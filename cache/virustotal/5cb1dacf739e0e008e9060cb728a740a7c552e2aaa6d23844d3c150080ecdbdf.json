@@ -1,0 +1,1576 @@
+{
+  "data": {
+    "id": "5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf"
+    },
+    "attributes": {
+      "type_description": "Win32 EXE",
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "unique_sources": 34,
+      "sha256": "5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf",
+      "sha1": "1fc0aa57018b68a3ada27ec3037b9571a140633d",
+      "size": 28402906,
+      "meaningful_name": "Loader by Sexsoldier.exe",
+      "last_analysis_stats": {
+        "malicious": 42,
+        "suspicious": 0,
+        "undetected": 13,
+        "harmless": 0,
+        "timeout": 4,
+        "confirmed-timeout": 1,
+        "failure": 11,
+        "type-unsupported": 4
+      },
+      "reputation": -11,
+      "type_tag": "peexe",
+      "vhash": "227036551514501d345f61c0934",
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 4,
+        "medium": 4,
+        "low": 1
+      },
+      "type_tags": [
+        "executable",
+        "windows",
+        "win32",
+        "pe",
+        "peexe"
+      ],
+      "filecondis": {
+        "dhash": "0000000c0e0d0800",
+        "raw_md5": "3bab3042986687b3ff33e4ca4931eb82"
+      },
+      "creation_date": 1793659731,
+      "sigma_analysis_results": [
+        {
+          "rule_level": "high",
+          "rule_id": "2333305c10a5e401a71aa3f6f7fdc5beb2f3131724fbb28c6c6d9e4ae27ef754",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious Process Masquerading As SvcHost.EXE",
+          "rule_description": "Detects a suspicious process that is masquerading as the legitimate \"svchost.exe\" by naming its binary \"svchost.exe\" and executing from an uncommon location.\nAdversaries often disguise their malicious binaries by naming them after legitimate system processes like \"svchost.exe\" to evade detection.\n",
+          "rule_author": "Swachchhanda Shrawan Poudel",
+          "match_context": [
+            {
+              "values": {
+                "CommandLine": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe",
+                "EventID": "1"
+              }
+            },
+            {
+              "values": {
+                "CommandLine": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\5f01f38d3539\\svchost.exe",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\5f01f38d3539\\svchost.exe",
+                "EventID": "1"
+              }
+            },
+            {
+              "values": {
+                "CommandLine": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\dfaee8c83924\\svchost.exe",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\dfaee8c83924\\svchost.exe",
+                "EventID": "1"
+              }
+            },
+            {
+              "values": {
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\284f84054f65\\svchost.exe\"",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\284f84054f65\\svchost.exe",
+                "EventID": "1"
+              }
+            },
+            {
+              "values": {
+                "CommandLine": "\"C:\\Users\\RDhJ0CNFevzX\\AppData\\Roaming\\SystemData\\svchost.exe\"",
+                "Image": "C:\\Users\\RDhJ0CNFevzX\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "EventID": "1"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "high",
+          "rule_id": "25fc56c1bee673d7ff3edcf371e4d2a36c0af83222da348961b87735c8efa61f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "System File Execution Location Anomaly",
+          "rule_description": "Detects the execution of a Windows system binary that is usually located in the system folder from an uncommon location.\n",
+          "rule_author": "Florian Roth (Nextron Systems), Patrick Bareiss, Anton Kutepov, oscd.community, Nasreddine Bencherchali (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=A0F52ABA37CEE9698220AF45C3F76F2EBCCCB5A9,MD5=6BD8E27282C5BE493DB66D4E7A3586C9,SHA256=053C310C9A6A86676F924D0B42EBE1594FCA3392C5B57259478EB5F34A918C01,IMPHASH=00000000000000000000000000000000",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\conhost.exe\"",
+                "ParentImage": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\conhost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=D0F3AD11FE7AF6EB50CC9A6C61D501114BFF0128,MD5=516EDCA661E09E8F9A751154BE7A3A4B,SHA256=8F295C29070ADB00789BAD0E1430D6E1F97B2E8E7C61EB86B91CA8FE19965645,IMPHASH=00000000000000000000000000000000",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\conhost.exe\"",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\conhost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "high",
+          "rule_id": "27b72c2678411f21ba21bd10b44b7e9c45594d5a5f61f14223b81a8906675039",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "New RUN Key Pointing to Suspicious Folder",
+          "rule_description": "Detects suspicious new RUN key element pointing to an executable in a suspicious folder",
+          "rule_author": "Florian Roth (Nextron Systems), Markus Neis, Sander Wiebing, Swachchhanda Shrawan Poudel (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "EventType": "SetValue",
+                "EventID": "13",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "Details": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "TargetObject": "HKU\\S-1-5-21-1070296143-2877979003-364783958-1001\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SystemAutoLauncher"
+              }
+            },
+            {
+              "values": {
+                "RuleName": "T1060,RunKey",
+                "EventType": "SetValue",
+                "Details": "C:\\Users\\azure\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "Image": "C:\\Users\\azure\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "EventID": "13",
+                "TargetObject": "HKU\\S-1-5-21-4270068108-2931534202-3907561125-1001\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SystemAutoLauncher"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "high",
+          "rule_id": "f4143907bd6e32636e7bc2f3b4f1fca7dde5ff6787f10a17b360a798f52c6357",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Uncommon Svchost Command Line Parameter",
+          "rule_description": "Detects instances of svchost.exe running with an unusual or uncommon command line parameter by excluding known legitimate or common patterns.\nThis could point at a file masquerading as svchost, a process injection, or hollowing of a legitimate svchost instance.\n",
+          "rule_author": "Liran Ravich",
+          "match_context": [
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\" ",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\explorer.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\azure\\Downloads\\5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "7b87fbdccf3c12011b709aab8b9bd4642bd61dc9880e0e1ce9ebb9901e2a3497",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Uncommon Child Process Of Conhost.EXE",
+          "rule_description": "Detects uncommon \"conhost\" child processes. This could be a sign of \"conhost\" usage as a LOLBIN or potential process injection activity.",
+          "rule_author": "omkar72",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=A0F52ABA37CEE9698220AF45C3F76F2EBCCCB5A9,MD5=6BD8E27282C5BE493DB66D4E7A3586C9,SHA256=053C310C9A6A86676F924D0B42EBE1594FCA3392C5B57259478EB5F34A918C01,IMPHASH=00000000000000000000000000000000",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\conhost.exe\"",
+                "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\conhost.exe\"",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\conhost.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\conhost.exe"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "8b5db9da5732dc549b0e8b56fe5933d7c95ed760f3ac20568ab95347ef8c5bcc",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "CurrentVersion Autorun Keys Modification",
+          "rule_description": "Detects modification of autostart extensibility point (ASEP) in registry.",
+          "rule_author": "Victor Sergeev, Daniil Yugoslavskiy, Gleb Sukhodolskiy, Timur Zinniatullin, oscd.community, Tim Shelton, frack113 (split)",
+          "match_context": [
+            {
+              "values": {
+                "EventID": "13",
+                "Details": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "EventType": "SetValue",
+                "TargetObject": "HKU\\S-1-5-21-1070296143-2877979003-364783958-1001\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SystemAutoLauncher"
+              }
+            },
+            {
+              "values": {
+                "RuleName": "T1060,RunKey",
+                "EventID": "13",
+                "EventType": "SetValue",
+                "Image": "C:\\Users\\azure\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "Details": "C:\\Users\\azure\\AppData\\Roaming\\SystemData\\svchost.exe",
+                "TargetObject": "HKU\\S-1-5-21-4270068108-2931534202-3907561125-1001\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SystemAutoLauncher"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "a0daa529834b3c5230b4524da005a6b6503e7cb061e298a8f74e0dc1fee0a008",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Uncommon Svchost Parent Process",
+          "rule_description": "Detects an uncommon svchost parent process",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\" ",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\explorer.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\azure\\Downloads\\5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "e13498937de9343f50c1e8f315ce602aa238e37e21f3dbb15d3403c25afafe3e",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Files With System Process Name In Unsuspected Locations",
+          "rule_description": "Detects the creation of an executable with a system process name in folders other than the system ones (System32, SysWOW64, etc.).\nIt is highly recommended to perform an initial baseline before using this rule in production.\n",
+          "rule_author": "Sander Wiebing, Tim Shelton, Nasreddine Bencherchali (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Image": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "TargetFilename": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "EventID": "11"
+              }
+            },
+            {
+              "values": {
+                "Image": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "TargetFilename": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\conhost.exe",
+                "EventID": "11"
+              }
+            },
+            {
+              "values": {
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "EventID": "11",
+                "TargetFilename": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "EventID": "11",
+                "TargetFilename": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\conhost.exe"
+              }
+            },
+            {
+              "values": {
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "EventID": "11",
+                "TargetFilename": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "afd546ea5eff265c454f77f6e7641ade6e5a791d79de155fa27d377be1581535",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Windows Processes Suspicious Parent Directory",
+          "rule_description": "Detect suspicious parent processes of well-known Windows processes",
+          "rule_author": "vburov",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\Bruno\\Desktop\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Product": "svchost",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe\"",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\svchost.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe\"",
+                "FileVersion": "1.0.0.0",
+                "ParentImage": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\e5c0e3e0e0a8\\Loader by Sexsoldier.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9d572ce78ec8\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=CD9F4CC756FB7495D00A39BD6060A194F71395D6,MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+                "CommandLine": "\"C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe\" ",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\explorer.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Users\\Bruno\\AppData\\Roaming\\SystemData\\svchost.exe"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "MD5=548E885F59AD952996AF78F5E6A64D6C,SHA256=5AD907215D8F6EA094927314B5847AED0667F0591304A9A70FE486682E48EE18,IMPHASH=F34D5F2D4577ED6D9CEEC516C1F5A744",
+                "CurrentDirectory": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\",
+                "OriginalFileName": "svchost.exe",
+                "Product": "svchost",
+                "Description": "svchost",
+                "FileVersion": "1.0.0.0",
+                "ParentCommandLine": "\"5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe\"",
+                "CommandLine": "\"C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Users\\azure\\Downloads\\5cb1dacf739e0e008e9060cb728a740a7c552e2aaa6d23844d3c150080ecdbdf.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\9c743a42f9f5\\svchost.exe"
+              }
+            }
+          ]
+        }
+      ],
+      "tags": [
+        "peexe",
+        "assembly",
+        "detect-debug-environment",
+        "spreader",
+        "overlay"
+      ],
+      "trid": [
+        {
+          "file_type": "Generic CIL Executable (.NET, Mono, etc.)",
+          "probability": 36.3
+        },
+        {
+          "file_type": "UPX compressed Win64 Executable",
+          "probability": 34.8
+        },
+        {
+          "file_type": "UPX compressed Win32 Executable",
+          "probability": 13.4
+        },
+        {
+          "file_type": "Win32 Dynamic Link Library (generic)",
+          "probability": 3.2
+        },
+        {
+          "file_type": "Win64 Executable (generic)",
+          "probability": 3.2
+        }
+      ],
+      "last_analysis_date": 1794104312,
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 4,
+          "medium": 4,
+          "low": 1
+        }
+      },
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "W32.Malware.FC5AF6F3"
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261104",
+          "category": "malicious",
+          "result": "malicious (high confidence)"
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "exe.unknown.jalapeno"
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojanpws.Msil"
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Artemis"
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Gen:Variant.Jalapeno.23945"
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "malicious",
+          "result": "Unsafe"
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Gen:Variant.Jalapeno.23945"
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojan.Win32.Save.a"
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61398",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojan ( 700000201 )"
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61398",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojan ( 700000201 )"
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "malicious",
+          "result": "win/malicious_confidence_90% (D)"
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan.Jalapeno.D5D89"
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "9d10c90:9d10c90:5022543:5022543",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "HEUR:Trojan/FakeSysApp.a"
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1334",
+          "engine_update": "20261106",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "ML.Attribute.HighConfidence"
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Malicious"
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "generic.ml"
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "malicious",
+          "result": "TrojanPSW:MSIL/Salat.adc9d67b"
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan.Win32.Inject7.lktvnx"
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Gen:Variant.Jalapeno.23945"
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Worm.Generic!8.402 (CLOUD)"
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Gen:Variant.Jalapeno.23945 (B)"
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan.TR/Dropper.Gen"
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojan.PWS.Salat.389"
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5725",
+          "engine_update": "20261106",
+          "category": "malicious",
+          "result": "Trojan.GenKryptikAGen.Win64.32470"
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Real Protect-LS!BBE946348F99"
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "malicious",
+          "result": "malicious.moderate.ml.score"
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Troj/Salat-B"
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Trojan.Win64.Krypt"
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "undetected",
+          "result": null
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "TR/Dropper.Gen"
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan[PSW]/MSIL.Salat"
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.259.174",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan.Win32.Kryptik.sa"
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39097",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan:MSIL/Salat.A!MTB"
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-08.00",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762362",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Troj/Salat-B"
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46636AVA:64.32193",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Gen:Variant.Jalapeno.23945"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Trojan/Win.Generic.C5950548"
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-08.01",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "RiskWare.Spoofer"
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Malware.Win32.Gencirc.14bb276c"
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "malicious",
+          "result": "Static AI - Malicious PE"
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "PossibleThreat"
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "malicious",
+          "result": "MALICIOUS"
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "malicious",
+          "result": "Trojan[dropper]:MSIL/GenKryptik_AGen.CTW"
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261108",
+          "category": "timeout",
+          "result": null
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261107",
+          "category": "timeout",
+          "result": null
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261106",
+          "category": "timeout",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261108",
+          "category": "confirmed-timeout",
+          "result": null
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261107",
+          "category": "timeout",
+          "result": null
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261108",
+          "category": "failure",
+          "result": null
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261108",
+          "category": "failure",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": null,
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261108",
+          "category": "failure",
+          "result": null
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": null,
+          "engine_update": "20261108",
+          "category": "failure",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261106",
+          "category": "failure",
+          "result": null
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261107",
+          "category": "failure",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261107-00",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261108",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "magic": "PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows",
+      "first_submission_date": 1793671141,
+      "authentihash": "e164c0dc84d422640d083ab39e45492be5477e79466887f6bf80b0e9c223a0c0",
+      "detectiteasy": {
+        "filetype": "PE32",
+        "values": [
+          {
+            "version": "v4.0.30319",
+            "type": "Library",
+            "name": ".NET"
+          },
+          {
+            "version": "11.0",
+            "type": "Linker",
+            "name": "Microsoft Linker"
+          }
+        ]
+      },
+      "names": [
+        "Loader by Sexsoldier.exe",
+        "hm4xb.exe"
+      ],
+      "tlsh": "T18B5723D2DBB0C325D28FC275886983525C2ABA55DC156F8A3712B5197FFB2C2F61C283",
+      "sandbox_verdicts": {
+        "C2AE": {
+          "category": "malicious",
+          "malware_classification": [
+            "STEALER"
+          ],
+          "sandbox_name": "C2AE",
+          "malware_names": [
+            "SalatStealer"
+          ],
+          "confidence": 70
+        },
+        "Yomi Hunter": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE"
+          ],
+          "sandbox_name": "Yomi Hunter"
+        },
+        "VMRay": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE"
+          ],
+          "sandbox_name": "VMRay",
+          "malware_names": [
+            "SalatStealer",
+            "Mal/Generic-S"
+          ]
+        }
+      },
+      "pe_info": {
+        "timestamp": 1793659731,
+        "imphash": "f34d5f2d4577ed6d9ceec516c1f5a744",
+        "machine_type": 332,
+        "entry_point": 13230,
+        "resource_details": [
+          {
+            "lang": "NEUTRAL",
+            "chi2": 53844.49,
+            "filetype": "unknown",
+            "entropy": 3.186614990234375,
+            "sha256": "0b9d5739fd0de273eacd1bbb8644a1acb574a7ed3ca21ab366f449f4cf5f3299",
+            "type": "RT_VERSION"
+          },
+          {
+            "lang": "NEUTRAL",
+            "chi2": 4719.86,
+            "filetype": "unknown",
+            "entropy": 5.00111722946167,
+            "sha256": "c0085eb467d2fc9c9f395047e057183b3cd1503a4087d0db565161c13527a76f",
+            "type": "RT_MANIFEST"
+          }
+        ],
+        "resource_langs": {
+          "NEUTRAL": 2
+        },
+        "resource_types": {
+          "RT_MANIFEST": 1,
+          "RT_VERSION": 1
+        },
+        "overlay": {
+          "chi2": 9598809.0,
+          "filetype": "unknown",
+          "entropy": 7.912402153015137,
+          "offset": 7680,
+          "size": 28395226,
+          "md5": "b369ab6ce0fdd383f5715c15005bb625"
+        },
+        "sections": [
+          {
+            "name": ".text",
+            "chi2": 102594.06,
+            "virtual_address": 8192,
+            "flags": "rx",
+            "raw_size": 5120,
+            "entropy": 5.58,
+            "virtual_size": 5044,
+            "md5": "76c8d4f288bd298713523a3fa14993df"
+          },
+          {
+            "name": ".rsrc",
+            "chi2": 94908.52,
+            "virtual_address": 16384,
+            "flags": "r",
+            "raw_size": 1536,
+            "entropy": 3.79,
+            "virtual_size": 1296,
+            "md5": "e36446241194aa99ae718db7f4e4cd5d"
+          },
+          {
+            "name": ".reloc",
+            "chi2": 128522.0,
+            "virtual_address": 24576,
+            "flags": "r",
+            "raw_size": 512,
+            "entropy": 0.08,
+            "virtual_size": 12,
+            "md5": "1638f98d1d7e7e81725de96bb15568b0"
+          }
+        ],
+        "import_list": [
+          {
+            "library_name": "mscoree.dll",
+            "imported_functions": [
+              "_CorExeMain"
+            ]
+          }
+        ]
+      },
+      "signature_info": {
+        "file version": "0.0.0.0",
+        "original name": "Loader by Sexsoldier.exe",
+        "internal name": "Loader by Sexsoldier.exe"
+      },
+      "packers": {
+        "PEiD": ".NET executable",
+        "Varist": "exefile"
+      },
+      "popular_threat_classification": {
+        "suggested_threat_label": "trojan.jalapeno/salat",
+        "popular_threat_name": [
+          {
+            "value": "jalapeno",
+            "count": 7
+          },
+          {
+            "value": "salat",
+            "count": 6
+          },
+          {
+            "value": "msil",
+            "count": 5
+          }
+        ],
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 17
+          },
+          {
+            "value": "dropper",
+            "count": 3
+          },
+          {
+            "value": "pua",
+            "count": 1
+          }
+        ]
+      },
+      "md5": "bbe946348f99f47ff5294b1c3edc7f70",
+      "type_extension": "exe",
+      "last_submission_date": 1794253861,
+      "ssdeep": "786432:3+lI6NYKd9mZKCDplFVvhdeRAEtJfjwH+lI6A:4v9KKIFVe6Enjfi",
+      "times_submitted": 35,
+      "dot_net_assembly": {
+        "entry_point_token": 100663298,
+        "metadata_header_rva": 9844,
+        "assembly_name": "Loader by Sexsoldier.exe",
+        "resources_va": 0,
+        "assembly_flags": 1,
+        "strongname_va": 0,
+        "external_assemblies": {
+          "mscorlib": {
+            "version": "4.0.0.0"
+          },
+          "System": {
+            "version": "4.0.0.0"
+          }
+        },
+        "clr_meta_version": "1.1",
+        "tables_present": 16,
+        "entry_point_rva": 0,
+        "tables_rows_map": "12430806030384300003000000001211001002000000000",
+        "assembly_flags_txt": "COMIMAGE_FLAGS_ILONLY",
+        "external_modules": [
+          "kernel32.dll"
+        ],
+        "streams": {
+          "#~": {
+            "chi2": 43124.72265625,
+            "size": 976,
+            "entropy": 4.516202449798584,
+            "md5": "ccc054fc864817de4d12a2c39b4a54e3"
+          },
+          "#Strings": {
+            "chi2": 16839.36328125,
+            "size": 1580,
+            "entropy": 5.050292015075684,
+            "md5": "bab2fa75ff06e0998c065d07c8f440fd"
+          },
+          "#US": {
+            "chi2": 14076.2998046875,
+            "size": 208,
+            "entropy": 3.4315531253814697,
+            "md5": "852f1948277c7536aa3f873797d259f8"
+          },
+          "#GUID": {
+            "chi2": 240.0,
+            "size": 16,
+            "entropy": 4.0,
+            "md5": "8f66ab212670d4b650d856fd08ab2bca"
+          },
+          "#Blob": {
+            "chi2": 6260.9189453125,
+            "size": 416,
+            "entropy": 4.660375118255615,
+            "md5": "529e5a4fb292606bc31019ac42805c9d"
+          }
+        },
+        "tables_present_map": "93c021d57",
+        "clr_version": "v4.0.30319",
+        "assembly_data": {
+          "majorversion": 0,
+          "minorversion": 0,
+          "hashalgid": 32772,
+          "flags_text": "afPA_None",
+          "buildnumber": 0,
+          "flags": 0,
+          "revisionnumber": 0,
+          "name": "Loader by Sexsoldier"
+        },
+        "tables_rows_map_log": "4756558555444444",
+        "unmanaged_methods": {
+          "kernel32.dll": [
+            "SetFileAttributes"
+          ]
+        },
+        "type_definition_list": [
+          {
+            "namespace": "System",
+            "type_definitions": [
+              "Object",
+              "Byte",
+              "Array",
+              "RuntimeFieldHandle",
+              "BitConverter",
+              "String",
+              "Math",
+              "IDisposable",
+              "StringComparison",
+              "Environment",
+              "Guid",
+              "Int32"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.CompilerServices",
+            "type_definitions": [
+              "CompilationRelaxationsAttribute",
+              "RuntimeCompatibilityAttribute",
+              "CompilerGeneratedAttribute",
+              "RuntimeHelpers"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.InteropServices",
+            "type_definitions": [
+              "DllImportAttribute"
+            ]
+          },
+          {
+            "namespace": "System.Collections.Generic",
+            "type_definitions": [
+              "List`1"
+            ]
+          },
+          {
+            "namespace": "System.Reflection",
+            "type_definitions": [
+              "Assembly"
+            ]
+          },
+          {
+            "namespace": "System.IO",
+            "type_definitions": [
+              "FileStream",
+              "FileMode",
+              "FileAccess",
+              "Stream",
+              "SeekOrigin",
+              "Path",
+              "Directory",
+              "DirectoryInfo",
+              "StreamReader",
+              "TextReader",
+              "File"
+            ]
+          },
+          {
+            "namespace": "System.Text",
+            "type_definitions": [
+              "Encoding"
+            ]
+          },
+          {
+            "namespace": "uncategorized",
+            "type_definitions": [
+              "Enumerator",
+              "SpecialFolder"
+            ]
+          },
+          {
+            "namespace": "System.Diagnostics",
+            "type_definitions": [
+              "ProcessStartInfo",
+              "ProcessWindowStyle",
+              "Process"
+            ]
+          }
+        ],
+        "unmanaged_method_list": [
+          {
+            "name": "kernel32.dll",
+            "methods": [
+              "SetFileAttributes"
+            ]
+          }
+        ]
+      },
+      "crowdsourced_yara_results": [
+        {
+          "ruleset_id": "00c291ca7f",
+          "ruleset_version": "00c291ca7f|e76c93dcdedff04076380ffc60ea54e45b313635",
+          "ruleset_name": "indicator_packed",
+          "rule_name": "INDICATOR_EXE_Packed_Fody",
+          "match_date": 1794253862,
+          "description": "Detects executables manipulated with Fody",
+          "author": "ditekSHen",
+          "source": "https://github.com/ditekshen/detection"
+        }
+      ],
+      "magika": "PEBIN",
+      "last_modification_date": 1794253862,
+      "dot_net_guids": {
+        "mvid": "1923bdf0-59b1-4f3f-8565-92a8662d1736"
+      }
+    }
+  }
+}

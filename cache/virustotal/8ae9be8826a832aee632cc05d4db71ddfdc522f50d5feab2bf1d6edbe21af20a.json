@@ -1,0 +1,2455 @@
+{
+  "data": {
+    "id": "8ae9be8826a832aee632cc05d4db71ddfdc522f50d5feab2bf1d6edbe21af20a",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/8ae9be8826a832aee632cc05d4db71ddfdc522f50d5feab2bf1d6edbe21af20a"
+    },
+    "attributes": {
+      "crowdsourced_ids_results": [
+        {
+          "rule_category": "Domain Observed Used for C2 Detected",
+          "alert_severity": "high",
+          "rule_msg": "ET MALWARE Observed Malicious SSL Cert (Quasar CnC)",
+          "rule_id": "1:2027619",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert tls $EXTERNAL_NET any -> $HOME_NET any (msg:\"ET MALWARE Observed Malicious SSL Cert (Quasar CnC)\"; flow:from_server,established; tls.cert_subject; content:\"CN=Quasar Server CA\"; nocase; fast_pattern; endswith; reference:url,sslbl.abuse.ch/ssl-certificates/sha1/f87d2aff4148f98f014460ab709c77587ea1e430/; classtype:domain-c2; sid:2027619; rev:3; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_and_Server, created_at 2019_06_27, deployment Perimeter, malware_family Quasar, performance_impact Low, confidence High, signature_severity Major, tag SSL_Malicious_Cert, tag RAT, tag Description_Generated_By_Proofpoint_Nexus, updated_at 2020_09_17, mitre_tactic_id TA0011, mitre_tactic_name Command_And_Control, mitre_technique_id T1071, mitre_technique_name Application_Layer_Protocol;)",
+          "rule_references": [
+            "https://sslbl.abuse.ch/ssl-certificates/sha1/f87d2aff4148f98f014460ab709c77587ea1e430/"
+          ],
+          "alert_context": [
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "c12f54a3f91dc7bafd92cb59fe009a35"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            },
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "43016d7f7f9336b17c884650d0d2545d"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            }
+          ]
+        },
+        {
+          "rule_category": "Domain Observed Used for C2 Detected",
+          "alert_severity": "high",
+          "rule_msg": "ET MALWARE PureRAT SSL Cert",
+          "rule_id": "1:2035595",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert tls $EXTERNAL_NET [!5222,!7687] -> $HOME_NET any (msg:\"ET MALWARE PureRAT SSL Cert\"; flow:established,to_client; content:!\"infinitecampus.com\"; content:\"|0f 39 39 39 39 31 32 33 31 32 33 35 39 35 39 5a|\"; fast_pattern; content:\"|55 04 03|\"; pcre:\"/^.(?P<servercert>[\\x00-\\xff][\\x20-\\x7f]{1,50})\\x30.+?\\x55\\x04\\x03.(?P=servercert)\\x30/Rsi\"; tls.cert_subject; content:\"CN=\"; startswith; content:!\"O=\"; content:!\"OU=\"; content:!\"ST=\"; tls.cert_issuer; content:\"CN=\"; startswith; content:!\"O=\"; content:!\"OU=\"; content:!\"ST=\"; content:!\".com\"; content:!\"CN=localhost\"; content:!\"CN=ForFunLabs\"; reference:md5,7ed7bf7ea7a1551218f73774d28be76c; classtype:domain-c2; sid:2035595; rev:6; metadata:affected_product Windows_XP_Vista_7_8_10_Server_32_64_Bit, attack_target Client_Endpoint, tls_state plaintext, created_at 2021_09_13, deployment Perimeter, malware_family PureRAT, confidence High, signature_severity Major, tag Description_Generated_By_Proofpoint_Nexus, updated_at 2022_08_01, reviewed_at 2024_05_06; target:src_ip;)",
+          "rule_references": [
+            "https://www.virustotal.com/gui/search/7ed7bf7ea7a1551218f73774d28be76c"
+          ],
+          "alert_context": [
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "c12f54a3f91dc7bafd92cb59fe009a35"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            },
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "43016d7f7f9336b17c884650d0d2545d"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            }
+          ]
+        },
+        {
+          "rule_category": "Potentially Bad Traffic",
+          "alert_severity": "low",
+          "rule_msg": "ET INFO External IP Lookup Domain in DNS Lookup (ipwho .is)",
+          "rule_id": "1:2037042",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert dns $HOME_NET any -> any any (msg:\"ET INFO External IP Lookup Domain in DNS Lookup (ipwho .is)\"; dns.query; content:\"ipwho.is\"; nocase; bsize:8; classtype:bad-unknown; sid:2037042; rev:2; metadata:attack_target Client_Endpoint, created_at 2022_06_21, deployment Perimeter, performance_impact Low, confidence High, signature_severity Informational, updated_at 2024_11_26, mitre_tactic_id TA0007, mitre_tactic_name Discovery, mitre_technique_id T1614, mitre_technique_name System_Location_Discovery;)",
+          "alert_context": [
+            {
+              "dest_ip": "8.8.8.8",
+              "dest_port": 53
+            }
+          ]
+        },
+        {
+          "alert_severity": "low",
+          "rule_msg": "SSLBL: Malicious SSL certificate detected (QuasarRAT C&C)",
+          "rule_id": "1:902204417",
+          "rule_source": "Abuse.ch SSL Blocklist",
+          "rule_url": "https://sslbl.abuse.ch/blacklist/sslblacklist.rules",
+          "rule_raw": "alert tls $EXTERNAL_NET any -> $HOME_NET any (msg:\"SSLBL: Malicious SSL certificate detected (QuasarRAT C&C)\"; tls.fingerprint:\"cf:cd:07:59:e2:0f:29:c3:99:c9:d4:21:0b:e6:14:e4:e0:20:be:e8\"; reference:url, sslbl.abuse.ch/ssl-certificates/sha1/cfcd0759e20f29c399c9d4210be614e4e020bee8/; sid:902204417; rev:1;)",
+          "rule_references": [
+            "https://sslbl.abuse.ch/ssl-certificates/sha1/cfcd0759e20f29c399c9d4210be614e4e020bee8/"
+          ],
+          "alert_context": [
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "c12f54a3f91dc7bafd92cb59fe009a35"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            },
+            {
+              "src_ip": "191.217.233.144",
+              "src_port": 4782,
+              "ja3": [
+                "43016d7f7f9336b17c884650d0d2545d"
+              ],
+              "ja3s": [
+                "ae4edc6faf64d08308082ad26be60767"
+              ]
+            }
+          ]
+        }
+      ],
+      "trid": [
+        {
+          "file_type": "Microsoft Resource Library (x86)",
+          "probability": 59.5
+        },
+        {
+          "file_type": "Generic CIL Executable (.NET, Mono, etc.)",
+          "probability": 24.5
+        },
+        {
+          "file_type": "Microsoft Visual C++ compiled executable (generic)",
+          "probability": 5.5
+        },
+        {
+          "file_type": "Win32 Dynamic Link Library (generic)",
+          "probability": 2.2
+        },
+        {
+          "file_type": "Win64 Executable (generic)",
+          "probability": 2.1
+        }
+      ],
+      "crowdsourced_yara_results": [
+        {
+          "ruleset_id": "00c3b8eb5d",
+          "ruleset_version": "00c3b8eb5d|e76c93dcdedff04076380ffc60ea54e45b313635",
+          "ruleset_name": "indicator_suspicious",
+          "rule_name": "INDICATOR_SUSPICIOUS_EXE_SandboxHookingDLL",
+          "match_date": 1794242233,
+          "description": "Detects binaries and memory artifacts referencing sandbox DLLs typically observed in sandbox evasion",
+          "author": "ditekSHen",
+          "source": "https://github.com/ditekshen/detection"
+        },
+        {
+          "ruleset_id": "00c3b8eb5d",
+          "ruleset_version": "00c3b8eb5d|e76c93dcdedff04076380ffc60ea54e45b313635",
+          "ruleset_name": "indicator_suspicious",
+          "rule_name": "INDICATOR_SUSPICIOUS_EXE_NoneWindowsUA",
+          "match_date": 1794242233,
+          "description": "Detects Windows executables referencing non-Windows User-Agents",
+          "author": "ditekSHen",
+          "source": "https://github.com/ditekshen/detection"
+        },
+        {
+          "ruleset_id": "0000fcef3c",
+          "ruleset_version": "0000fcef3c|1d926845269a3ac8de0431da133950390b5cced3",
+          "ruleset_name": "apt_quasar_rat",
+          "rule_name": "MAL_QuasarRAT_May19_1",
+          "match_date": 1794242233,
+          "description": "Detects QuasarRAT malware",
+          "author": "Florian Roth (Nextron Systems)",
+          "source": "https://github.com/Neo23x0/signature-base"
+        },
+        {
+          "ruleset_id": "009cfa8ad5",
+          "ruleset_version": "009cfa8ad5|347a57b31829b6f8e3280e0fd6a0ed49e5453c67",
+          "ruleset_name": "sandboxdetect",
+          "rule_name": "sandboxdetect_misc",
+          "match_date": 1794242233,
+          "description": "Sandbox detection tricks",
+          "author": "AlienVault Labs",
+          "source": "https://github.com/AlienVault-Labs/AlienVaultLabs"
+        },
+        {
+          "ruleset_id": "000d5e78ed",
+          "ruleset_version": "000d5e78ed|1d926845269a3ac8de0431da133950390b5cced3",
+          "ruleset_name": "gen_mal_backnet",
+          "rule_name": "MAL_BackNet_Nov18_1",
+          "match_date": 1794242233,
+          "description": "Detects BackNet samples",
+          "author": "Florian Roth (Nextron Systems)",
+          "source": "https://github.com/Neo23x0/signature-base"
+        },
+        {
+          "ruleset_id": "0020abb7ce",
+          "ruleset_version": "0020abb7ce|5cc871d82361de8a80d387ec8bbd01fe4258b4a9",
+          "ruleset_name": "Pulsar_RAT",
+          "rule_name": "Pulsar_RAT",
+          "match_date": 1794242233,
+          "description": "Identifies Pulsar RAT, based on Quasar RAT.",
+          "author": "@bartblaze",
+          "source": "https://github.com/bartblaze/Yara-rules"
+        },
+        {
+          "ruleset_id": "0026056171",
+          "ruleset_version": "0026056171|d1fd450ec7c73f71e829d8f39a46e82e73687778",
+          "ruleset_name": "Costura_Protobuf",
+          "rule_name": "Costura_Protobuf",
+          "match_date": 1794242233,
+          "description": "Identifies Costura and Protobuf in .NET assemblies, respectively for storing resources and (de)serialization. Seen together might indicate a suspect binary.",
+          "author": "@bartblaze",
+          "source": "https://github.com/bartblaze/Yara-rules"
+        },
+        {
+          "ruleset_id": "00c291ca7f",
+          "ruleset_version": "00c291ca7f|e76c93dcdedff04076380ffc60ea54e45b313635",
+          "ruleset_name": "indicator_packed",
+          "rule_name": "INDICATOR_EXE_Packed_Fody",
+          "match_date": 1794242233,
+          "description": "Detects executables manipulated with Fody",
+          "author": "ditekSHen",
+          "source": "https://github.com/ditekshen/detection"
+        }
+      ],
+      "pe_info": {
+        "timestamp": 2825267538,
+        "imphash": "f34d5f2d4577ed6d9ceec516c1f5a744",
+        "machine_type": 332,
+        "entry_point": 2009534,
+        "resource_details": [
+          {
+            "lang": "NEUTRAL",
+            "chi2": 62046.21,
+            "filetype": "unknown",
+            "entropy": 3.1939451694488525,
+            "sha256": "9332bfa16432bc350e3e5a7f9653e05513370665879ee21cdd585932940a93e3",
+            "type": "RT_VERSION"
+          },
+          {
+            "lang": "NEUTRAL",
+            "chi2": 17265.67,
+            "filetype": "unknown",
+            "entropy": 5.180288791656494,
+            "sha256": "1896060246fc6b09837baf64f2b9888be8b6cb85e9840edf6e616a28da057250",
+            "type": "RT_MANIFEST"
+          }
+        ],
+        "resource_langs": {
+          "NEUTRAL": 2
+        },
+        "resource_types": {
+          "RT_MANIFEST": 1,
+          "RT_VERSION": 1
+        },
+        "sections": [
+          {
+            "name": ".text",
+            "chi2": 2517154.5,
+            "virtual_address": 8192,
+            "flags": "rx",
+            "raw_size": 2001408,
+            "entropy": 7.75,
+            "virtual_size": 2001348,
+            "md5": "11c890ce5ba9e8d90321d9063cf53d7b"
+          },
+          {
+            "name": ".rsrc",
+            "chi2": 91682.35,
+            "virtual_address": 2015232,
+            "flags": "r",
+            "raw_size": 3072,
+            "entropy": 4.59,
+            "virtual_size": 2632,
+            "md5": "ff75c65af917da210fad76eeb2b96cd9"
+          },
+          {
+            "name": ".reloc",
+            "chi2": 128015.0,
+            "virtual_address": 2023424,
+            "flags": "r",
+            "raw_size": 512,
+            "entropy": 0.1,
+            "virtual_size": 12,
+            "md5": "f6e3cd1b6eeb1250b6409f6fc2e651d5"
+          }
+        ],
+        "import_list": [
+          {
+            "library_name": "mscoree.dll",
+            "imported_functions": [
+              "_CorExeMain"
+            ]
+          }
+        ]
+      },
+      "type_tag": "peexe",
+      "detectiteasy": {
+        "filetype": "PE32",
+        "values": [
+          {
+            "version": "v4.0.30319",
+            "type": "Library",
+            "name": ".NET"
+          },
+          {
+            "type": "Linker",
+            "name": "Microsoft Linker"
+          }
+        ]
+      },
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 0,
+          "medium": 3,
+          "low": 0
+        }
+      },
+      "ssdeep": "24576:+LS2eWBRwRR16z/0m8yXP8oc5R2NntxY0KKm77yviUSQaZaOwI55l2S62r9iyFoL:+Z7wRPirm2NnPTKKm77LrwCB6uanAc",
+      "size": 2005504,
+      "times_submitted": 1,
+      "authentihash": "723975a4bd9ba2e216f6ca437eff1febeaf9c53245d0ecc6ed06a10e1718977a",
+      "tags": [
+        "obfuscated",
+        "peexe",
+        "malware",
+        "calls-wmi",
+        "checks-network-adapters",
+        "detect-debug-environment",
+        "assembly"
+      ],
+      "crowdsourced_ids_stats": {
+        "high": 2,
+        "medium": 0,
+        "low": 2,
+        "info": 0
+      },
+      "magic": "PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows",
+      "reputation": -11,
+      "sha256": "8ae9be8826a832aee632cc05d4db71ddfdc522f50d5feab2bf1d6edbe21af20a",
+      "unique_sources": 1,
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "dot_net_guids": {
+        "mvid": "91573d94-9955-4faf-9846-4e265ffa8f51"
+      },
+      "type_extension": "exe",
+      "type_description": "Win32 EXE",
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "W32.Malware.B4E08872"
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Win32.Pulsar.m!c"
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Gen:Variant.Application.Tedy.5914"
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "malicious",
+          "result": "Backdoor.Pulsarrat"
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Artemis!Trojan"
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Gen:Variant.Application.Tedy.5914"
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "malicious",
+          "result": "Unsafe"
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Gen:Variant.Application.Tedy.5914"
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Suspicious.Win32.Save.a"
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "malicious",
+          "result": "win/malicious_confidence_100% (W)"
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Gen:Variant.Application.Tedy.5914"
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan ( 700000201 )"
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan ( 700000201 )"
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Application.Tedy.D171A"
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "691424c:691424c:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor/MSIL.AsyncRAT.aa"
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor.Trojan"
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "malicious (high confidence)"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "MSIL/PulsarRAT.A trojan"
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Win32.VSX.PE04CAN"
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "generic.ml"
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Win.Malware.Generic-9883083-0"
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "HEUR:Backdoor.MSIL.ShadowRecruit.a"
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "malicious",
+          "result": "Backdoor:Win32/PulsarRat.b0ef50fb"
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "malicious",
+          "result": "Malicious"
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor.Quasar!1.13C79 (CLASSIC)"
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Mal/Generic-S"
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.TR/W32.Pulsar.A"
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "BackDoor.QuasarNET.3"
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5725",
+          "engine_update": "20261106",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor.MSIL.TEDY.TL0101K726ZZ"
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan:Win/Aikaantivm.EAB"
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "undetected",
+          "result": null
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "exe.unknown.tedy"
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Gen:Variant.Application.Tedy.5914 (B)"
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor.QuasarRat"
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "undetected",
+          "result": null
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "TR/W32.Pulsar.A"
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan[Banker]/MSIL.ClipBanker"
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "MSIL.Backdoor.ShadowRecrui.a"
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Win32.Agent.sa"
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor:Win32/PulsarRat.AR!AMTB"
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Win.Z.Tedy.2005504"
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46657AVA:64.32204",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "MSIL.Trojan-Spy.Keylogger.BH"
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "W32/MSIL_Agent.FUM.gen!Eldorado"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Spyware/Win.Tinclex.C5773079"
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.MSIL.RedLine.Heur"
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Backdoor.Agent.Generic"
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trj/GdSda.A"
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.Msil.Keylogger.16001821"
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.PulsarRAT!4gHeQlgvAQE"
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "GenericRXWV-LQ!96A22C9CE3CF"
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "malicious",
+          "result": "Static AI - Malicious PE"
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "MSIL/Agent.CVS!tr"
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Win32:Pulsar-A [Rat]"
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Win32:Pulsar-A [Rat]"
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "malicious",
+          "result": "Backdoor:MSIL/PulsarRAT.A"
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": null,
+          "engine_update": "20261109",
+          "category": "timeout",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "failure",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "last_modification_date": 1794249428,
+      "names": [
+        "Client.exe",
+        "txttbjsh.exe",
+        "4hzfkfap.exe"
+      ],
+      "meaningful_name": "Client.exe",
+      "first_seen_itw_date": 1793994700,
+      "packers": {
+        "PEiD": ".NET executable"
+      },
+      "sha1": "af0b4692469b1d68ee96641703f83e2f5f53055f",
+      "last_analysis_stats": {
+        "malicious": 53,
+        "suspicious": 0,
+        "undetected": 16,
+        "harmless": 0,
+        "timeout": 1,
+        "confirmed-timeout": 0,
+        "failure": 1,
+        "type-unsupported": 4
+      },
+      "last_submission_date": 1793991097,
+      "popular_threat_classification": {
+        "popular_threat_name": [
+          {
+            "count": 12,
+            "value": "msil"
+          },
+          {
+            "count": 9,
+            "value": "tedy"
+          },
+          {
+            "count": 6,
+            "value": "pulsarrat"
+          }
+        ],
+        "suggested_threat_label": "trojan.msil/tedy",
+        "popular_threat_category": [
+          {
+            "count": 30,
+            "value": "trojan"
+          },
+          {
+            "count": 1,
+            "value": "banker"
+          },
+          {
+            "count": 1,
+            "value": "spyware"
+          }
+        ]
+      },
+      "creation_date": 2825267538,
+      "filecondis": {
+        "raw_md5": "7b75de81a86c6d67d275db9c68936b4d",
+        "dhash": "0000001e1e161300"
+      },
+      "magika": "PEBIN",
+      "sigma_analysis_results": [
+        {
+          "rule_level": "medium",
+          "rule_id": "3a2766a08d32a855b604a786cddc0f76fee13e6ccd22e01d4878150f0ef1eebc",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious DNS Query for IP Lookup Service APIs",
+          "rule_description": "Detects DNS queries for IP lookup services such as \"api.ipify.org\" originating from a non browser process.",
+          "rule_author": "Brandon George (blog post), Thomas Patzke",
+          "match_context": [
+            {
+              "values": {
+                "QueryResults": "::ffff:172.66.175.107;::ffff:104.20.44.133;",
+                "QueryStatus": "0",
+                "QueryName": "ipwho.is",
+                "Image": "C:\\Users\\Bruno\\Desktop\\program.exe",
+                "EventID": "22"
+              }
+            },
+            {
+              "values": {
+                "QueryResults": "::ffff:172.66.175.107;::ffff:104.20.44.133;",
+                "QueryStatus": "0",
+                "QueryName": "ipwho.is",
+                "Image": "C:\\Users\\Bruno\\Desktop\\executable.exe",
+                "EventID": "22"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "43c6ce8bdbd683e1a7f4fb9b49a3a8236621ff32e67fdf0987c5770097ef376c",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "ADS Zone.Identifier Deleted By Uncommon Application",
+          "rule_description": "Detects the deletion of the \"Zone.Identifier\" ADS by an uncommon process. Attackers can leverage this in order to bypass security restrictions that make use of the ADS such as Microsoft Office apps.",
+          "rule_author": "Nasreddine Bencherchali (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "TargetFilename": "C:\\Users\\user\\AppData\\Local\\Temp\\619f2be4d77c82e6d7264035aa0eaaee.exe:Zone.Identifier"
+              }
+            },
+            {
+              "values": {
+                "TargetFilename": "c:\\users\\rdhj0cnfevzx\\desktop\\96a22c9ce3cf02e3ebebe814fb1e2b0a.exe:zone.identifier"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "924e45f65b58d749e29df4b23b32058847bb1b15673ee93b0f9a0fc94359b19b",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "New Root or CA or AuthRoot Certificate to Store",
+          "rule_description": "Detects the addition of new root, CA or AuthRoot certificates to the Windows registry",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "EventType": "SetValue",
+                "Details": "Binary Data",
+                "Image": "C:\\Windows\\system32\\svchost.exe",
+                "EventID": "13",
+                "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\Certificates\\D4DE20D05E66FC53FE1A50882C78DB2852CAE474\\Blob"
+              }
+            },
+            {
+              "values": {
+                "Details": "Binary Data",
+                "EventType": "SetValue",
+                "Image": "C:\\Windows\\system32\\svchost.exe",
+                "EventID": "13",
+                "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\Certificates\\AD7E1C28B064EF8F6003402014C3D0E3370EB58A\\Blob"
+              }
+            },
+            {
+              "values": {
+                "Details": "Binary Data",
+                "EventID": "13",
+                "Image": "C:\\Windows\\system32\\svchost.exe",
+                "EventType": "SetValue",
+                "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\Certificates\\51501FBFCE69189D609CFAF140C576755DCC1FDF\\Blob"
+              }
+            },
+            {
+              "values": {
+                "EventID": "13",
+                "EventType": "SetValue",
+                "Image": "C:\\Windows\\system32\\svchost.exe",
+                "Details": "Binary Data",
+                "TargetObject": "HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\Certificates\\2796BAE63F1801E277261BA0D77770028F20EEE4\\Blob"
+              }
+            }
+          ]
+        }
+      ],
+      "dot_net_assembly": {
+        "entry_point_token": 100663331,
+        "metadata_header_rva": 1708720,
+        "assembly_name": "Client.exe",
+        "resources_va": 1537536,
+        "assembly_flags": 1,
+        "strongname_va": 0,
+        "external_assemblies": {
+          "": {
+            "version": "13.320.2897.6477"
+          },
+          "LookupPrivilegeValue": {
+            "version": "320.2315.37544.0"
+          },
+          "fclose": {
+            "version": "320.2845.37589.0"
+          },
+          "CreateProcess": {
+            "version": "256.2213.5179.1"
+          },
+          "CloseHandle": {
+            "version": "256.2447.12728.0"
+          },
+          "FindWindow": {
+            "version": "262.2689.49003.0"
+          }
+        },
+        "tables_present": 32,
+        "entry_point_rva": 170712,
+        "tables_rows_map": "129b166073f064f08814d74227b2342511351ea10329085e215108fec130010019000020dcaaa2",
+        "assembly_flags_txt": "COMIMAGE_FLAGS_ILONLY",
+        "streams": {
+          "#~": {
+            "chi2": 4088552.75,
+            "size": 104488,
+            "entropy": 5.340658664703369,
+            "md5": "51f1194e912e3c767c053bfdf895d71a"
+          },
+          "#Strings": {
+            "chi2": 707734.0625,
+            "size": 74436,
+            "entropy": 5.130306243896484,
+            "md5": "0865f5b3e98c9a5a7abee7a218fdddc6"
+          },
+          "#US": {
+            "chi2": 5243610.5,
+            "size": 79940,
+            "entropy": 3.6947031021118164,
+            "md5": "eceb2a5e9b433b1486083dc3942b4254"
+          },
+          "#GUID": {
+            "chi2": 240.0,
+            "size": 16,
+            "entropy": 4.0,
+            "md5": "f98ea26b8dea7a63b219766eefaf9c17"
+          },
+          "#Blob": {
+            "chi2": 715045.625,
+            "size": 41496,
+            "entropy": 5.41146993637085,
+            "md5": "4007fcc917b27971b8d9d488956f9e5e"
+          }
+        },
+        "clr_meta_version": "1.1",
+        "clr_version": "v4.0.30319",
+        "assembly_data": {
+          "majorversion": 256,
+          "minorversion": 2199,
+          "hashalgid": 65536,
+          "flags_text": "afPublicKey ",
+          "buildnumber": 5219,
+          "flags": 16777217,
+          "pubkey": " \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000f\u0000l\u0000o",
+          "revisionnumber": 1,
+          "name": "EnumWindows"
+        },
+        "manifest_resource": [
+          "GetModuleFileName",
+          "GetTickCount",
+          "IsDebuggerPresent",
+          "NtUserGetForegroundWindow",
+          "VirtualFree",
+          "VirtualFree"
+        ],
+        "tables_present_map": "1f093fb7ff57",
+        "tables_rows_map_log": "4aabbb8baa7475a45799769974779694",
+        "type_definition_list": [
+          {
+            "namespace": "System",
+            "type_definitions": [
+              "Object",
+              "IntPtr",
+              "UIntPtr",
+              "Byte",
+              "Guid",
+              "String",
+              "Int32",
+              "Exception",
+              "Type",
+              "RuntimeTypeHandle",
+              "DateTime",
+              "Environment",
+              "EventArgs",
+              "IDisposable",
+              "EventHandler",
+              "STAThreadAttribute",
+              "StringComparison",
+              "ValueType",
+              "MulticastDelegate",
+              "IAsyncResult",
+              "AsyncCallback",
+              "BitConverter",
+              "Enum",
+              "FlagsAttribute",
+              "Action",
+              "Math",
+              "IndexOutOfRangeException",
+              "Nullable`1",
+              "GC",
+              "Random",
+              "Func`1",
+              "NullReferenceException",
+              "ObjectDisposedException",
+              "TimeSpan",
+              "Tuple`2",
+              "Boolean",
+              "Console",
+              "ArgumentNullException",
+              "UnauthorizedAccessException",
+              "AppDomain",
+              "UnhandledExceptionEventHandler",
+              "EventHandler`1",
+              "UnhandledExceptionEventArgs",
+              "AggregateException",
+              "Func`2",
+              "Array",
+              "Char",
+              "SystemException",
+              "UInt32",
+              "Buffer",
+              "ParamArrayAttribute",
+              "RuntimeFieldHandle",
+              "Decimal",
+              "Convert",
+              "Int64",
+              "Action`1",
+              "Delegate",
+              "Uri",
+              "Predicate`1",
+              "ValueTuple`2",
+              "ArgumentOutOfRangeException",
+              "InvalidOperationException",
+              "Tuple",
+              "NotSupportedException",
+              "DateTimeOffset",
+              "UriKind",
+              "IFormatProvider",
+              "DateTimeKind",
+              "ApplicationException",
+              "TimeZoneInfo",
+              "ArgumentException",
+              "OperatingSystem",
+              "Version",
+              "UInt16",
+              "StringComparer",
+              "UInt64",
+              "Single",
+              "OperationCanceledException",
+              "StringSplitOptions",
+              "Activator",
+              "AppDomainManager",
+              "Void",
+              "RuntimeMethodHandle",
+              "ResolveEventArgs",
+              "ResolveEventHandler"
+            ]
+          },
+          {
+            "namespace": "System.Text",
+            "type_definitions": [
+              "StringBuilder",
+              "Encoding",
+              "UTF8Encoding"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.InteropServices",
+            "type_definitions": [
+              "Marshal",
+              "UnmanagedFunctionPointerAttribute",
+              "CallingConvention",
+              "COMException",
+              "SafeHandle",
+              "ComVisibleAttribute"
+            ]
+          },
+          {
+            "namespace": "System.IO",
+            "type_definitions": [
+              "File",
+              "IOException",
+              "DirectoryInfo",
+              "FileAttributes",
+              "Path",
+              "FileSystemInfo",
+              "Directory",
+              "SearchOption",
+              "FileNotFoundException",
+              "FileStream",
+              "Stream",
+              "MemoryStream",
+              "InvalidDataException",
+              "DriveInfo",
+              "DriveType",
+              "FileInfo",
+              "PathTooLongException",
+              "DirectoryNotFoundException",
+              "FileAccess",
+              "StreamWriter",
+              "TextWriter",
+              "StreamReader",
+              "TextReader",
+              "FileMode",
+              "FileShare"
+            ]
+          },
+          {
+            "namespace": "System.Linq",
+            "type_definitions": [
+              "Enumerable",
+              "IGrouping`2",
+              "IOrderedEnumerable`1"
+            ]
+          },
+          {
+            "namespace": "System.Collections.Generic",
+            "type_definitions": [
+              "IEnumerable`1",
+              "List`1",
+              "Dictionary`2",
+              "HashSet`1",
+              "KeyValuePair`2",
+              "IEnumerator`1",
+              "IEqualityComparer`1"
+            ]
+          },
+          {
+            "namespace": "System.Windows.Forms",
+            "type_definitions": [
+              "Form",
+              "TextBox",
+              "Button",
+              "RichTextBox",
+              "KeyEventHandler",
+              "Control",
+              "CreateParams",
+              "TextBoxBase",
+              "FormClosingEventArgs",
+              "KeyEventArgs",
+              "Keys",
+              "FormClosedEventArgs",
+              "Message",
+              "AnchorStyles",
+              "ButtonBase",
+              "ContainerControl",
+              "AutoScaleMode",
+              "FormClosedEventHandler",
+              "Application",
+              "UnhandledExceptionMode",
+              "NotifyIcon",
+              "Screen",
+              "NativeWindow",
+              "Clipboard",
+              "SystemInformation",
+              "PowerStatus",
+              "BatteryChargeStatus",
+              "IDataObject",
+              "MessageBoxButtons",
+              "MessageBoxIcon",
+              "MessageBox",
+              "DialogResult",
+              "MessageBoxDefaultButton",
+              "MessageBoxOptions",
+              "FormCollection",
+              "MethodInvoker",
+              "PowerState",
+              "KeyPressEventHandler",
+              "KeyPressEventArgs",
+              "ApplicationContext"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Networking",
+            "type_definitions": [
+              "ISender"
+            ]
+          },
+          {
+            "namespace": "System.ComponentModel",
+            "type_definitions": [
+              "IContainer",
+              "CancelEventArgs",
+              "Component",
+              "EditorBrowsableAttribute",
+              "EditorBrowsableState",
+              "AsyncCompletedEventHandler",
+              "AsyncCompletedEventArgs",
+              "Win32Exception"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.UserSupport.RemoteChat",
+            "type_definitions": [
+              "GetChat",
+              "DoChat",
+              "DoKillChatForm",
+              "DoStartChatForm",
+              "DoChatAction"
+            ]
+          },
+          {
+            "namespace": "System.Diagnostics",
+            "type_definitions": [
+              "Debug",
+              "Stopwatch",
+              "DebuggerBrowsableAttribute",
+              "DebuggerBrowsableState",
+              "TraceListener",
+              "ProcessStartInfo",
+              "Process",
+              "ProcessWindowStyle",
+              "DebuggerNonUserCodeAttribute",
+              "DebuggerStepThroughAttribute",
+              "DebuggerHiddenAttribute",
+              "ProcessModule",
+              "ProcessModuleCollection",
+              "ProcessThread",
+              "ProcessThreadCollection",
+              "Debugger",
+              "DebuggableAttribute"
+            ]
+          },
+          {
+            "namespace": "System.Drawing",
+            "type_definitions": [
+              "Point",
+              "Size",
+              "SizeF",
+              "Color",
+              "Rectangle",
+              "Bitmap",
+              "Graphics",
+              "Image",
+              "CopyPixelOperation",
+              "RotateFlipType",
+              "Brush"
+            ]
+          },
+          {
+            "namespace": "uncategorized",
+            "type_definitions": [
+              "ControlCollection",
+              "Enumerator",
+              "Enumerator",
+              "Enumerator",
+              "ValueCollection",
+              "Enumerator",
+              "KeyCollection",
+              "SpecialFolder",
+              "ManagementObjectEnumerator",
+              "DebuggingModes"
+            ]
+          },
+          {
+            "namespace": "System.Net",
+            "type_definitions": [
+              "ServicePointManager",
+              "SecurityProtocolType",
+              "IPAddress",
+              "IPEndPoint",
+              "EndPoint",
+              "WebClient",
+              "IWebProxy",
+              "HttpWebRequest",
+              "HttpWebResponse",
+              "WebRequest",
+              "WebResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages",
+            "type_definitions": [
+              "IMessageProcessor",
+              "SetUserActiveWindowStatus",
+              "MessageHandler",
+              "SetUserStatus",
+              "SetUserClipboardStatus",
+              "GetDebugLog",
+              "TypeRegistry",
+              "MessageProcessorBase`1",
+              "DoClientReconnect",
+              "SetStatus",
+              "FileTransferRequest",
+              "GetKeyloggerLogsDirectoryResponse",
+              "GetPasswordsResponse",
+              "PingRequest",
+              "PingResponse",
+              "DoRenameRegistryKey",
+              "DoCreateRegistryValue",
+              "DoDeleteRegistryValue",
+              "GetRegistryKeysResponse",
+              "GetDeleteRegistryValueResponse",
+              "GetChangeRegistryValueResponse",
+              "GetMonitorsResponse",
+              "DoStartupItemAdd",
+              "DoStartupItemRemove",
+              "GetSystemInfoResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.DNS",
+            "type_definitions": [
+              "HostsManager",
+              "Host",
+              "HostsConverter"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.UAC",
+            "type_definitions": [
+              "UAC"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Helpers",
+            "type_definitions": [
+              "FileHelper",
+              "PlatformHelper",
+              "StringHelper"
+            ]
+          },
+          {
+            "namespace": "System.Threading",
+            "type_definitions": [
+              "ThreadStart",
+              "Thread",
+              "ManualResetEvent",
+              "Monitor",
+              "WaitHandle",
+              "EventWaitHandle",
+              "Mutex",
+              "CancellationTokenSource",
+              "CancellationToken",
+              "ThreadExceptionEventHandler",
+              "ThreadExceptionEventArgs",
+              "Interlocked",
+              "WaitCallback",
+              "ThreadPool",
+              "ApartmentState",
+              "Semaphore",
+              "AutoResetEvent"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.CompilerServices",
+            "type_definitions": [
+              "CompilerGeneratedAttribute",
+              "RuntimeHelpers",
+              "AsyncTaskMethodBuilder",
+              "AsyncStateMachineAttribute",
+              "IAsyncStateMachine",
+              "TaskAwaiter",
+              "ExtensionAttribute",
+              "IteratorStateMachineAttribute",
+              "FixedBufferAttribute",
+              "UnsafeValueTypeAttribute",
+              "CompilationRelaxationsAttribute",
+              "RuntimeCompatibilityAttribute",
+              "InternalsVisibleToAttribute"
+            ]
+          },
+          {
+            "namespace": "SharpDX.Direct3D11",
+            "type_definitions": [
+              "Buffer",
+              "Device",
+              "DeviceContext",
+              "RenderTargetView",
+              "ShaderResourceView",
+              "Texture2D",
+              "VertexShader",
+              "PixelShader",
+              "InputLayout",
+              "OutputMergerStage",
+              "BlendStateDescription",
+              "BlendState",
+              "BufferDescription",
+              "RasterizerStateDescription",
+              "RasterizerState",
+              "DeviceCreationFlags",
+              "Resource",
+              "RasterizerStage",
+              "RenderTargetBlendDescription",
+              "BlendOption",
+              "BlendOperation",
+              "ColorWriteMaskFlags",
+              "ResourceUsage",
+              "BindFlags",
+              "CpuAccessFlags",
+              "ResourceOptionFlags",
+              "CullMode",
+              "FillMode",
+              "Texture2DDescription",
+              "DepthStencilView",
+              "DepthStencilStateDescription",
+              "InputElement",
+              "DepthWriteMask",
+              "Comparison",
+              "DepthStencilState",
+              "ClassLinkage",
+              "DeviceChild",
+              "MapMode",
+              "MapFlags",
+              "VertexShaderStage",
+              "CommonShaderStage`1",
+              "PixelShaderStage",
+              "InputAssemblerStage",
+              "VertexBufferBinding",
+              "CommonShaderStage",
+              "SamplerState",
+              "SamplerStateDescription",
+              "Filter",
+              "TextureAddressMode",
+              "ResourceRegion"
+            ]
+          },
+          {
+            "namespace": "SharpDX.DXGI",
+            "type_definitions": [
+              "SwapChain",
+              "PresentFlags",
+              "SwapChainDescription",
+              "Usage",
+              "Rational",
+              "ModeDescription",
+              "Format",
+              "SampleDescription",
+              "SwapChainFlags",
+              "SwapEffect",
+              "OutputDuplication",
+              "Adapter",
+              "Factory1",
+              "Output",
+              "Adapter1",
+              "Output1",
+              "Device",
+              "DXGIObject",
+              "Factory",
+              "Resource",
+              "OutputDuplicateFrameInformation",
+              "ResultCode"
+            ]
+          },
+          {
+            "namespace": "System.Collections.Concurrent",
+            "type_definitions": [
+              "ConcurrentQueue`1",
+              "ConcurrentDictionary`2"
+            ]
+          },
+          {
+            "namespace": "SharpDX",
+            "type_definitions": [
+              "Vector3",
+              "Color4",
+              "Vector2",
+              "Result",
+              "DataStream",
+              "Utilities",
+              "Matrix",
+              "DataBox",
+              "SharpDXException",
+              "DisposeBase",
+              "ComObject",
+              "IUnknown",
+              "ResultDescriptor",
+              "Vector4",
+              "DataRectangle"
+            ]
+          },
+          {
+            "namespace": "SharpDX.Mathematics.Interop",
+            "type_definitions": [
+              "RawColor4",
+              "RawBool"
+            ]
+          },
+          {
+            "namespace": "SharpDX.Direct3D",
+            "type_definitions": [
+              "DriverType",
+              "PrimitiveTopology"
+            ]
+          },
+          {
+            "namespace": "SharpDX.D3DCompiler",
+            "type_definitions": [
+              "CompilationResult",
+              "ShaderBytecode",
+              "ShaderFlags",
+              "EffectFlags",
+              "SecondaryDataFlags"
+            ]
+          },
+          {
+            "namespace": "System.Drawing.Imaging",
+            "type_definitions": [
+              "PixelFormat",
+              "ImageFormat",
+              "BitmapData",
+              "ImageLockMode"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Enums",
+            "type_definitions": [
+              "UserStatus",
+              "AccountType",
+              "FileType",
+              "ContentType",
+              "RemoteDesktopStatus",
+              "MouseAction",
+              "RemoteWebcamStatus",
+              "ShutdownAction",
+              "StartupType",
+              "ProcessAction",
+              "ConnectionState"
+            ]
+          },
+          {
+            "namespace": "System.Text.RegularExpressions",
+            "type_definitions": [
+              "Regex",
+              "Match",
+              "Group",
+              "GroupCollection",
+              "Capture"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.Clipboard",
+            "type_definitions": [
+              "DoGetAddress",
+              "DoSendAddress",
+              "SendClipboardData"
+            ]
+          },
+          {
+            "namespace": "System.Security.Principal",
+            "type_definitions": [
+              "WindowsIdentity",
+              "WindowsPrincipal",
+              "WindowsBuiltInRole"
+            ]
+          },
+          {
+            "namespace": "System.Security.Cryptography",
+            "type_definitions": [
+              "CryptographicException",
+              "ProtectedData",
+              "DataProtectionScope",
+              "RSACryptoServiceProvider",
+              "AsymmetricAlgorithm",
+              "CryptoConfig"
+            ]
+          },
+          {
+            "namespace": "System.Threading.Tasks",
+            "type_definitions": [
+              "UnobservedTaskExceptionEventArgs",
+              "TaskScheduler",
+              "Parallel",
+              "ParallelLoopResult",
+              "Task",
+              "TaskFactory",
+              "TaskCreationOptions"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.ExceptionServices",
+            "type_definitions": [
+              "FirstChanceExceptionEventArgs"
+            ]
+          },
+          {
+            "namespace": "System.Reflection",
+            "type_definitions": [
+              "MethodBase",
+              "MemberInfo",
+              "Assembly",
+              "MethodInfo",
+              "ParameterInfo",
+              "BindingFlags",
+              "FieldInfo",
+              "AssemblyName",
+              "AssemblyNameFlags",
+              "AssemblyTitleAttribute",
+              "AssemblyDescriptionAttribute",
+              "AssemblyConfigurationAttribute",
+              "AssemblyCompanyAttribute",
+              "AssemblyProductAttribute",
+              "AssemblyCopyrightAttribute",
+              "AssemblyTrademarkAttribute",
+              "AssemblyFileVersionAttribute"
+            ]
+          },
+          {
+            "namespace": "System.Net.Sockets",
+            "type_definitions": [
+              "Socket",
+              "AddressFamily",
+              "SocketType",
+              "ProtocolType",
+              "SocketFlags",
+              "NetworkStream"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.ReverseProxy",
+            "type_definitions": [
+              "ReverseProxyConnect",
+              "ReverseProxyConnectResponse",
+              "ReverseProxyData",
+              "ReverseProxyDisconnect"
+            ]
+          },
+          {
+            "namespace": "Microsoft.Win32",
+            "type_definitions": [
+              "RegistryKey",
+              "RegistryValueKind",
+              "RegistryHive",
+              "RegistryView",
+              "Registry"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Models",
+            "type_definitions": [
+              "RegValueData",
+              "RegSeekerMatch",
+              "RecoveredAccount",
+              "Drive",
+              "FileSystemEntry",
+              "FileChunk",
+              "StartupItem",
+              "Process",
+              "TcpConnection"
+            ]
+          },
+          {
+            "namespace": "System.Collections",
+            "type_definitions": [
+              "IEnumerator",
+              "CollectionBase",
+              "ReadOnlyCollectionBase",
+              "IEnumerable"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.Serialization",
+            "type_definitions": [
+              "DataMemberAttribute",
+              "IgnoreDataMemberAttribute",
+              "DataContractAttribute",
+              "XmlObjectSerializer"
+            ]
+          },
+          {
+            "namespace": "System.Resources",
+            "type_definitions": [
+              "ResourceManager"
+            ]
+          },
+          {
+            "namespace": "System.Globalization",
+            "type_definitions": [
+              "CultureInfo",
+              "DateTimeFormatInfo",
+              "RegionInfo",
+              "TextInfo",
+              "CompareInfo",
+              "CompareOptions"
+            ]
+          },
+          {
+            "namespace": "System.CodeDom.Compiler",
+            "type_definitions": [
+              "GeneratedCodeAttribute"
+            ]
+          },
+          {
+            "namespace": "System.Configuration",
+            "type_definitions": [
+              "ApplicationSettingsBase",
+              "SettingsBase"
+            ]
+          },
+          {
+            "namespace": "System.Net.Security",
+            "type_definitions": [
+              "SslStream",
+              "RemoteCertificateValidationCallback",
+              "SslPolicyErrors"
+            ]
+          },
+          {
+            "namespace": "System.Security.Cryptography.X509Certificates",
+            "type_definitions": [
+              "X509Certificate2",
+              "X509CertificateCollection",
+              "X509Certificate",
+              "X509Chain",
+              "PublicKey"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Other",
+            "type_definitions": [
+              "IMessage",
+              "ClientIdentificationResult",
+              "ClientIdentification",
+              "StartProcessOnMonitor"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Extensions",
+            "type_definitions": [
+              "SocketExtensions",
+              "DriveTypeExtensions",
+              "StringExtensions"
+            ]
+          },
+          {
+            "namespace": "System.Security.Authentication",
+            "type_definitions": [
+              "SslProtocols"
+            ]
+          },
+          {
+            "namespace": "ProtoBuf",
+            "type_definitions": [
+              "Serializer"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Utilities",
+            "type_definitions": [
+              "SafeRandom",
+              "ByteConverter"
+            ]
+          },
+          {
+            "namespace": "NAudio.Wave",
+            "type_definitions": [
+              "WaveInEvent",
+              "WaveInCapabilities",
+              "WaveIn",
+              "WaveFormat",
+              "WaveInEventArgs",
+              "WasapiLoopbackCapture"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Audio",
+            "type_definitions": [
+              "GetMicrophone",
+              "GetMicrophoneDevice",
+              "GetMicrophoneResponse",
+              "GetMicrophoneDeviceResponse",
+              "GetOutput",
+              "GetOutputDevice",
+              "GetOutputDeviceResponse",
+              "GetOutputResponse"
+            ]
+          },
+          {
+            "namespace": "NAudio.CoreAudioApi",
+            "type_definitions": [
+              "MMDeviceEnumerator",
+              "MMDeviceCollection",
+              "MMDevice",
+              "WasapiCapture",
+              "DataFlow",
+              "DeviceState",
+              "AudioClient",
+              "CaptureState"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.ClientManagement",
+            "type_definitions": [
+              "DoClientUninstall",
+              "DoClientDisconnect",
+              "DoElevateSystem"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.ClientManagement.UAC",
+            "type_definitions": [
+              "DoAskElevate",
+              "DoDeElevate",
+              "DoUACBypass"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.IO",
+            "type_definitions": [
+              "FileSplit"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.FileManager",
+            "type_definitions": [
+              "GetDrives",
+              "GetDirectory",
+              "FileTransferCancel",
+              "FileTransferChunk",
+              "DoPathDelete",
+              "DoPathRename",
+              "DoZipFolder",
+              "SetStatusFileManager",
+              "GetDrivesResponse",
+              "GetDirectoryResponse",
+              "FileTransferComplete"
+            ]
+          },
+          {
+            "namespace": "System.IO.Compression",
+            "type_definitions": [
+              "ZipFile",
+              "CompressionLevel",
+              "DeflateStream",
+              "CompressionMode"
+            ]
+          },
+          {
+            "namespace": "System.Security",
+            "type_definitions": [
+              "SecurityException",
+              "UnverifiableCodeAttribute"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common",
+            "type_definitions": [
+              "NativeMethods"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.FunStuff",
+            "type_definitions": [
+              "DoBSOD",
+              "DoSwapMouseButtons",
+              "DoHideTaskbar",
+              "DoChangeWallpaper"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.FunStuff.GDI",
+            "type_definitions": [
+              "DoScreenCorrupt",
+              "DoIlluminati"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Video.Codecs",
+            "type_definitions": [
+              "UnsafeStreamCodec"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.HVNC",
+            "type_definitions": [
+              "GetHVNCDesktop",
+              "DoHVNCInput",
+              "StartHVNCProcess",
+              "GetHVNCDesktopResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Video",
+            "type_definitions": [
+              "Resolution"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.KeyLogger",
+            "type_definitions": [
+              "GetKeyloggerLogsDirectory"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.UserSupport.MessageBox",
+            "type_definitions": [
+              "DoShowMessageBox",
+              "DoExecScript"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.Passwords",
+            "type_definitions": [
+              "GetPasswords"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Preview",
+            "type_definitions": [
+              "GetPreviewImage",
+              "GetPreviewResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.Query",
+            "type_definitions": [
+              "GetBrowsers"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Models.Query.Browsers",
+            "type_definitions": [
+              "QueryBrowsers"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.Query.Browsers",
+            "type_definitions": [
+              "GetBrowsersResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.QuickCommands",
+            "type_definitions": [
+              "DoSendQuickCommand",
+              "DoEnableTaskManager",
+              "DoDisableTaskManager"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.RegistryEditor",
+            "type_definitions": [
+              "DoLoadRegistryKey",
+              "DoCreateRegistryKey",
+              "DoDeleteRegistryKey",
+              "DoRenameRegistryValue",
+              "DoChangeRegistryValue",
+              "GetCreateRegistryKeyResponse",
+              "GetDeleteRegistryKeyResponse",
+              "GetRenameRegistryKeyResponse",
+              "GetCreateRegistryValueResponse",
+              "GetRenameRegistryValueResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.RemoteDesktop",
+            "type_definitions": [
+              "GetDesktop",
+              "DoMouseEvent",
+              "DoKeyboardEvent",
+              "DoDrawingEvent",
+              "GetMonitors",
+              "GetDesktopResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Monitoring.VirtualMonitor",
+            "type_definitions": [
+              "DoInstallVirtualMonitor",
+              "DoUninstallVirtualMonitor"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.RemoteShell",
+            "type_definitions": [
+              "DoShellExecute",
+              "DoShellExecuteResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Webcam",
+            "type_definitions": [
+              "GetWebcam",
+              "GetAvailableWebcams",
+              "GetWebcamResponse",
+              "GetAvailableWebcamsResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.Actions",
+            "type_definitions": [
+              "DoShutdownAction"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.StartupManager",
+            "type_definitions": [
+              "GetStartupItems",
+              "GetStartupItemsResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.SystemInfo",
+            "type_definitions": [
+              "GetSystemInfo"
+            ]
+          },
+          {
+            "namespace": "System.Net.NetworkInformation",
+            "type_definitions": [
+              "IPGlobalProperties",
+              "NetworkInterface",
+              "GatewayIPAddressInformation",
+              "UnicastIPAddressInformation",
+              "IPInterfaceProperties",
+              "GatewayIPAddressInformationCollection",
+              "NetworkInterfaceType",
+              "OperationalStatus",
+              "UnicastIPAddressInformationCollection",
+              "IPAddressInformation",
+              "PhysicalAddress"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.TaskManager",
+            "type_definitions": [
+              "GetProcesses",
+              "DoProcessStart",
+              "DoProcessEnd",
+              "DoProcessDump",
+              "DoSuspendProcess",
+              "GetProcessesResponse",
+              "DoProcessResponse",
+              "DoProcessDumpResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.Administration.TCPConnections",
+            "type_definitions": [
+              "GetConnections",
+              "DoCloseConnection",
+              "GetConnectionsResponse"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.UserSupport.Website",
+            "type_definitions": [
+              "DoVisitWebsite"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Messages.ClientManagement.WinRE",
+            "type_definitions": [
+              "DoAddWinREPersistence",
+              "DoRemoveWinREPersistence",
+              "AddCustomFileWinRE"
+            ]
+          },
+          {
+            "namespace": "System.Timers",
+            "type_definitions": [
+              "Timer",
+              "ElapsedEventHandler",
+              "ElapsedEventArgs"
+            ]
+          },
+          {
+            "namespace": "Gma.System.MouseKeyHook",
+            "type_definitions": [
+              "IKeyboardMouseEvents",
+              "Hook",
+              "IKeyboardEvents"
+            ]
+          },
+          {
+            "namespace": "Pulsar.Common.Cryptography",
+            "type_definitions": [
+              "Sha256"
+            ]
+          },
+          {
+            "namespace": "System.Management",
+            "type_definitions": [
+              "ManagementObjectSearcher",
+              "ManagementObjectCollection",
+              "ManagementObject",
+              "ManagementBaseObject",
+              "ManagementDateTimeConverter"
+            ]
+          },
+          {
+            "namespace": "Microsoft.Win32.SafeHandles",
+            "type_definitions": [
+              "SafeFileHandle"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.Serialization.Json",
+            "type_definitions": [
+              "DataContractJsonSerializer"
+            ]
+          },
+          {
+            "namespace": "AForge.Video.DirectShow",
+            "type_definitions": [
+              "VideoCaptureDevice",
+              "FilterInfoCollection",
+              "VideoCapabilities",
+              "FilterCategory",
+              "FilterInfo"
+            ]
+          },
+          {
+            "namespace": "AForge.Video",
+            "type_definitions": [
+              "NewFrameEventHandler",
+              "VideoSourceErrorEventHandler",
+              "NewFrameEventArgs",
+              "VideoSourceErrorEventArgs"
+            ]
+          },
+          {
+            "namespace": "System.Xml.Linq",
+            "type_definitions": [
+              "XDeclaration",
+              "XName",
+              "XElement",
+              "XDocument",
+              "XContainer",
+              "XAttribute",
+              "XNode"
+            ]
+          },
+          {
+            "namespace": "System.Drawing.Drawing2D",
+            "type_definitions": [
+              "LinearGradientBrush"
+            ]
+          },
+          {
+            "namespace": "System.Runtime.Versioning",
+            "type_definitions": [
+              "TargetFrameworkAttribute"
+            ]
+          }
+        ]
+      },
+      "first_submission_date": 1793991097,
+      "tlsh": "T1B295F150A7F98616F1FF1BBA987345150B37B8479A3AC35E4A8C946D0FB33408E643A7",
+      "sandbox_verdicts": {
+        "CAPE Sandbox": {
+          "category": "malicious",
+          "malware_classification": [
+            "RAT"
+          ],
+          "sandbox_name": "CAPE Sandbox",
+          "malware_names": [
+            "QuasarRAT"
+          ]
+        },
+        "Zenbox": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE",
+            "TROJAN",
+            "EVADER",
+            "RAT"
+          ],
+          "sandbox_name": "Zenbox",
+          "malware_names": [
+            "Clipboard Hijacker",
+            "Quasar"
+          ],
+          "confidence": 96
+        },
+        "C2AE": {
+          "category": "malicious",
+          "malware_classification": [
+            "RAT",
+            "STEALER"
+          ],
+          "sandbox_name": "C2AE",
+          "malware_names": [
+            "QuasarRAT",
+            "Stealerium"
+          ],
+          "confidence": 50
+        },
+        "Yomi Hunter": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE"
+          ],
+          "sandbox_name": "Yomi Hunter"
+        },
+        "VMRay": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE"
+          ],
+          "sandbox_name": "VMRay",
+          "malware_names": [
+            "PulsarRAT",
+            "Stubworm",
+            "Mal/Generic-S"
+          ]
+        }
+      },
+      "vhash": "22603675151450d4dffe012a319e",
+      "md5": "96a22c9ce3cf02e3ebebe814fb1e2b0a",
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 0,
+        "medium": 3,
+        "low": 0
+      },
+      "signature_info": {
+        "file version": "1.6.6",
+        "original name": "Client.exe",
+        "internal name": "Client.exe"
+      },
+      "last_analysis_date": 1794240083,
+      "type_tags": [
+        "executable",
+        "windows",
+        "win32",
+        "pe",
+        "peexe"
+      ]
+    }
+  }
+}

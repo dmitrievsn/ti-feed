@@ -1,0 +1,1120 @@
+{
+  "data": {
+    "id": "173785fcf88d091cd1cd7b25872ae3ebce7e0ec6e7cacbe7b5d60980c7c4390d",
+    "type": "file",
+    "links": {
+      "self": "https://www.virustotal.com/api/v3/files/173785fcf88d091cd1cd7b25872ae3ebce7e0ec6e7cacbe7b5d60980c7c4390d"
+    },
+    "attributes": {
+      "type_tag": "vba",
+      "reputation": -11,
+      "names": [
+        "Product List for Quotation.vbs",
+        "4pcysulsf.exe",
+        "MediaLibrary.vbs"
+      ],
+      "md5": "f418b138eb4d95713a764d630c42b1a3",
+      "magika": "VBA",
+      "sigma_analysis_stats": {
+        "critical": 0,
+        "high": 2,
+        "medium": 4,
+        "low": 4
+      },
+      "total_votes": {
+        "harmless": 0,
+        "malicious": 1
+      },
+      "vhash": "c406dd8d1b089b66359c66b5b405037f",
+      "last_analysis_stats": {
+        "malicious": 11,
+        "suspicious": 0,
+        "undetected": 50,
+        "harmless": 0,
+        "timeout": 0,
+        "confirmed-timeout": 0,
+        "failure": 0,
+        "type-unsupported": 14
+      },
+      "last_submission_date": 1794225876,
+      "sha256": "173785fcf88d091cd1cd7b25872ae3ebce7e0ec6e7cacbe7b5d60980c7c4390d",
+      "type_tags": [
+        "source",
+        "vba",
+        "vbs"
+      ],
+      "sigma_analysis_summary": {
+        "Sigma Integrated Rule Set (GitHub)": {
+          "critical": 0,
+          "high": 2,
+          "medium": 4,
+          "low": 4
+        }
+      },
+      "meaningful_name": "Product List for Quotation.vbs",
+      "first_submission_date": 1794219969,
+      "sha1": "837ad3d49c6a47a9b6a49ec327e6d8a05de915eb",
+      "last_modification_date": 1794246875,
+      "vba_info": {
+        "strings": [
+          "vos8obkRso_JEpOSwkMHQWR4uvFyRq-Cz-DC2GVlKkFSaytEmmOynA7hTd4lixP5sWVuMRCEn0-YrCEWVqfs_4ApUaT6Z1X4yiehfYSCOMhMjvitbPNqB3cK3mC0OvLOKiOxXUp4XeHz01OsmiV2N_dGgH0S67dOWvsNCENZCd2HD_tYpQodMCXZjO0HzMQd0B_nCl064Q7QJTJ4Vsl-5_qM8vDtGRYxZQ1-PM1YTBnRV29IG1tE8i-IprPXlpZiGMBqY0W2A9jNYFOEMDJrkQ0IEBgTLAFcfPy-kA6Oxvy-ZTNsh9NwNyS6qhykGfgVX-gymViPNZzwFOA7rzc67v13Sc9fHTdGcbYowIYC3DM-Zu15yqvvziCvrgVyvWGwkIBA4O1GixfL2kNoOH9l0VNjx4g22VkUxEjp4rB9p4E_qqvxztGBmjpzUwTcco1b6a5jsZOh4rtxer8k_Lw6xkfvWMAMzkYF972zmbHPp-5PQ9obpL6O",
+          " gridQueue17",
+          "1v1Zu7p6XkfdEBEMkxUyfS6y74pVkOEmwdmvoaFxOybmzqX9SH2e9GDH9F6b1VJAktkK_lDbeIUP4QlDTw5SQmag_9ogNoM5rkUdfl6hzT8Qt_G2ySuxnTTsO9nyHCdTwuNg7eqZbsJxQZApqyavHJdd_vjwjP0d3enJkE6cF7XsypcHQdpkQggTdJeFlExckHsqvuUiY7BXeo_3oEVIav76recZlmbopcaSui1u4arVJDEkfX2yOdaTpEey8XpjEfNVnxHFei6JpiUN71ZcOW0oWtRJLC8XR0jjIgr_UgxoYe_Vrj7nmcYVIuFhcPkMoGaWAuFz5ry69syAZ8R_etbgwZVQACS4eRDUX7VBie9KxyKophrKj2Eq07oYmkv-rqZG0jKLGJGUsNPIwTTHje8Si-bGWRzZ7Qn3MMpIlyjntEyRVtdVZsGdVbFcRdAe06p_TiUkGsNWBr4uDSULy978b02xpMzH9lEIQjIsg-xrPVRPOl4Z",
+          "Sgf-_CD0SiykknL5dMA7uodDpX9ffy9Gd0ZfZS_Mke-XYlu98nj1T1uVKWAMWJsqdu8car-ZZMCbGRl-WG3JHXME2tBbq7ksDtQg0eL5aStBwR3Bzaq3Xzahd2guEziREZL8Wygbu3c88gabfEWpJ5bd4VL_M1DPMgJQTIpPPO-Jm6wMZ4DXjdI5nWZnpCFqoJ7O_p-MyM2osSgqKy3r9e18280H1xGWKp5keULf9wcIa1p5wgf6EHm-pWiIws4EuED6UzLI8Ei7Lw21ZoyF3xX8oDgfZ_PLfHrZ0iOBT8c7wVC-gmk5bveqLZQlIAlDU83pIb8zXiWWiAWAqXK9u0lZcoULIh9FE3Xr45Io4Tmmzf3DN0iGQsSEIpshrh4cZUy7tJDj12Eo21s3yIjFbqHEcoZGk1ShlictMpmkc5noS_ywQvc0huFmTofak3SknujrEg-2nPA065j-MkqZNwWklpu1a4a40n2ZVXB_7umJPVPxnGQb",
+          "lmfA9C2uTT_-ki5og9yDu1B6XDW0pA-W_9IHrI3W7gKg39JpNfL1voxGaDYE_2BcsLGklPC4D7FyHsrd5zCfTGvF_uV-Wh4r4z6ud4L6YYqe4KJ1YX0X3w1x2D0raLa1jXUfkbbVmxr2q9APMN51wB0-D5F1rs0fyOZf7b5HUaZmuMDYyYnYhp9Xf6pTfPxi9XQrrHdrVw5GPuc0GufbPTIq-HMNIQ-Ba0-YHwcpQFCBppKp0RYIYa_rytdn9vRx7F1PpnD-e1ED79KB5J8QOhAhG6NvKKdtAb-9Fd-MmExwjoieMIUJwUc8YYG22pY8QO5BvaDh_WFzzxb42R6OMc3nnVFNrnmIkO7j01Is0vzBhkdjGoL7CFWziVHZCQ5xAs-n_Sx4vEbj4Cv10FtxaJ7f3CkRPDd3V23TvG3AXYXvd-q7vX6G3tPbpVU0dsTsUqoS-4VJBlPMNDtiJQuuROE6zxSIbnjyQjcHYeBCWLXs0LrBC24H",
+          "oK85mmM5R6YkbZBKVMnkO4_XChd91hPuC12cdig0V5UeLQqktzlp676ezvEQ-ytAE8UDk9upkqPhpyRqvkW8lll0kW_v2v959uqSpqp6jCcXP5pKq2424ZqA6yOEmPgxbmFsSlbyWtwLpj_kEsoRxoVXr5BkE9576k2NxzwFF81zVd3k23JmgRAr4jpshzjNfQ0Y2HErfHORmGV5TWCLqIdOHozB1EOLmG6R9h-zY8HVZ-no6LyI3k7bwPX9T4J-vrzouGdwbPQf2ab0imvj5PGN2L_03EWvP2W1UCOS-SKoKz3Os-c_VwML_vLZGeR3PRMA5x_ho1o4i7PFnunFOkoCcFQKeBJXN7il9TyHvDkNSqnXJi7oRMLG2Z2axZHO88tsJgrERakYGf9C6ck1Np7jCVhPMs_dbkKnDG8tRDdkz_3c940Yq_C69zQ0dC8g5MB2N3r3iXgY1f2TTQ0Qu2j5b6wvj1EMvEVAPGhtk-bukPZpAaXW",
+          "6RZFXMClxuNS21zz5Wxx6En9NJifDWj4qGdxkeG-_7Go1zhCglrUyhxHAdpyr_FLaCEt1xjAfaLL4IElaCNekqXT0sioADtISxbDRz3Gr8S5f74Tbt4rkDyKmjAHZ4AV1NWhwSvFG8VMdLpZZVf-mJwFmg66WU9EhTTuZeqBPJHXCi2rmuVXZpbvIfdk9aLOCdY2ZPA8jJgLT3iOts_KgLglkh9GQQ4ky4hZO-_l-40yKjwht3wDTMSXJFNLLcxX20NH69wv6yy95S6h_N0CXj0W32AhrQgjAlMZK9g9vFcdPuwjUQGh9NrH78ZABcegKAhdOCbj2cj8Z-uPsRm7sy_Cn2pKpnnDc7tGzUBBgiyUKv8IQBRilta5YkyKedzqERejmt9KvqurqYGyxKa0nsYByGcEVmHSLEMR5hMfIkeNyhs7BkRBaRdzJ-bDhZR-8Iu--IyT9Fi-Zzi6zbeb_GLtcyvC1zlpdSnLjf4aQ0aTF549C6_B",
+          "O9yBJZsfAHXPbLVB424r_xTozR9REBaeslbj1L4KIHe5V21Y70pLqP5yeQ6Rr37zHpoWSmAqUes4jvxSROB4n3IFpGlQ6-hlur8pVfudOmIcgkXuTVI-fl_sDFzSFtZ77V2R6tKWJRWHHfuq9Fg56ZcP1YlGf7k12sX77PX9RZ_bnyKDOlV-mV59zfcTfaRrSUIdYrUGlr_OHHmd4rtKpwSo_4Tu5OenQNf_YpbpTfLjwLeuZV2flTqKTZ8z9w4FOt-dj9y0Bkw083d5PsYWeLYYyE6cHeBwTEJKDAdFETijz-q9Md8FnV3wohMVPZWmVKfNuxyVA-wB3ZJTmLza7PRSshc4cSjdZ7zOh_XzV_FjZYOGaeOSq5QAfeH1l3lBC9fnPhNerIvNBoDatcezj0SbjpXXIMrHIK6ZgIf5UktXQfJ6Erz1zAdsf1FafcWSEdHUfxDDZSVsUGT5h5PiQYy0ghX5x7yHmq1VzedD4DSj5DDxSNpP",
+          "FtBOMos6BtqWIVQz6oTLTnRLggitortH1SyDXnDJ85xah2I-p745swvvfTZSPq6GycS8gA9pg9BQBlLvMww749pycwoOWsQcdLSNfOk9IMBvBpdVyN0jVmm9hGjPPh7Z21nWqTtx1aneTUbKxyGrDy2vr86T8e9-m6nFbiPzFnA8AzAFzh4uHi9azKGj2cNO5duvEbDGg-Y4ahZHtaU1jq6U0rUxOBZUjeDgaSvcdl_Jaef34n2EoHTpnIdc7Obq4gLZaxdWcTP4oAH2VLho37MRXx9MRxGKcWH1y_krin-BnaAwWj-Q8ovEz4GO9IstCsdXMLNvbVFsl9WJ8gPH8ujmHA3E5M21YtteR8m6dnsxgEEdgz4VtUHOOHkn6uYsfeGuUWLqyGM6u88lniBByC8C_SmFZG7NnzkMlVuv6OnLn13iJ9_HH5QOc7nSSWBVTaBi70qF75OsPAL_gI0hLShpzBny91L-1uzbv9YmUstpzIep8BPX",
+          "9RdeoGEG_csMJN2i0pO-OfVmBM3TY5p7ljze4SXwdvdHFBrepnF5owvChh-0pYVCbr1avOy36oQ26YXNtitOR3TOPJkWBORKUuZ29O82y6kdSbdxzoatZLhFCPIkiz6UzfZC1eHr4H5NXLVWX7cNdfMpRY13qu3Xd3QaO9U7CSDcHB85b-2WgdhwcsbT3QKXE9Wbmp2UPK8Kn44E4PJxK9zqK9CM6N4aWlZQgs3I2X08d5VBuVBN54UiLHez6j-YbuTSJD3Xj3Fc_qA_KUZ5jusrRE6ZhYuYbMKFGa28cHPRHC_Q8QR8vOMxYw0wSftfQi-USH3vGEOjuKlL6kzJmXQYN8iuE5_4SiBgLHWPP1koSVYs1w0uwJChoZAWUsFzAsIsvpsXxanZDzdkpYylEPCOaYf0kplwwJJ1pKGLZP0klAXRKqyPIW3AlHxsBwULps3-Tt0ycTwnKR36imxzSp5ZmsKsvpuAClUCCb9JricUrbHjhH-N",
+          "yyA1RsbxvVSoNqGURl0JZ0Q0uhRHZwgHhj7XRlTWqXQAntRFl2kHrGR8eYrTauCCDVlNJMNbK2rW4IVElADnrCBcaBoljVXXWaXBvonbbth29FCWEnbHousz0jbD0_A2UadrMEn3Lnc19pbTQN9HnTjiWEbdKqjg6ZakBk2KCnWIhbUuk8RCezN_5e4ogiNBBpLgtSrGYoivm5J25qdz8NogBS3K40ITwhIQ8Iw2xzrhFZST14_KfO4hZDQkgk5fFpDTLKP2m6-hYBiM_mJXfBNUgQp_usYzxwpE9CbrK77ZqXc-mMHhcI_dJc7Majj_EWNx1_3fESvBuDQX4iOb3cj-L_sFV25xd42fN9zINGBm4tGzwALtSaZzU_xh-0op-Ft21FWESMkVaVPmXA9FNzZmfGujSWJ-5GJJ9_DSW9xTjYcsINuT2vKXR-Ol0e4m2pUO8zlVaS1Q4Ki_QSMepx8_l_MyDE1OSvJr59I-Ek7S5CrrI7yb",
+          "mk955OwE0b_rxhFkHP0Pa05aj1LdmGSU5gTES4pinJx2datvfwdwx3TwwZ1iNONPI6IqK-EvjlnwKx9DMocREa3RLarVGwz_y61RAN68Gz-glgUOO77NQrigOnF8IcAxFFa-ZBJanYuTaqc4ur_qm-JKg7OwlyR9ziVTkStWrz6xqByCaba3_NnAmqRhkdLz3voin-5qLf8ytnYRx-K1UoqsC1PRWL6GESNHRc5RoXXIiJzbIGyTT1LMyt1xVTkXF8v68qdRWIkQ4db55vvo4H0YYpRm7Dc_rED49II9HG5-bnr-LKisa3hpW141OftohePeRXrkIYr6OtQhQSj5Vtl4ihZ_3JgkF29uCMzOvNn11Wu8SUg-O-IP2mXYeWYluOCt11ANkmlgUfL18cD2PFbiHbLv-jJgsXSDmrtONC6_oF8sgf-ouH8QucSTzPlr3XRgR-G3Mjph4v-vGArc6IkBPggh108B8DrH8OadYJPDgIfnYyom",
+          "UUfDCZBS71VCvTOq8aM8Mugi0W_-l4atL6n91b6zaUQbhIDZFC-Ya_FQkz5YTV29AVP7ZL18NNlPn78jL5vEJheQUTzUETaoG0YkKLUWG-kNlCVzy8BmTlE8YcwJmOMNTCGBcMUnyufaGeAvIOBLCsJoJVq-HJBd01dQAUIiEiDtznQ7vHvxnvxxcDdkMunHzqS-3GroCKjVMDl12_sEUrnGvHOGG4WL_i0kCTgRMtsxUb7YXWFuYjOhUzXKJ4ZbqNALxt6n45EYXTEJOqdAiQNUzRkD8AU8AUAgXrucyk6QU6WwU6AYC-vTTNVAqZkbCRfAb8FYhRJYjEvIVKO9KNTqxOL6eyyHyucR1TuXs7i4A_G9wpH18Q5-IHITpgpFTGF87gskaDfE-RqosyNUS-OvADOp1Kr6tKNlxL1WJugFnfFKL6mh5s3rzWTPOVYdkom3GVSv6YOMg8_t_BItDxvvEqrEQKInJKVpPKa6yB5VMCyT8741",
+          "xFeOJihqNgX0en8e62cksaj4UfD41HMTJaG-RTSfGgOpvqnIToa8P6NYwJrVPSNwRuKE5tKyJT8W1ot_M1bACLGG6QyAb6GosqqHiKyNLYC69M4qgZJ6411SgRFp7k3OK6O3gAaJEdJdbZr0lkL50FLMYit0dwFv1ruxr_ZunjJgAbuIN8lLKytzx65IQMC0jwduLO68uH6ibCiDw1JoN-5VGG1791HYNA5MV1-uiVKUf9114WhtxtWZJ0gYjuqDeIKAc7CEKKip69gVLdr71DDosSU99nubzAIKfnvWmsGZ_gu2h4ZufnDJk-dmhjZubtJhrifYf8w6x1z_Y3eZT9qAU8-gpM8hmoM8XOoaPI954AiASfV678VPmggg34Me8gCOb1TUw61-nZsCvQE1xclPa4UNQ0-VyorpC3GWa6UsbdnWI3opB9TOUbVus_tbf9Pv3YEWnAkZPLrvm6G4TOIRkUmFWyy0A7s17_Z4LZwIPXyardJv",
+          "BTfWBGsZ4DRxeRE3zSWQD-GV8qaxLFqW3YsWY454NzP_GVbp9RWpgXtidj0L9q0ug5g4KVsACYPAJ29VheRnSJZbjfKM-5LrBiuMaxs5uo3Spmzdhs-5inpX_d2YT9IyoYWb2twuFMyEZFTe0ZeEmNpJRBE2pxQu5bVNciEy_Kzb3fAjLYk4J0jkFfPg1Pvi3mWaQWgsy8GM1YTl6L67Cx6W6qCOMLoLGDRfn-zKFWROYGQOi-MrIZTVncN0qxJmldrf_XbX-lB03R2jRNaSGyt3tT13I8OtBAYcOr-qxFKomV8jYATiqiiBmrMzyEH-89pm-dz9Dt8gEEeQW4vESR7bmWVIrsGh8rDnoQXT7yQqBhwvVk3uiHfk9lpyyjOaWdsUQ_DxauHBxZJEzyAn8rCINvBKSyLUKEpboMBL2kX2PuB0BhBpSQm-hsrUBmCxzvZppF5tKkTcrNveJjfNVnsDpz3YJ3NEuHh5RWj1dwdCEnMfxRvS",
+          "WTQpKBh6At4pEREpFm5NSqUoXCo1NpxIyabXNQQHT9FDc1HI8jQl1Lb9MhXkJcL15f5arSmJBhGfjI7ftS_6lxAUBP1lgZjsZAX6heGREkz_4LkodbX5wEUWCg0r_3Euam5lvsMAYZfeqtorYc1eBXz14YNlb4t8KxQ7uZftNkSe_cYXTca0IEbQODEpPq8Q-h5nH95xMBcXa82BE9-jk_nn0oOCRHN8LscNems2Xmg-TOuYr9ijWxAXmn5fn_dfuD_rdq_9Q9WSa-Jj9QwaJ1gDChaN0HqEnmY_E5-LslLTdfElUPLQApft7QTCsEEo_6I5eC9d8NINfykclrBPXLcR9zePkIlEjklOFr8TqFEjvvv9GmLwlG9a9FUUtpfah_ySblUwxcwW3O63Dc4h-Jj1wXKpvezEcVJlA5Jap0plr_fK1V--UYKf4aLmCaZNfx9Yb3hbV231Dw_RqJx84GkuHthu-7GmpJ5K9Q4GrEMmpLb_eTnG",
+          "HyZ7waWIGggCX-ewFc4Qi_xd3z5NtSsdtbG2mujhGdQb6yD8M94nzOfd1nDTZ1mjBk5nl20PZeCh0yLy3kZKfJ2WIVVvn9_nc2RJXkO7360fmOUtqNFvxl3RrbfUrOATw3c5gktuKT9b8SJrbagGqzNzqJun6rD7aerORO5Rg-LK7o0q4E86OE0htj1-KG5Rv55Iq73JL8pQ99bzdpDNZQ37oAApidPu7WVmhmXrzjHskkY8x46LTUZ1Gcngyue2fMfoaYWcH58JTK_pLaJuQDpORv0pUiwWOoTG9xKQCpz-ENLRwbhMSGcdxBoDGB2s7z_GngfbY-Dye17SrPli6gc1VWKtrxUwMK8pKewvd6pmuhKELwiqJi2q6oV9EXF2xS-_JgtuOzbY7NV5eo7S2AZUfggb8Q4cZbS9p46IEpf-AfPUnpl2Tu85XFa7FaNjWemdovl2a1BFWK1rupqQkMc6wy6neY44v5rPxd4SnRVohPAvm9Ah",
+          "UaquHoCAzdtUzF9qXDZh5bG57J52F57GfSy8PpvynUJ1BYdf18TEXT34dDHTQrQli52gfziEoUZd603sM8F84dxOF-p8_uMFwYqUVynizXe5JPmCcVI9DS5Xm83OI43UU-ULpGQcIP8dtYadBPXiIecbCdIZqVAWxfWoCamtMeZ60d_1S3TwZR-XbwMYlUv7uj2sBJoOU0oGygrVaUghRSlmmgGoXJLb90_TQa_oafK3RAdCV4DA94agGhdsTXw4HZCKwwk7Asaicmw8fJpC4u1K0EOW4YdAcXu_nA93C99rjpingLlKcS613Nz0OoT0XQD5WP2LxvaaqKMPAeYYLDM3Y_p9IkgwgyRrAnPErHYIkx8PXBaBDMH-es8Pa49DooG3hJozFNEFcGw_-oghCRGv5CEQ7Z7v1mE8rGy74-nzpPYEW0RC0xUCNW4OnQpwJE8STd8ahkepYnrK95_d8-BOMcIshb0PcxWDk9efDidASYPAIhC6",
+          "wqJLqa4tnGJeLZYU_81pscvpmoLZsQBPtZMbIVAakMJ5F68CjjCA673Gh9q0eq1RrGqVFL2swcQMF8QI2mkegsbSKyjAPLqjAPNIrS4sdSFFhIve62Hv9P9T0zuPoGpqPlEEaTRymyLaOup2MboVfkxRDOzD3B9OkaCkwaKSVUaXMlauRimqTSzK2RknGEGfGRaBq-IXhxHYLCz6F16lrK4NjMcSk4XyxNYeRMO2E8V38-Y6F1z7jKQ7e6AcuZYqleoZI-ZXzHM1V2v8r807e5EnOQ8NSpdorHIS1QWmbnBzARgGfqDsAA72gGfGZf08n_LfYRv_WwE3cCXkefkrT35oFCGdS6jDQyqGpHhZ7aNX3IIwTC6n8WSr-FmRwiOx8RTmLkRkd06m44z3cZnEs8kIV7942gcBcXq-pLKsvu0fdIabRSYbDeJwGjCp5X4VZOOcCI3f2UyLJsrwhh2cNCXhwz_50LB78Z7pZGbZFUAEzb-qxcpZ",
+          "t-gN4oYF_gm-q8b9VGwPUgZBm77phAPKmr97sxJDBJVSERVUXGYCcywBfAbZUZpeNyEL7DhOwYq5P1T-hrIR9DIOjTiEUALzsZyhpwOlc0mEI0Fq51DLfUsLUUmOGRm2VivjKHKIlXmIaCU4arMlJ9XG5A8wl4k5su7vGmZQZ0OHG1u3ICuluEMSoqEuMkk248a1DJcEw3aqdHsFxGKRr9WKS8SFSiFauV0IGf1WEtiWQCeAk8ETXE7bEr7mjMOwRJQlhJZklZI4NsM2WpVbIQ2mU1pw1UMWD_4lpo1Nm42gATwDShtpHDqt8TK88RsvshgyaZZdLOFBVbV3dJaz6ERecuUICpSs2ehaK9xNoICfs0LbUBIa1qhqDub7arajD7KZVeGm1YIi4Px5Hd6nIcxudzAkGs_b5cr7GanRCdGYKy5u-l5wrzFcbf_r5EuyOvCrd2WarhV2jMET6vvwtBCjrPsotciqqMEtOsF63z4UrSulFDzR",
+          "kdRy5IrgX33f_DMcYP0m3nMvvrl95cwgyVlu0kfv78fMB4xgRvi1kL8S_xUdTBakca2Jur4mkzm28HTVfT-WcaBw-mLhT9m1nxGZoAt--214wKXmmRrEg5uvIyalq5O1YaT3Mp8mAXwK45GX5-1yZWkCCGcCGoxZzt8tBC_l9hpOUxLhRA-0ABWgWnKP7TAS1DO1XUCTyRwi1js4SD7Rjo-Wbe5R13n5qGxmQQS5mWrvouZsXhJXq0kztiuzdP3ad114h_LfCHbHu7uodlKbobKDuKJDBGhf3ukgHNPdIG-p2wLZ-Bd0R1piR9KlVn0usLYO2WR2I6plkaIGyZQEqp3D9Bm_TylxUyENz8u7FKqr3ifvW3QetcbZ-acK_QvZEUJuOspfNoRp1EwBw6CnRlKki9UdofOvhKWm9cE_DEIgPLKn7pwYqH-mPWf4NYMVR36N3kdBy6IEnI3W5s0Wppc5N6m08qGHsOBtuQZ2AtLS75i9Oess",
+          "94rXqlmTKxfpRHDBwIWTLFGn5bODdQsObSe40_HeX0beHqcUT6NLbnFiKY2TYi7FgerBovJEOh44CJaogYyh9-CMl_L7aaAfrNbpZIT9HETbKgDG9BxUDvaKKo2c_0NNvOz_NEtbJTsA0AvJecEaBhOBrZIJcVP3hR7SLD700rVm01jQ-NRuLdMa3t7SQY3vhCBJBLXgSBunza_B0M-Zt_5YikhLsShqLgAJf4vPzdHOxZaski7QSNBNT3MSRmRl_54a2H4BUjQcqztLp1FJ5sMJWPfXBoMOT9c64o2-dN-ZcPfcnsqNuPDyl9Dw5tKkmSH4Tj_5pI2Hofl5AC3J9of8qdv1-nQF1hsTnrYRQduqYB1_OAl_bEu1Yfbwx7UYW4gNzymtnZFwOMqJWJ4Q_wNueSFjU0Yz12R91Yns7ndg9AZdR3VgUADXYzCeYXS22m2lKYPGC56MKlppL4LqFNRBLLbvxTPIyT8UizjI5enn3nQgGqMu",
+          "dpGzxzQ7yXHg_dtRZtzxcBIF3ryb7U0ni7z9ZM4r6ksasBN9p4ONw1Oc-B8i5xQCbZfjoKCK7AqoaVTgkVcjW1p8Cn3z8qeuQrtXGtUf5OpEBDKi_-CMma1-OrbYmgq3OFMQfZnltM6JYoUPeXsp552IkVnhSLD4V9Xk8oWKtKJtb9H8jqN7RKifdSbIE3AB4fxvFNzNiXK4dgt0XD_ogqzQKuhTSsp5ti0ikj_kA5bRBR65-TvGQwKqT1_syrsrLZObPQeMyffV7dI26-RZzQejbCVKr33RPBqdkkmXuxkqsWNAlTCqp4ytsKxx9LSGQ7zjgtdeGHvLpvUol2sb3cfEYrf3o0SzptSiPO-66xuG2fw9pFnCkxlmiVx8QklK3oXkph9gbKWzn5Bpe5-g0lRUq9x5Z0Yr158HVTC4hpO35N4TyBeWgCda9_0m7Mo0qOZ8UOpnIhRvvTTVby3DhMm5NdqrnYTiKrUazvpXXC59UA3ABifx",
+          "Execute",
+          "tB06-ovc6rMQqjHPOE2z4_sPt5CHiovKT0rwMH20fFE8efhYTNalLjQASWchtmxA5BxGVNYOATAQ5Enb-a0Ne5VEnUTM5Qo2QTbFFzKg7utFBtDAURseDbV3OSLbkH_R3H0oKWLW1THXS0I5AOQ4m3HdWqNaNdLFT9cgRyU3-EcpvNrYos8eqo9H1pXWj6aCymDblzjAmBAmRHsgU8BMYfyKZdpEz6p-TpgpOdLuitTOoHX4YRCxVfHE3c8vUbz78ptN3euKPvPDoy5AazASkkMVMXktxIvm1zPDhnH4mJBzA-ojtkzhvLZHUT9T3M2pr3BkI602IHpWwpf8Z5swV8fdIHGaFfY80SJLtbw7vumUfvvMGPNWT6ww_mALq7RNXeARGsLjNSsTz72pgu4hQ-hZrFq4GdqFniHGyplrk5mGfzeOL2HyInGazcDCagDE2WXCNGYB10L2fRFsrQ8yi7E_PTyl3i7KVbgwFBh6aiAQWQqAjbmE",
+          "q1-_s35_1tEoItWurKO3M--uHX_itSRAacqxabpLJdV6NZgj2DMQ1mrPtnPmH5ItWVKcJTyBmAFnPWRcGbS-qW0PDqXuOKW8XzDLbVbcJBPkw96Xx4veEhHWWTB2bVcSstnpGHZPQ2xSIJVx-o3-mki1wYPjqL2CL05TDXXjwlyqnU8Ez-Oq-CDwmceiz70Qa_43RIW4akhZb5-YUz6kdyECOQrWYt-6PwwDocnT7kkegnVw82qkL6Auyod97GlyKiDgUwTzEl-ui-5HsoRFpUaY-YX08eSjPUdcRm9-zOyCjd-4plhK6z-xkrfGiU7nyvLMOdma_N4Cmmcdg68oxm1ILnCeSsUXnLIvHSR1DqmkPZo5XQ8KBfLBM02T2i6s_LBMlxOGypmWLn2sMh0KJSitxgRPTM3msA4CdRMNsSXUVCYlgwZyMWKUVXbjw7-k5Ff3-hCqy4qfyrNj6HhdLv5-nbtEFFdA0dzPxLpsoLVAn9y8_5je",
+          "r_jHTo-IJ8P9vojqetSHfPReHw79YfJ8PaCFXVdnEQnYmxXfUxjHtrdlr2yOug6-D_intiS87euxfC9ToLsQFtDNuMQqF3AC8istDxlIw1sJeTbPFaEmFKhRC4TimHlBcsMZ-LJDsuJLLK7f8IJYwqFfT68jV5teNHaaPzBHvvecTDB6aqG-SipN0C-XH9ITNNsnlehmBimspwZW--DbMCD23wbROKZyRKwSljZCldlEhqNGgQhdptzjLapDEtXJrmjz2qByY1V34oV5_YkkAg5kztsgSlQ9QVLetaEYrfznT7WDtq6ilWLH_4_9A9M0-VZSngwLuCWViPgduX8OYMjP2eZ_Wy7Zr3xEPakiOpTGevDYbZv0HumUGnVvFVpA-ysFEQQ1kgfBQME4-JGJwOx7bPDuYB_ki_rYOojKgP2SypDhOUrxVwbitmbrBlV00t9AE04oxkpj_wCcxJed-ek6X0SOQp5xb8KiI6ShI6c44xeV4kWV",
+          "1UW-dBWQLGRSyjv9cRcHoOZWv_CoxKtIS78hOXDdebEV5JYRv4ijgYJsMZvAbgp-sAj_mRebGm50k0ZrFexYYWvJ2VS1Uuf4dBzfk08K_bRbeowJBIiQU5QY-E4b8VVlVGQRI5jZ4WM5R9n2Yexb_svBNunhLrZ4mXji1BvGjdfu5xR8tkxWYzsx0-IteoydAUfTzN40GcWhnUV55UvQ_ORIoNUNeyV8BOCL2zv3rnv4Cza8RoYpPw0YLSpC03DTQksd_myQfa0az5eMs_rE7XIT3KO7Vm3m47r8Xd8wrjznYq_IptlEkv-z1JM64-hQ2PRmAzicoUor97-NbJU-LO0o-_Dl5quh7UOqeBvwPsjRGO-hsuTsyQ536yGScfm6rpjoJC1appqQcrzatZGqwi-WtDKFj57txKoiez5ARqj-92B9XGhTPp7U9m4-UfsT-5SxxOw342Wq8DAw4I6Qcp5ZPHOPDac4LS4T7-tW6FFBM2O3vaHS",
+          "gU_zF1-7oV7wt-3l4BZPQmxPth-dN7SPPwbkCwmtv4VgrWsii3pWgy-4I-yjpo-b4CAXhT_R0aA3bP4wE66Rknhu7MfDPPxaGWpuXnDLme4nKui5zQEplSmstJikJXitcu3AefnZbdUJgJy3vqkpMEXLxlpqGhcTcbBcsd0-JYwjOyO2DGnQqnwiD966kQIRBxXF7SLJk7TKAOF_fD1TqKMKc_cMJm0eViNGNDZYwCkvfAqQgitL2UMCF37Mzkf3_OKPsmelSKPDbuDkuOQ1dx_GHMiPQdodn4vl4TCt6m6WI7xSP9yXzP7ko4zSeIvS-vkTr2Q24wWnVgbOaGYSGIXO7BD_LDrc1bJavbXiTJ0fhm5JYPDiz_kuhgxRvfbUeEYPl2VlODxbiye4acHFgjaoMKnjU3n-YzEBsONj5dgjD90oeVGt3fjGx1gOxHWB2mz_nKDFIboE3aPyNre67XMZ1KbA_TeiG1Ly-X9ZEr8yN9nXIGRI",
+          "SPUcWrvbQ8hxhQEsi3neFvRdQ-baKXIe-Q3XN-uOkMRVDWfI7i-mBVIszOFTvsrDO-xwIErgqyVEFc-FS6EwDcTS77AfaCBCvOaChR1YSIZFN_5NjiXEi4g-j1Klh3jqekx3WxWx2APt9ijTtkFt1bBqwEw0rVN4Grsny9bf4_peAI5h-kVI14IkOwFxBcuLuSXeMKoiMYORsNCYB0nQQVmOpGCy8oSEY9I2ZuEknibkm8X7zHkzdO_5w_BP-R-dWYMg6FZddpidkNqA9sgKVuOqtWZWUXhVZbcDzotbMlgl2yLZMi_XKo9eRmhzxPN-1y_Yx_OrA7zQqmlaNXPr8E4_e6uURpEwnzUpcBjng92IIDfjIG08VVPQyhUFg3Rggf9Vb7v_47OmPlNTq3QvVeZvqPoJzk81bOqjq6ofd1m4oap9AikFLOccLgNNf9nerlvbZVlh__JlHEKwTJXbE_UcOAWPP6mNtBVqw2IL8-Nj3qVbn422",
+          "gIUoE7h2ghMYGf5JHFrr2n_sjQLCbMHBurJurLRpcnpwKCb8kaVMxZOrSN-ohbiPJ_H74EneAULTqm1jaIRYVffYOS-9Y_3R1r5w4dPYcqKTnvfL8ijEuPPVoa6a_StLql9ItP0f2FXBqh9ebYnfZviWq-Zm4gJ6xZLLQlmIBIgZP1sig0w8XqZ9W8ckys3J-EbPqHO1xH91RBg7Z9g6MVAx6C2n7qcgxr5RgHdByZWHTHM0eaSkNQ_Fe85iAtb8XtvhhC8Xif3hb0d7JuyUw4ABfJqZCBbrflnrlmNiBqB1sO_8P8yQlf9t29Pbj6PN-QgUTCCKxs05tQzFvn_VL4OfsVqP5W-qO61M_S3CGEASUzKiJLEWJIfoxaAyNPJus2c7UnfM5qSybOojynCZq2EYQy4WBHkMsBirJzS-kF0cbvRmlF-j9A1o-7axXK4Tzs_dJQmZX4N8RKWz5-2tr9jRbtaDzlnMNz1fYMXiiOUVdi-Jf9BF",
+          "WxP-WVJHM26bg2OE4FUbglphOz874YrMlhwv59dB2Xj9ALtmlu22H54Y9ILaP-F3_kabm3SVWUFCNtU3x8EDLXWRphBpgvuquou7flUUJnEIhZeQTVcP1fKhDpzz9pOM1s6uK_z2KC4h_GKXytfFEXhHmjDdJAFHQBSFMGapCkMw-0MUUF1cgmmnmLbEm8i1YCmnyGwyOx5552ul3TBjbCQHoCxDWBdkPhbnk_bgeV_ru0xqgkTTYqUhS5aqIhv8vVc5jsZAQPjoYI5JCCWG_6JysHKrCv2RaBTubZsBPuXa1n_WtUP88KWDFQz_OGb2nURAR8hPF7A6g8Jr8gUY9Sf99P9AbNoepyV1dFi7q5YagBXC9hq29Cb2nysFBjLy_IqBfwW3jXQL5B1aMMU-nvsCUQauRTTV7tjkYQNFL1u1Be5Fcxw4A8AEe2VdPLyc9zftclTeYRpQhLtaSxWUREiGq7giupOcflkBVkzKtSTyGnmBODrN",
+          "mPtVNx4RkkUY9yVmBi95ly9f5zkVO3gkyxWCzeOk7Nxbv1qYXSqGRy0JV1PeimHTI7cHtf7F6FkjjjwuQEAf6u4PY0Hvx2q5ecr_ND857wbHQ7oKJxs4pV8wYRn6KbLkuHye47twW5JqR6Ja08h0H00u3ZofGNBDqkrKbl2s54eyUOHDwU2GeoqoHV6LOx15gL8Tfhy_OjdX0Ejgu6ERdbBG4dV5n7Af7WSYpv9YX8CDnWgUbXclm5c7k3Ggpf6qxgFsTU6hVWBLFq2liFjRl8SwrosMlAPsINZgpSnVqkmA-lqTPnwVpdXPyRQ_eIfV9gKUCgo7fPJaihdCkl4G_8N7q6UsrYPUg0GH0KLNyhyhoe915vuVe8dTrNRZUfy2FrrajHmHDFSq63hjyqKJKD8ydFnysRSvfEx26mKMZanB_kioydQoR-csjkAcx8BD757Pv5O33gPtzJlvuzwgiNpuybkqzxUHemPmunnBH9iP2v2XnPL7",
+          "lUVgEgggMUC-BWe6M7aO_avaZIdW8Y_mJC4DroyldoOLdhJWoXJ7EbJRyTalgQpcr07iRUWXNob9C4H8KscgO3uITLx_PqjPQT1dDaTyTQ0AY64IokoHINxtmunjwW4CyEJwFLEXE_Pqgxx2Lfhmc3bv5MydrgNBbam2I6qdlylDmONWPZtIuuA2Ze78tHUZ3ujhzDMnPufTv75F30qaiEjCNCuLwxMyiEDSl86HVjxvCvf4KbzWJhp-R5nJ6sM7JH5MgXO-42cjt6A3swYxf-1nw4wxaSBLUOWQJmRJPtzZGeZdrA02HLPXLuL5QMuV0BLxAPp-4D9DKYxXgzl1wUqxcmRHyEunTUD9D_CmwJ2NrLcuaP53WckiGlIbYrtG9gRjhqwONAf6XaFFlEsJq5TRNTmSodvVXea_OaQZrTO_nM_iHHrAQiF-NJirCsI4rx4je1b08S7QpvuHz9HiP7ELKQN-__77GcFO6dHz5PxTCXn0RWeo",
+          "whQSQueg5unpHJ9xWZK9URNc3y25ZPnWIEDPxMl-VsZlLKeYSX2FoVkPTILLMWCeuoycHRup0THF7gedZ_KnlzIaL10bUHmU8rLlsPn22N9DJLznCuxiKlDgLAmZMhoMY4WVSysqYp0FbP4klhuabg5gawtzFnK8HX5ONr0JTazM6KLlLZdFChrymy9JH-AhZ4YCZeQUZpWDgSubKxMFt7eKGHMcA1yyFIYD9WF571vq7Cg6hY76ccKy_-MDXa9yDxnPSCitXP15bqFiNZJBXzGiMDAxoW2bEv165h_xb3ggt2_XXlCH5p23IYyvrzxhgvDKiOPTOPCz0ryj52exX1-BXGroKAX_oCCpNDiuqAO88tXbCTQ9SPLzHDCTeB0Z4oO-LUh1Z3UB_gAeDe47wVPjyJ8YBKxGXisM1KvS9t2Cr1vj5NV-KvcnEwdKxULoaQpfu4ADhu9ZrS-mK_AGxz4ZuDNurnyEbXzZxABhnyUNswjQofGS",
+          "sJFd3KV2nRta8ZoQIB-Ckcvwu9ieP_D5HhY47fyzEM0Aj1bLxprNlg6SGOUmXqTW",
+          "QP_mbJB-xoJHXd0jW4CDqst0z9cVZTwP_Cmls2uGhAC8wsHQW-rq1portc1soUzDTLPrwO9f-1QMsSbxq3clJ7UaFxid199N2jSGNBuxwEAhH1cHOyuIPMDPAbzci13cyC_lmUAOQ12P_1nnL-O5MOWzZf9OV47cy_BNYdKW24InuyLS-mxOJo5KZjPzSt_LaMLstaRD4Y0e1xtnYc_M5zGqXG3JCMmA7m3I51mVC_W4WH-VlkkXeRWZzaFLCYyp1K1rT-jlDeRWRZ6hTK03b1T9QBEn07FYZ5dIztkNzt0lxP35Y6YOy50EY0p6E_zxjx2cl0ZXPWo9AGu-60xgM5bwcsQ2TnQypEJWEhxzAES0b8jdiSQNNfiDQ80DlNAikk8LEBfTwBdk9n-icbsEnkU1w_1QWUInS4_mpDuMExCbskPx_iWIMt2t9ytnfLRTO-nSmh2XMCsHAABm8bGW96q-grcr0o2SUbibqYyVNVsDKm6ejNn6",
+          "rHSVHCx3kG-13a8AwQEtrKp08TdyjYiLEUx1NW3ERkUy8Y0xnRfYOI5wwaSxs-XzwwuZfp4qFQ3ZbiKPum8KwyoX6Hln-ItPY4VRgYaTdP-d5uW3xrSkI0wmS4rpPv3Wa1CyKWm13wVnYK0kHfQDdT9Qtpu5SenF2jhX0EMm7lvwtM1oDfJgx0mtYTcPQplTqlgx8iy-kYxvGowFt8x1MLb8sapXcsw7QMzBQQXJIlXBr2QeiLqL6FEPdv1N-ByHma0aJe_9FlArY4wca9CKocQ3T7cQH9CAoFp6CnkHj8fPX2Pj_7-jDEpzBXNwp2jbyLiN0-t6WmwYSLzMfH6k6q1tpMobd6C0-ok5DFGwFyFnuyQe2pgAFvhMvelkFLHSKMf_MXcwbApoE7KdEcVWog143XYxLSBn_CDvuZIQ8dFYkkzHLFJJI7KIX-xj93wvOOhxk0UnFgqeiI1JBhGoODW4z24YuIjYtYr-X1o4a7cnphbHcutn",
+          "dZVf28eyGWtWU8PjWnrOomNY3vmDwafRql_kVV6hMsB6BdK7T2lo9r_9Y432e8eTKQwXRrpjcnqFTsrYq_BfIHh0eDqun-bbAFwf8naRhavbndMkwnrut0zZTbTESszEtYIfO4Wq0qFYJRwrOC8dASaeZhn0o45ymFhWwjAMDVDRbLTJvW5EyFRTaN-xRM09FUGI6WV6D-dw6BbLPGol8XnOBv6uITYyvUXQEqPYEIhVhBWclefEX-XryKuKAxmgN-BIigdsh0lUg28Yd7e7K-IS0sI6MLFaldyGcWifxpkp1JtM9yEkLClPnERxqbKUPyl1QVMFOiXKcSbUqNqk1wQx0YKxUp3I7sqhEzVltnDV8ji0eVtL_nhhmNSoQXFrnYdQjYrFcQeXjItXFHxYwT61r9d0c6Lgh7MJFv0d_M_WbWCxOj9q9YWjkeo5hZFE3yQQ733evTkoTXhyPFiFcOFRS6poS7_vRIss",
+          "GTqdaHN4rJRXnRYXwgSxGA9lM-j5zLlE_0z8FkPVRmWoR8eUhx3DPpmRNfOPGxcVtk1d6XRzd1zYw2gh81kv5H5xFBKO9OyfLexH3ZwNm9yjfjxGg9iVU8RwEkRfOfkSHgyz4dkIeYnjPTwTm1LPoPSc-usAFMVzVbVTPiBLsoJ5pz6xrQQjNSgbUNdmAy9gb9T9zC463W2KbB0f0F2OTFOI1qPdwaDHQvIklHeBnDTIhb8KuzbqG0YNgc7ZjF0mTnGUnXWA8LlyjtXtyJ2aPsYK_FZmBZ8987AJOtOTHPsnRrXF-1RocCZM4_MK6uC9uEUEM511aIFDk8RH32EDwVShPOXGCpSBKA5TfNc-PA3zPba6NEucQSyhlojgWVGuBrkATh1MzdiUWWAtd23L-bqP8VQ6EGU3j1IsfT5ZcgzQxRBN1SgR7B_BMVvr1IhlW5Je2EaQ9WyctnYZVZBF8YshTaUwiUb0-dWPCUujQ5j2WHVC6UEN",
+          "emea-7831",
+          "xk1lx2dW3WM21WIlX5Im3ef9UOKzKIWobQwNCRsZgf67g2TVWn_wqhaAEM01QU8cg-7n3QzNxyP_fHSM5GPkH6aB7t2TvQ2cczUvO-bTkHKCjcBfZPFdOYcylXzuOMXmZh0uHu4f9xpBVt8ED9tD4IPT3db6QpTkdm0rzIDQP9IstdvvjrbVCzC4E1xTNLiJbHz35sA8Jaz5vERjQdMoa2tC95YdNDJhz7HxJ0TmFgNPH_tSuh2U2hZmyX2lUlGTeWCJJlm5BHi5PTh0RT_p9BCfp6XCB16eLb7GJHXhGzJT0jWtYw1n8JmhPgAvb4CIwiZTsYxfzb8b6gadxjp0VkfgAwHiVL0gcqv4XVfa8jXBKHOACJs0n8993VPl_dXM1mrYhjGw5rT-4kdE36P2--fUPFOzTOVKkFwc4S1csZO86BfbjPrw79NJZavJI4p3mMOHKZwmJ2n11FTKQ-JFeQ5rRKFuR1_lFp2hw8FoSgnfP4x37GaI",
+          "UxA9PjE7JRV_MEiTRMnTuN_y3YNzixCMrZ2dfId4I1uWQLNeaCTc10AlnmNPP7wGEq1NwepnzDELcEadHS6CjGO3HrmdYd26YIE6TlZEbAQoKIyT_d3WMEApaXkl_SV3zE8AQqmMFDeOf2ZYcVviRMMO42AlGdzdtB9VbZRsYzGKi0umCAzMFPsxCU91-KM6yOsJ0xkTAB3kj6wROTkCHv6RLa3oZDRf7HPr08TPXBYW1ofV5pNjfmXdIdGpSsImF4Y_ha4xDyeUi_PLI_aG_mz9z3VEQ-uSFPormBhU0JgmzF16mwJIi3WoJLTG7FNTsnuXTVvFxEHJs7H3ltZsOK-wLUdF6QeUUPwSMoiiT61_PbUGYz7EDX7Lhi32bPC94y0QMPddqjz9vFFkjFVG67hlSBwQcO0w2n62QmwEWNF4VtW_qYcIFZNZ-aAn31_cd-jlIjZatdw74hyr8wk0Edb3e17sHyHrODM7YXPrXxu6fEu64dsN",
+          "N7hH7xWmkEFZZpZAj6KOY9hotS_VYZ5kPRkrgBuiOENoexTRpWR8OFIx3Wb4FstISDMrfVBdLW71WDR0J1Q9UQuDTvCZRsCYa7FovoeNcwbQO6fHUrq6I8lLgwtCF64Yyo3I26dHr9Ne7UlfkdAjbRBdSpqaNj5UvHRrKDzlJvUmoNGoBx_1xxDLhmzKDL7BaSgPhI5wgdvVlFdVm912ug2ZEeB97ajWRXvYW5M4pUNP4eZ-rhHymk8OBbgMFkGK2THZbSMk5G__NEt9r_wIF4NPjelb1vnnCo8XdMvFSL6qqVrdQ2PBZYaU_Ks8NsWkQNFEyxHzvXfgy4pXs2_YJyW76xY1UuaDl77Wu1ffirziW4iCjBoF0mlYNCOWwLcfH7naMm2l_Z1Hva70cDmvHzUCX3hP1uFl7Hznfg_Keppr1c4XYMbDLb__Os__aBQWlKXMSFBz_3Bc2L2pn6EYkfA8HXfBigYCdqigg3u5jB92gC1iOPkf",
+          "zsWuMlZt2B_gsJ_lA8iY8gTq9mw0V2TbAL7rbewtCBHuBp03BydSr_sMUif_DKOkIoQf4_XgTSBLAe8TrwhwoveIB2-0ipb_0FF-RpaWRiSbAeUmbUJDqwx3CUbEjCHvRLigqUDedBcZIgvKOWNKfhf2QRXFuc1PV-xBxBDXBImeSgXkNL4N5t7aU1nlkdquNMJeP4W_4WYrd-XRBbb3NiOUPcSN5euSDl6Qpk5AVq6TSiiKpJPhcbRLecrlnIfF0qrRdzMkKnfMAPefS00n8lT4UcpjlXQI_YbRTSsftKCY_xHezbwX0qcF13qgE2dnrlXvdvJcep7WnnV8XEI_1HeoHTEhp3iIK3GLKemOEvooosPDjMvdhoO7Iqs9JrMxWC-R1_WaESWHUtRnV6ZX8yphUdqbEalXI8a0ET75HXedG2eXlmKnw2TcCEYC9KGcAwg7Qq4iX6-WQ9ibB2G3b9L268y4SxGmNUN7YrhYbsQd8yy6ToeA",
+          "Global",
+          "z6J_Rf_iyqLerKnqUTo3uDd03sJ5RixQ48owJTfblAnwUmOImk6M3n11kIJ41GhvowzdMMqAve6KhS7gPsQRuwg4YLWpFeO-C35wmeVYUUsdsZTw0PQdblOKi2hCFm5sH9__3aRw4qvXJ9AmK8SX2y-lmyKJO2Ax9VOWYdl7NE6fD0rHbH7bbXcO7AhetqZWGY7IHRKSD5nAZfFm80Kri6LXxvAv2pvhpYX3dHIrMIlSLO6Q-fUKxdToIiazl-Enru5cGEXTnhl8Ge-qwieJmxolCYYBDzXHurswxHGsiNjSjj1RM9YznuuKmSrlOo8XRP4vn0WJy4dpgnbZpiZc8la_yhQxhXiyeheRpbW6gv2GqHKXghd2izOElglGUnvxrUke206jFHZdoLp9ZWQuAFhfhra1M9k2W6j295X1v_E-g-fe8O3zAuAa2wYJyOY9r9rXTPHAFIBc9T7oaC60DTOuZKeH7FdVEbTR4GgIhV6oMO5ygSNp",
+          "7YUhnn8HoCGcChcUv5UoP7f5oVqRg-yJ6smkDgfNwMFrae_vAdRpoJc8RYP3VWegJEl6JIYdD895vyLR90xqkW4spy6zjQvxCdw7Hwh_weDC1ngqA-hD00T86bpVX_4wCSaaFx77YoPvF3I4MUsHLttFK0g8wxDX2DymLoiKymB4JDmwBxtIcfz276IcFA6bI-Yzp6RLqR733hpVnN7ts5KOcFdnX7wH_ukNccT1g-vGSzkcKfP1lAlUNhXh7ipUY-SqmnN_ROhE3rwUd17FTo-YmVu1oXo4ZtYvquLpGPW9ilN4R7BTn0S2srNZuBMUF2lgc1TZ7xnsuNQq9An8oobwsDF9o8u1XdzQJ_DIe49W8BCgViYtydk6oTD0VgcjKHjJZI7JYVgytprp9gw9ll3QrOQiug06ssiil1xWG02SyCeayL07dhaDB0JfIv8WxSzQIGo9ZXPgYVh0ehAV80siNgVIqMMJ_ntSSHYrBr3L6h5MG-SH",
+          "khsMb7lLu0ANjgSWRV_J1h8DjW1i1bfxE0eXkk4nwl3m5vazs2F1o9Glk7W0pOL63t-8rNGE_t7mnDzj31fsDAq6e7SLtb1h_4Pgu2KusbAjfYHrCuIJPqmdT_LuYgP0unOyaKfQ4zXoqG2s1jbaCP4rTAG1JpItjLuTqbUjMJLbbNbL_Jhpsoo_XA6AVAMgR9CouIpwBR7eL3N1t1n9U50qC28qAasmAOgqbVa_Tmc0KfoeaiY7TjdwDwJwfVS_fWCGxH1BK5dP0QdzkqWueJ7o4FGD-2wfa9TT1WqVfSOcuDZIuoE0kzjKFVZkohGWbRzwZ0uJvBQ7EG_MzeOrzqPcyoj0JUER5LmaAXG1e_zQjfTcSV7I-6x7X8mHwHm1M6VHO8tCS4cOO7mTbpdGeSeYpAF0dX0HrH68UfwnkfReG_C6x8TXFcZOYsvWYE_hfTLglr_rLoLmR5q5yretvz4ezhOD5-geW8SbF1V2t5UjXpa-m_6n",
+          "X5iAOq06XFYeMlPDbwHya43DVmTJs-MOkyze61A_C3d2iqm-0--vWIBizuRmOCpZCGQUVA-yuRYkVpKnltH_NXO_-qLlZ5MyTiwLL9MvSanWaWRyjdeozo2L-N5pXt-qsHyNXiqz0Az6zujGSFMx2HgzHj1deqpheOYm9EHR9An-8Tgq7CsqnFKADzZ7JUEynaHFWGoafmCOHV9xIefIn7EWVPC5amdqrSpPX03WO3ezLGIC-Ul4BbE0lHEvE3nvsAD4H2c2TM7t8LiMUamJgUs8_FzSCw42xfkwm-MTP4fenqmi19SoVnSvyyO8ONRXXDftToQekhoW7TMN5TUu3PdaU6Pj-UYyWHuDQVSmiHqhoScrmSpgs_uTdnvOAtRuwt5KuOBvjjzUnyX39S1-jL73W7J7A_ODDNAXPEo4gG1l6ZrMfoHtSzzO9jIeMGWetTJLVCLbzMlXYJTnDwCkEHSwrDi85ujPtwyf_EKgLkSgbfj3guOS",
+          "RakGaZLCpzBu_Q_HoxyY9cLhZcVsp_3y96pTdGK83hb5dM-zpnZqhmH7YZYdiTm91KX8z4FA8SXPZIFkWc4wP6xJsz-lhixeEHU044V-Ei1lzS_E4qQDuQD8KcgfY35_FX-MSfD0RRiLYdB5el_h45YK6RLY_k11yXR5sq_pl8fcIruW02aYpj9IBf6JK4U_AvDNZAqYxBcJ9lHAiOhPkwj1i_LPod_VADX7PdX2fNhn0vaN6ObccQZJJMEr9jjwYlBnVJuo6-Ehq4QHmNvL4QtgIKFxJdqocPxyWfrMVoOUJwa43v3GIN_GmDtKrAedbeRp8se1rj7bui9yv68_zRs5b7RZSebZu4Myw9Bi_Vtb8rCCQPdVmbZXcQrwkmSYwIrhvM6c-ven8IsooZ2Y3lk7fVt3EjfZemqJ-_jDfUXQiDn1YTJGf5_0Cr9Raj2fG4dbknWiLd1AFPBzLNFpIhqm-0diWUBaqS5ExH6L70SA_WAcf6vH",
+          "AzAmQR2t_1XEEgfakcaoRgok4xdqQy-xf5SLog5A0vPllfHMgJaNH5I-R60n8JSLDhtiHDkNsb3yYW4GVHQQXQl522YhpxL5qNqAyqyqOJ39t6T9eDkYSvbuo-NMqFygFifZ2ARaqrPqGTkma24ToBaI0ellY9sWx_g7qzUPy_Av3xBddlW_BpRs2J362VBNaBE34GfU5UryFai_cJpWrj1Jdf0wze7eiZN4FMCrjQuVsHCzfOSZWbaIMMkymlJ0isc7FlfzVaJpvNvvS6xVCKkC0fvfnOuTmmoQsV9CyDCyWW7iFwh3rP1Cd6WT6Mg3YfgMt0mZ0_FZ1hSwDad72ZT-9bosMsO2P9GtHZrOiDGiGPQo97ZLJyZZ1_6ehpz4klgrsqmZC6b953sLXTsosw8ZLcfFAj6lRqlhyf1Xhpp-6VMOLSCRc0FDrrSxir5GyMbzmkpYTGpaedwTIiHHri5jmwiKt7mZHTeyoUAJSakvBD25zdoi",
+          "3SQMrWMRoR7n6snYWqWTugWHKD-hk6Ye0f5nnlRLA3uhtih8eZka5jZSBObGMontVMYDNRdjpDfc2PNqqNlRJhDmpX_kIbo4PuKUCOhbuzihezO0K4qPVv58FjHzZmXVNeiNJMnejKhwhYcEh7-dRKD5QRT6298s0lISy7gryabvl6Bmbftmdqs5F8R3pu5aEq_FWQvLCB53idlojZj7NShPoxZQKLWbmo_axLEEZ0--B94F0LPmtqPVpg2CASKUCOjakeNrZC7LFLV_MPaeUO-2dWGlAQY7VFiJ6iyegPBdjlUostnIVpmUEku5sZMSAwbW2DgwJrtSqaO1UAMRBlRrm5Zb4X-1cIxlQLjAhpcYsmWZzgBPH9Xv_sIkJxzmWSVthcFWZJj8pRGISy_8hTM52vMd5eWbpdGHpSnmK_9ElCRj4cMg1O-A0c5X4oqhNOd_YzQm8oSustVKfXVQFmNL4-ChrcUwtj6K9e69kWHiGHGVKbNb"
+        ]
+      },
+      "tlsh": "T1DCB4236222AE61A85B3C74F52EE37919960D3DEEB16DD9406CFD212C3352088D7C7B62",
+      "magic": "ASCII text, with very long lines (526u), with CRLF line terminators",
+      "type_extension": "vbs",
+      "popular_threat_classification": {
+        "popular_threat_name": [
+          {
+            "count": 2,
+            "value": "sagent"
+          },
+          {
+            "count": 1,
+            "value": "egairtigado"
+          },
+          {
+            "count": 1,
+            "value": "fij1"
+          }
+        ],
+        "popular_threat_category": [
+          {
+            "count": 5,
+            "value": "trojan"
+          },
+          {
+            "count": 2,
+            "value": "dropper"
+          }
+        ],
+        "suggested_threat_label": "trojan.sagent/egairtigado"
+      },
+      "filecondis": {
+        "raw_md5": "964dd91f504928375e66cdb61d4bf5fb",
+        "dhash": "d28080888c828380"
+      },
+      "sandbox_verdicts": {
+        "Zenbox": {
+          "category": "malicious",
+          "malware_classification": [
+            "MALWARE",
+            "EVADER"
+          ],
+          "sandbox_name": "Zenbox",
+          "confidence": 72
+        }
+      },
+      "unique_sources": 2,
+      "size": 523801,
+      "sigma_analysis_results": [
+        {
+          "rule_level": "high",
+          "rule_id": "80bbf1ed6106205ab2926430c9634286f976b2fee4357dbacddec45b979a4422",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Windows Shell/Scripting Processes Spawning Suspicious Programs",
+          "rule_description": "Detects suspicious child processes of a Windows shell and scripting processes such as wscript, rundll32, powershell, mshta...etc.",
+          "rule_author": "Florian Roth (Nextron Systems), Tim Shelton",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Hashes": "SHA1=AF506B15498F0DB1A4E350CC26F2A60D6C12146C,MD5=478BEAEC1C3A9417272BC8964ADD1CEE,SHA256=9A121ACF7686D2883E524332111D5E4BCC0C1A8E81136486FBA4CA65CA614407,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05",
+                "Description": "Task Scheduler Configuration Tool",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x27988.xml\" /f",
+                "FileVersion": "10.0.19041.906 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=85E046DE3C2DE1B4C85E57BA00CF7151B3D59F24,MD5=D857FA7279E2861199583474C17A1C6C,SHA256=DDDE64F0F55751763C1BCD53DE9CDFFC0D725D45A8476464A2A0422661813004,IMPHASH=44E70F20C235C150D75F6FC8B1E29CD1",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Task Scheduler Configuration Tool",
+                "FileVersion": "10.0.22621.1 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\System32\\WScript.exe \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x34763.xml\" /f",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\System32\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\System32\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "high",
+          "rule_id": "92acfd50d9fe4d995d6998a5346e4e031ea037d422458bb4f74555a52ffc886c",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Script Interpreter Execution From Suspicious Folder",
+          "rule_description": "Detects suspicious script execution from suspicious directories or folders accessible by environment variables that may indicate malware activity.\nScript interpreters (cscript, wscript, mshta, powershell) executing from folders like Temp, Public, or user profile directories may suggest attempts to evade detection or execute malicious scripts.\n",
+          "rule_author": "Florian Roth (Nextron Systems), Nasreddine Bencherchali (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\file_22a30ecc.ps1\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "0533322c5c44794b71e761cd351a2459aad6e21ae95c9543d4c9fdb3c8fde6c4",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Schedule Task Creation From Env Variable Or Potentially Suspicious Path Via Schtasks.EXE",
+          "rule_description": "Detects Schtask creations that point to a suspicious folder or an environment variable often used by malware",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=AF506B15498F0DB1A4E350CC26F2A60D6C12146C,MD5=478BEAEC1C3A9417272BC8964ADD1CEE,SHA256=9A121ACF7686D2883E524332111D5E4BCC0C1A8E81136486FBA4CA65CA614407,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Task Scheduler Configuration Tool",
+                "FileVersion": "10.0.19041.906 (WinBuild.160101.0800)",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x27988.xml\" /f",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Hashes": "SHA1=85E046DE3C2DE1B4C85E57BA00CF7151B3D59F24,MD5=D857FA7279E2861199583474C17A1C6C,SHA256=DDDE64F0F55751763C1BCD53DE9CDFFC0D725D45A8476464A2A0422661813004,IMPHASH=44E70F20C235C150D75F6FC8B1E29CD1",
+                "Description": "Task Scheduler Configuration Tool",
+                "EventID": "1",
+                "ParentCommandLine": "C:\\Windows\\System32\\WScript.exe \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x34763.xml\" /f",
+                "FileVersion": "10.0.22621.1 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\System32\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "06b48fa7870d38bdf92b4d4a9b9c4a4df779bd405fdc5ba0e70911df20027ce1",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Change PowerShell Policies to an Insecure Level",
+          "rule_description": "Detects changing the PowerShell script execution policy to a potentially insecure level using the \"-ExecutionPolicy\" flag.",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\file_22a30ecc.ps1\"",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "96d2c399118cab5d249093badf4a85f0ef1889872b0191bdf131bcabc0994681",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Potentially Suspicious Powershell Script Execution From Temp Folder",
+          "rule_description": "Detects a potentially suspicious powershell script executions from temporary folder",
+          "rule_author": "Florian Roth (Nextron Systems), Max Altgelt (Nextron Systems), Tim Shelton",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\file_22a30ecc.ps1\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "medium",
+          "rule_id": "c089503ba0204ebcc3605f01ef3ba76dfff60846f2bad81faf9eae455e81921b",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Suspicious PowerShell Invocation From Script Engines",
+          "rule_description": "Detects suspicious powershell invocations from interpreters or unusual programs",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\file_22a30ecc.ps1\"",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "1c2e4db94ca79f939e94e29c04fb3b71467fc6f5b9c31db34fcce5a2fb3b856f",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Non Interactive PowerShell Process Spawned",
+          "rule_description": "Detects non-interactive PowerShell activity by looking at the \"powershell\" process with a non-user GUI process such as \"explorer.exe\" as a parent.",
+          "rule_author": "Roberto Rodriguez @Cyb3rWard0g (rule), oscd.community (improvements)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=F5EE89BB1E4A0B1C3C7F1E8D05D0677F2B2B5919,MD5=C32CA4ACFCC635EC1EA6ED8A34DF5FAC,SHA256=73A3C4AEF5DE385875339FC2EB7E58A9E8A47B6161BDC6436BF78A763537BE70,IMPHASH=194427A488ED1DD0A91731658B071667",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "PowerShell.EXE",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Windows PowerShell",
+                "FileVersion": "10.0.19041.546 (WinBuild.160101.0800)",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe\"  -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\file_22a30ecc.ps1\"",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "3bc9d14114a6b67367a24df21134d0564d6f08a0ad903d68f9b25e9d8b7f0790",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Scheduled Task Creation Via Schtasks.EXE",
+          "rule_description": "Detects the creation of scheduled tasks by user accounts via the \"schtasks\" utility.",
+          "rule_author": "Florian Roth (Nextron Systems)",
+          "match_context": [
+            {
+              "values": {
+                "Hashes": "SHA1=AF506B15498F0DB1A4E350CC26F2A60D6C12146C,MD5=478BEAEC1C3A9417272BC8964ADD1CEE,SHA256=9A121ACF7686D2883E524332111D5E4BCC0C1A8E81136486FBA4CA65CA614407,IMPHASH=918DBB01101BFA7F1042CCA9520D2A05",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Task Scheduler Configuration Tool",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x27988.xml\" /f",
+                "FileVersion": "10.0.19041.906 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Hashes": "SHA1=85E046DE3C2DE1B4C85E57BA00CF7151B3D59F24,MD5=D857FA7279E2861199583474C17A1C6C,SHA256=DDDE64F0F55751763C1BCD53DE9CDFFC0D725D45A8476464A2A0422661813004,IMPHASH=44E70F20C235C150D75F6FC8B1E29CD1",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "schtasks.exe",
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "Description": "Task Scheduler Configuration Tool",
+                "FileVersion": "10.0.22621.1 (WinBuild.160101.0800)",
+                "ParentCommandLine": "C:\\Windows\\System32\\WScript.exe \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\schtasks.exe\" /create /tn \"MediaLibraryVBS\" /xml \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x34763.xml\" /f",
+                "EventID": "1",
+                "ParentImage": "C:\\Windows\\System32\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\System32\\schtasks.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "77ed185ff979a8d9206b5eed07bf6d5823529f713ed0ea19f2ef7a4a355568bc",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "File Deletion Via Del",
+          "rule_description": "Detects execution of the builtin \"del\"/\"erase\" commands in order to delete files.\nAdversaries may delete files left behind by the actions of their intrusion activity.\nMalware, tools, or other non-native files dropped or created on a system by an adversary may leave traces to indicate to what was done within a network and how.\nRemoval of these files can occur during an intrusion, or as part of a post-intrusion process to minimize the adversary's footprint.\n",
+          "rule_author": "frack113",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "Cmd.Exe",
+                "Hashes": "SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+                "Description": "Windows Command Processor",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c del /f /q \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\mfp_x27988.xml\"",
+                "FileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        },
+        {
+          "rule_level": "low",
+          "rule_id": "ec63f6d5ea6cf1a23c7c491b28d6b350219d23a95ea95516ce0256730fb7912c",
+          "rule_source": "Sigma Integrated Rule Set (GitHub)",
+          "rule_title": "Local Accounts Discovery",
+          "rule_description": "Local accounts, System Owner/User discovery using operating systems utilities",
+          "rule_author": "Timur Zinniatullin, Daniil Yugoslavskiy, oscd.community",
+          "match_context": [
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "Cmd.Exe",
+                "Hashes": "SHA1=4048488DE6BA4BFEF9EDF103755519F1F762668F,MD5=D0FCE3AFA6AA1D58CE9FA336CC2B675B,SHA256=4D89FC34D5F0F9BABD022271C585A9477BF41E834E46B991DEAA0530FDB25E22,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+                "Description": "Windows Command Processor",
+                "EventID": "1",
+                "ParentCommandLine": "\"C:\\Windows\\system32\\wscript.exe\" \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c if not exist \"C:\\Users\\Bruno\\AppData\\Local\\Media Library\" mkdir \"C:\\Users\\Bruno\\AppData\\Local\\Media Library\"",
+                "FileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\SysWOW64\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+                "Company": "Microsoft Corporation"
+              }
+            },
+            {
+              "values": {
+                "Product": "Microsoft\\xae Windows\\xae Operating System",
+                "CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+                "OriginalFileName": "Cmd.Exe",
+                "Hashes": "SHA1=13E9BB7E85FF9B08C26A440412E5CD5D296C4D35,MD5=5A6BE4D2519515241D0C133A26CF62C0,SHA256=423E0E810A69AACEBA0E5670E58AFF898CF0EBFFAB99CCB46EBB3464C3D2FACB,IMPHASH=D73E39DAB3C8B57AA408073D01254964",
+                "Description": "Windows Command Processor",
+                "EventID": "1",
+                "ParentCommandLine": "C:\\Windows\\System32\\WScript.exe \"C:\\Users\\Bruno\\Desktop\\Product List for Quotation.vbs\"",
+                "CommandLine": "\"C:\\Windows\\System32\\cmd.exe\" /c if not exist \"C:\\Users\\Bruno\\AppData\\Local\\Media Library\" mkdir \"C:\\Users\\Bruno\\AppData\\Local\\Media Library\"",
+                "FileVersion": "10.0.22621.1635 (WinBuild.160101.0800)",
+                "ParentImage": "C:\\Windows\\System32\\wscript.exe",
+                "IntegrityLevel": "Medium",
+                "Image": "C:\\Windows\\System32\\cmd.exe",
+                "Company": "Microsoft Corporation"
+              }
+            }
+          ]
+        }
+      ],
+      "last_analysis_results": {
+        "Bkav": {
+          "method": "blacklist",
+          "engine_name": "Bkav",
+          "engine_version": "8.2.40(8338)",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Lionic": {
+          "method": "blacklist",
+          "engine_name": "Lionic",
+          "engine_version": "8.16",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "MicroWorld-eScan": {
+          "method": "blacklist",
+          "engine_name": "MicroWorld-eScan",
+          "engine_version": "14.0.409.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ClamAV": {
+          "method": "blacklist",
+          "engine_name": "ClamAV",
+          "engine_version": "1.5.4.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CMC": {
+          "method": "blacklist",
+          "engine_name": "CMC",
+          "engine_version": "2.4.2022.1",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "CAT-QuickHeal": {
+          "method": "blacklist",
+          "engine_name": "CAT-QuickHeal",
+          "engine_version": "22.00",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Skyhigh": {
+          "method": "blacklist",
+          "engine_name": "Skyhigh",
+          "engine_version": "v2021.2.0+4045",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ALYac": {
+          "method": "blacklist",
+          "engine_name": "ALYac",
+          "engine_version": "2.0.0.10",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Malwarebytes": {
+          "method": "blacklist",
+          "engine_name": "Malwarebytes",
+          "engine_version": "3.1.0.296",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VIPRE": {
+          "method": "blacklist",
+          "engine_name": "VIPRE",
+          "engine_version": "6.0.0.35",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Sangfor": {
+          "method": "blacklist",
+          "engine_name": "Sangfor",
+          "engine_version": "2.22.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "CrowdStrike": {
+          "method": "blacklist",
+          "engine_name": "CrowdStrike",
+          "engine_version": "1.0",
+          "engine_update": "20251219",
+          "category": "undetected",
+          "result": null
+        },
+        "K7GW": {
+          "method": "blacklist",
+          "engine_name": "K7GW",
+          "engine_version": "14.91.61415",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "K7AntiVirus": {
+          "method": "blacklist",
+          "engine_name": "K7AntiVirus",
+          "engine_version": "14.91.61413",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "VirIT": {
+          "method": "blacklist",
+          "engine_name": "VirIT",
+          "engine_version": "9.5.1335",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Symantec": {
+          "method": "blacklist",
+          "engine_name": "Symantec",
+          "engine_version": "1.22.0.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ISB.Houdini!gen4"
+        },
+        "ESET-NOD32": {
+          "method": "blacklist",
+          "engine_name": "ESET-NOD32",
+          "engine_version": "18.2.18.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS/TrojanDropper.Agent.QIC trojan"
+        },
+        "TrendMicro-HouseCall": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro-HouseCall",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Avast": {
+          "method": "blacklist",
+          "engine_name": "Avast",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Cynet": {
+          "method": "blacklist",
+          "engine_name": "Cynet",
+          "engine_version": "4.0.3.4",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kaspersky": {
+          "method": "blacklist",
+          "engine_name": "Kaspersky",
+          "engine_version": "22.0.1.28",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "HEUR:Trojan.VBS.SAgent.gen"
+        },
+        "BitDefender": {
+          "method": "blacklist",
+          "engine_name": "BitDefender",
+          "engine_version": "7.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "NANO-Antivirus": {
+          "method": "blacklist",
+          "engine_name": "NANO-Antivirus",
+          "engine_version": "1.0.170.26895",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "SUPERAntiSpyware": {
+          "method": "blacklist",
+          "engine_name": "SUPERAntiSpyware",
+          "engine_version": "5.6.0.1032",
+          "engine_update": "20261107",
+          "category": "undetected",
+          "result": null
+        },
+        "Rising": {
+          "method": "blacklist",
+          "engine_name": "Rising",
+          "engine_version": "25.0.0.28",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Sophos": {
+          "method": "blacklist",
+          "engine_name": "Sophos",
+          "engine_version": "3.7.2.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "F-Secure": {
+          "method": "blacklist",
+          "engine_name": "F-Secure",
+          "engine_version": "18.10.1547.307",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "DrWeb": {
+          "method": "blacklist",
+          "engine_name": "DrWeb",
+          "engine_version": "7.0.76.8280",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zillya": {
+          "method": "blacklist",
+          "engine_name": "Zillya",
+          "engine_version": "2.0.0.5725",
+          "engine_update": "20261106",
+          "category": "undetected",
+          "result": null
+        },
+        "TrendMicro": {
+          "method": "blacklist",
+          "engine_name": "TrendMicro",
+          "engine_version": "24.550.0.1002",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "McAfeeD": {
+          "method": "blacklist",
+          "engine_name": "McAfeeD",
+          "engine_version": "1.2.0.16534",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "ti!173785FCF88D"
+        },
+        "CTX": {
+          "method": "blacklist",
+          "engine_name": "CTX",
+          "engine_version": "2026.10.27.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Emsisoft": {
+          "method": "blacklist",
+          "engine_name": "Emsisoft",
+          "engine_version": "2024.8.0.61147",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "huorong": {
+          "method": "blacklist",
+          "engine_name": "huorong",
+          "engine_version": "691424c:691424c:0b37565:0b37565",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "GData": {
+          "method": "blacklist",
+          "engine_name": "GData",
+          "engine_version": "GD:27.46655AVA:64.32203",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Jiangmin": {
+          "method": "blacklist",
+          "engine_name": "Jiangmin",
+          "engine_version": "16.0.100",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Google": {
+          "method": "blacklist",
+          "engine_name": "Google",
+          "engine_version": "1794236479",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Detected"
+        },
+        "Avira": {
+          "method": "blacklist",
+          "engine_name": "Avira",
+          "engine_version": "8.3.3.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Antiy-AVL": {
+          "method": "blacklist",
+          "engine_name": "Antiy-AVL",
+          "engine_version": "3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Kingsoft": {
+          "method": "blacklist",
+          "engine_name": "Kingsoft",
+          "engine_version": "None",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Gridinsoft": {
+          "method": "blacklist",
+          "engine_name": "Gridinsoft",
+          "engine_version": "1.0.262.174",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Xcitium": {
+          "method": "blacklist",
+          "engine_name": "Xcitium",
+          "engine_version": "39100",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Arcabit": {
+          "method": "blacklist",
+          "engine_name": "Arcabit",
+          "engine_version": "2025.0.0.23",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ViRobot": {
+          "method": "blacklist",
+          "engine_name": "ViRobot",
+          "engine_version": "2026-11-09.03",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "ZoneAlarm": {
+          "method": "blacklist",
+          "engine_name": "ZoneAlarm",
+          "engine_version": "6.28-119762367",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Microsoft": {
+          "method": "blacklist",
+          "engine_name": "Microsoft",
+          "engine_version": "1.26100",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Trojan:Win32/Egairtigado!rfn"
+        },
+        "Varist": {
+          "method": "blacklist",
+          "engine_name": "Varist",
+          "engine_version": "6.6.1.3",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "JS/Agent.FIJ1!Eldorado"
+        },
+        "AhnLab-V3": {
+          "method": "blacklist",
+          "engine_name": "AhnLab-V3",
+          "engine_version": "3.30.3.10716",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Acronis": {
+          "method": "blacklist",
+          "engine_name": "Acronis",
+          "engine_version": "1.2.0.121",
+          "engine_update": "20240328",
+          "category": "undetected",
+          "result": null
+        },
+        "VBA32": {
+          "method": "blacklist",
+          "engine_name": "VBA32",
+          "engine_version": "5.7.1",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TACHYON": {
+          "method": "blacklist",
+          "engine_name": "TACHYON",
+          "engine_version": "2026-11-09.02",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Zoner": {
+          "method": "blacklist",
+          "engine_name": "Zoner",
+          "engine_version": "2.2.2.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Tencent": {
+          "method": "blacklist",
+          "engine_name": "Tencent",
+          "engine_version": "1.0.0.1",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Vbs.Trojan.Sagent.Njgl"
+        },
+        "Yandex": {
+          "method": "blacklist",
+          "engine_name": "Yandex",
+          "engine_version": "5.5.2.24",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "TrellixENS": {
+          "method": "blacklist",
+          "engine_name": "TrellixENS",
+          "engine_version": "6.0.6.653",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Ikarus": {
+          "method": "blacklist",
+          "engine_name": "Ikarus",
+          "engine_version": "6.5.4.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "Win32.Outbreak"
+        },
+        "MaxSecure": {
+          "method": "blacklist",
+          "engine_name": "MaxSecure",
+          "engine_version": "4.0.3.0",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "Fortinet": {
+          "method": "blacklist",
+          "engine_name": "Fortinet",
+          "engine_version": "7.0.48.0",
+          "engine_update": "20261109",
+          "category": "malicious",
+          "result": "VBS/Agent.QIC!tr"
+        },
+        "AVG": {
+          "method": "blacklist",
+          "engine_name": "AVG",
+          "engine_version": "23.9.8494.0",
+          "engine_update": "20261108",
+          "category": "undetected",
+          "result": null
+        },
+        "Panda": {
+          "method": "blacklist",
+          "engine_name": "Panda",
+          "engine_version": "4.6.4.2",
+          "engine_update": "20261109",
+          "category": "undetected",
+          "result": null
+        },
+        "alibabacloud": {
+          "method": "blacklist",
+          "engine_name": "alibabacloud",
+          "engine_version": "2.2.0",
+          "engine_update": "20250321",
+          "category": "malicious",
+          "result": "Trojan[dropper]:Win/Wacatac.B9nj"
+        },
+        "Avast-Mobile": {
+          "method": "blacklist",
+          "engine_name": "Avast-Mobile",
+          "engine_version": "261109-00",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SymantecMobileInsight": {
+          "method": "blacklist",
+          "engine_name": "SymantecMobileInsight",
+          "engine_version": "2.0",
+          "engine_update": "20260123",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "BitDefenderFalx": {
+          "method": "blacklist",
+          "engine_name": "BitDefenderFalx",
+          "engine_version": "2.0.936",
+          "engine_update": "20261022",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "DeepInstinct": {
+          "method": "blacklist",
+          "engine_name": "DeepInstinct",
+          "engine_version": "5.0.0.8",
+          "engine_update": "20260614",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Elastic": {
+          "method": "blacklist",
+          "engine_name": "Elastic",
+          "engine_version": "4.0.297",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Webroot": {
+          "method": "blacklist",
+          "engine_name": "Webroot",
+          "engine_version": "1.9.0.8",
+          "engine_update": "20250227",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "APEX": {
+          "method": "blacklist",
+          "engine_name": "APEX",
+          "engine_version": "6.839",
+          "engine_update": "20261107",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Paloalto": {
+          "method": "blacklist",
+          "engine_name": "Paloalto",
+          "engine_version": "0.9.0.1003",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Alibaba": {
+          "method": "blacklist",
+          "engine_name": "Alibaba",
+          "engine_version": "0.3.0.5",
+          "engine_update": "20190527",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trapmine": {
+          "method": "blacklist",
+          "engine_name": "Trapmine",
+          "engine_version": "4.0.17.0",
+          "engine_update": "20261026",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Cylance": {
+          "method": "blacklist",
+          "engine_name": "Cylance",
+          "engine_version": "3.0.0.0",
+          "engine_update": "20261103",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "SentinelOne": {
+          "method": "blacklist",
+          "engine_name": "SentinelOne",
+          "engine_version": "7.8.0.2",
+          "engine_update": "20260924",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "tehtris": {
+          "method": "blacklist",
+          "engine_name": "tehtris",
+          "engine_version": "v0.1.4",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        },
+        "Trustlook": {
+          "method": "blacklist",
+          "engine_name": "Trustlook",
+          "engine_version": "1.0",
+          "engine_update": "20261109",
+          "category": "type-unsupported",
+          "result": null
+        }
+      },
+      "tags": [
+        "calls-wmi",
+        "obfuscated",
+        "vba",
+        "run-dll",
+        "long-sleeps",
+        "anti-analysis",
+        "macro-powershell",
+        "write-file"
+      ],
+      "last_analysis_date": 1794237868,
+      "times_submitted": 2,
+      "ssdeep": "12288:uHcYRvlMS1a7M+eVvTh0uZClP4ocnkHXSiOBrWZoZ:0cYplL1eM+K0uI4ocuilB6mZ",
+      "type_description": "VBA"
+    }
+  }
+}
